@@ -1,0 +1,32 @@
+.site-toggle {
+  position: relative;
+
+  padding-right: 38px;
+
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+
+  &--closed::after {
+    position: absolute;
+    content: "";
+    bottom: 1px;
+    right: 0;
+
+    width: 28px;
+    height: 28px;
+
+    background-image: url("../../img/burger.svg");
+    background-size: 24px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--opened {
+    .cross-icon(@color-font-bright);
+  }
+
+  .interactive-styles-links();
+}
+
+

@@ -1,0 +1,20 @@
+.catalog-toggle {
+  padding-right: 36px;
+
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+
+  &--closed {
+    background-image: url("../../img/burger.svg");
+    background-size: 24px 14px;
+    background-repeat: no-repeat;
+    background-position: top 13px right 2px;
+  }
+
+  &--opened {
+    .cross-icon(@color-font-bright);
+  }
+
+  .interactive-styles-links();
+}

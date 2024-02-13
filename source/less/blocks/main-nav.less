@@ -1,0 +1,179 @@
+.main-nav {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  gap: 50px;
+
+  min-height: 80px;
+  .wrapper();
+
+
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: min-content 1fr auto min-content min-content;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: min-content 1fr auto min-content min-content;
+    
+    min-height: 160px;
+  }
+}
+
+.main-nav__site-toggle {
+  margin-bottom: 1px;
+
+  @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+
+}
+
+.main-nav__contacts {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+
+}
+
+// .main-nav__phone {
+//   display: none;
+
+//   @media (min-width: @tablet-width) {
+//   }
+
+//   @media (min-width: @desktop-width) {
+//   }
+// }
+
+// .main-nav__social-list {
+//   display: none;
+
+//   @media (min-width: @tablet-width) {
+//   }
+
+//   @media (min-width: @desktop-width) {
+//   }
+
+// }
+
+// .main-nav__schedule {
+//   display: none;
+
+//   @media (min-width: @tablet-width) {
+//   }
+
+//   @media (min-width: @desktop-width) {
+//   }
+// }
+
+// .main-nav__mail {
+//   display: none;
+
+//   @media (min-width: @tablet-width) {
+//   }
+
+//   @media (min-width: @desktop-width) {
+//   }
+
+// }
+
+.main-nav__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+
+}
+
+.main-nav__basket {
+  grid-column: 2 / 3;
+  justify-self: end;
+
+  margin-top: 4px;
+  margin-right: 12px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 3 / 4;
+
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+}
+
+.main-nav__favorites {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    grid-column: 4 / 5;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+
+}
+
+.main-nav__user {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    grid-column: 5 / 6;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+
+}
+
+.main-nav__catalog-toggle {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+
+}
+
+.main-nav__search-form {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+
+}
+
+.main-nav__site-list {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+
+}
