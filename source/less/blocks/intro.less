@@ -4,6 +4,8 @@
 
   color: @color-font-light;
   background-color: @color-back-dark-2;
+
+
 }
 
 .intro__content {
@@ -15,13 +17,18 @@
     padding-left: 5px;
     padding-right: 5px;
   }
+
+  @media (min-width: @tablet-width) {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
 }
 
 .intro__title {
   margin-bottom: 20px;
   padding: 0 15px;
 
-  font-family: Forum;
+  font-family: "Forum";
   font-size: 35px;
   font-weight: 400;
   line-height: 35px;
@@ -51,6 +58,11 @@
 
 .intro__slider {
   order: -1;
+
+  @media (min-width: @tablet-width) {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
 }
 
 .intro__slider__img {

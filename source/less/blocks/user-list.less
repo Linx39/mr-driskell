@@ -1,0 +1,66 @@
+.user-list {
+  display: flex;
+  gap: 50px;
+}
+
+.user-list__item {
+  height: 28px;
+}
+
+.user-list__link {
+  position: relative;
+
+  width: 28px;
+  height: 28px;
+
+  .interactive-styles-links();
+}
+
+.user-list__item svg {
+  position: absolute;
+}
+
+.user-list__item--basket svg {
+  top: 4px;
+  left: 4px;
+}
+
+.user-list__item--favorites svg {
+  top: 5px;
+  left: 4px;
+}
+
+.user-list__item--private svg {
+  top: 5px;
+  left: 5px;
+}
+
+.user-list__item--basket {
+  position: relative;
+
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.user-list__item-text {
+  padding-top: 2px;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.user-list__item-quantity {
+  position: absolute;
+  top: -9px;
+  right: -12px;
+
+  padding: 0 5px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  background-color: @color-font-bright;
+}
