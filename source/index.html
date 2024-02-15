@@ -115,22 +115,15 @@
 
     <main class="page__main">
       <section class="intro">
-        <div class="intro__content">
-          <h2 class="intro__title">Лучшие товары в мире татуировок</h2>
-          <p class="intro__description">Оборудование и расходники для самых ярких и качественных работ</p>
-
-          <a class="intro__btn app-btn" href="">Смотреть каталог</a>
-        </div>
-
         <div class="intro__slider slider">
           <div class="intro__slider-wrapper slider__wrapper">
             <ul class="intro__slider-list slider__list">
               <li class="intro__slider-item slider__item">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1920px)" srcset="img/back/intro-desktop.webp 1x, img/back/intro-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/back/intro-desktop.webp 1x, img/back/intro-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/back/intro-tablet.webp 1x, img/back/intro-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/back/intro-mobile.webp 1x, img/back/intro-mobile@2x.webp 2x">
-                  <source media="(min-width: 1920px)" srcset="img/back/intro-desktop.png 1x, img/back/intro-desktop@2x.png 2x">
+                  <source media="(min-width: 1280px)" srcset="img/back/intro-desktop.png 1x, img/back/intro-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/back/intro-tablet.png 1x, img/back/intro-tablet@2x.png 2x">
                   <img class="intro__slider__img" src="img/back/intro-mobile.png" srcset="img/back/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
                 </picture>
@@ -138,20 +131,49 @@
             </ul>
           </div>
 
-          <div class="intro__slider-controls slider__controls">
-            <button class="intro__slider-arrow-btn arrow-btn arrow-btn--prev slider__arrow slider__arrow--prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <ul class="intro__slider-pagination slider__pagination">
-              <li class="slider__pagination-item">
-                <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
-                  <span class="visually-hidden">1 фото</span>
-                </button>
-              </li>
-            </ul>
-            <button class="intro__slider-arrow-btn arrow-btn arrow-btn--prev slider__arrow slider__arrow--next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
+          <div class="intro__wrapper">
+            <div class="intro__content">
+              <h2 class="intro__title">Лучшие товары в мире татуировок</h2>
+              <p class="intro__description">Оборудование и расходники <br>для самых ярких и качественных работ</p>
+
+              <a class="intro__btn app-btn" href="">Смотреть каталог</a>
+            </div>
+
+            <div class="intro__slider-controls slider__controls">
+              <button class="intro__slider-arrow-btn slider__arrow slider__arrow--prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <ul class="intro__slider-pagination slider__pagination">
+                <li class="slider__pagination-item">
+                  <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
+                    <span class="visually-hidden">4 фото</span>
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button class="intro__slider-pagination-btn slider__pagination-btn slider__pagination-btn--current" type="button">
+                    <span class="visually-hidden">5 фото</span>
+                  </button>
+                </li>
+              </ul>
+              <button class="intro__slider-arrow-btn slider__arrow slider__arrow--next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
