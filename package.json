@@ -3,7 +3,6 @@
   "private": true,
   "description": "Pet-project Магазин товаров для татуажа",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
     "@linthtml/linthtml": "0.9.5",
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
@@ -15,14 +14,12 @@
     "gulp-rename": "2.0.0",
     "gulp-svgstore": "9.0.0",
     "gulp-webp": "4.0.1",
-    "linthtml-config-htmlacademy": "1.0.12",
-    "postcss": "8.3.11",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.11"
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard-less": "^3.0.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/less/**/*.less\"",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"

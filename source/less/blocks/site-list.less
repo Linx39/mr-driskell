@@ -6,6 +6,7 @@
 
 .site-list__link {
   position: relative;
+
   padding: 4px 0;
 
   .interactive-styles-links();
@@ -13,10 +14,11 @@
   &:hover {
     &::after {
       position: absolute;
-      content: "";
       bottom: -10px;
-      left: 0;
       right: 0;
+      left: 0;
+
+      content: "";
 
       width: 6px;
       height: 18px;
