@@ -3,4 +3,21 @@
   font-size: 20px;
   line-height: 30px;
   text-align: center;
+
+  border: 2px solid @color-font-orange;
+
+  &--dark {
+    color: @color-font-white;
+    background-color: @color-btn-dark-orange;
+  }
+
+  &--light {
+    color: @color-font-orange;
+    background-color: @color-back-light-01;
+
+    &:hover {
+      color: @color-font-white;
+      background-color: @color-font-orange;
+    }
+  }
 }

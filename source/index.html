@@ -115,17 +115,17 @@
 
     <main class="page__main">
       <section class="intro">
-        <div class="intro__slider slider">
-          <div class="intro__slider-wrapper slider__wrapper">
-            <ul class="intro__slider-list slider__list">
-              <li class="intro__slider-item slider__item">
+        <div class="intro__slider intro-slider">
+          <div class="intro__slider-wrapper intro-slider__wrapper">
+            <ul class="intro__slider-list intro-slider__list">
+              <li class="intro__slider-item intro-slider__item">
                 <picture>
                   <source type="image/webp" media="(min-width: 1280px)" srcset="img/back/intro-desktop.webp 1x, img/back/intro-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/back/intro-tablet.webp 1x, img/back/intro-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/back/intro-mobile.webp 1x, img/back/intro-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/back/intro-desktop.png 1x, img/back/intro-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/back/intro-tablet.png 1x, img/back/intro-tablet@2x.png 2x">
-                  <img class="intro__slider__img" src="img/back/intro-mobile.png" srcset="img/back/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                  <img class="intro__slider-img" src="img/back/intro-mobile.png" srcset="img/back/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
                 </picture>
               </li>
             </ul>
@@ -136,41 +136,41 @@
               <h2 class="intro__title">Лучшие товары в мире татуировок</h2>
               <p class="intro__description">Оборудование и расходники <br>для самых ярких и качественных работ</p>
 
-              <a class="intro__btn app-btn" href="">Смотреть каталог</a>
+              <a class="intro__btn app-btn app-btn--dark" href="">Смотреть каталог</a>
             </div>
 
-            <div class="intro__slider-controls slider__controls">
-              <button class="intro__slider-arrow-btn slider__arrow slider__arrow--prev" type="button">
+            <div class="intro__slider-controls intro-slider__controls">
+              <button class="intro__slider-arrow-btn intro-slider__arrow intro-slider__arrow--prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
-              <ul class="intro__slider-pagination slider__pagination">
-                <li class="slider__pagination-item">
-                  <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
+              <ul class="intro__slider-pagination intro-slider__pagination">
+                <li class="intro-slider__pagination-item">
+                  <button class="intro__slider-pagination-btn intro-slider__pagination-btn" type="button">
                     <span class="visually-hidden">1 фото</span>
                   </button>
                 </li>
-                <li class="slider__pagination-item">
-                  <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
+                <li class="intro-slider__pagination-item">
+                  <button class="intro__slider-pagination-btn intro-slider__pagination-btn" type="button">
                     <span class="visually-hidden">2 фото</span>
                   </button>
                 </li>
-                <li class="slider__pagination-item">
-                  <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
+                <li class="intro-slider__pagination-item">
+                  <button class="intro__slider-pagination-btn intro-slider__pagination-btn" type="button">
                     <span class="visually-hidden">3 фото</span>
                   </button>
                 </li>
-                <li class="slider__pagination-item">
-                  <button class="intro__slider-pagination-btn slider__pagination-btn" type="button">
+                <li class="intro-slider__pagination-item">
+                  <button class="intro__slider-pagination-btn intro-slider__pagination-btn" type="button">
                     <span class="visually-hidden">4 фото</span>
                   </button>
                 </li>
-                <li class="slider__pagination-item">
-                  <button class="intro__slider-pagination-btn slider__pagination-btn slider__pagination-btn--current" type="button">
+                <li class="intro-slider__pagination-item">
+                  <button class="intro__slider-pagination-btn intro-slider__pagination-btn intro-slider__pagination-btn--current" type="button">
                     <span class="visually-hidden">5 фото</span>
                   </button>
                 </li>
               </ul>
-              <button class="intro__slider-arrow-btn slider__arrow slider__arrow--next" type="button">
+              <button class="intro__slider-arrow-btn intro-slider__arrow intro-slider__arrow--next" type="button">
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
@@ -179,73 +179,106 @@
       </section>
 
       <section class="cards">
-        <div class="cards__wrapper">
-          <h2 class="visually-hidden">Карточки товаров</h2>
-          <div class="cards__filter filter">
-            <h3 class="visually-hidden">Фильтры</h3>
-            <form class="cards__form filter-form">
-              <fieldset class="filter-form__group">
-                <ul class="filter-form__list">
-                  <li class="filter-form__item">
-                    <label class="filter-form__label">
-                      <input class="visually-hidden filter-form__input" type="radio" name="hit" value="no">
-                      Хиты продаж
-                    </label>
-                  </li>
-                  <li class="filter-form__item">
-                    <label class="filter-form__label">
-                      <input class="visually-hidden filter-form__input" type="radio" name="popular" value="no">
-                      Самые популярные
-                    </label>
-                  </li>
-                  <li class="filter-form__item">
-                    <label class="filter-form__label">
-                      <input class="visually-hidden filter-form__input" type="radio" name="new" value="yes" checked>
-                      Новые поступления
-                    </label>
-                  </li>
-                  <li class="filter-form__item">
-                    <label class="filter-form__label">
-                      <input class="visually-hidden filter-form__input" type="radio" name="promotion" value="no">
-                      Акционные товары
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+        <h2 class="visually-hidden">Карточки товаров</h2>
+        <div class="cards__filter">
+          <h3 class="visually-hidden">Фильтры</h3>
+          <form class="cards__filter-form cards-form" method="get">
+            <fieldset class="cards__filter-form-group cards-form__group">
+              <ul class="cards-form__list">
+                <li class="cards-form__item">
+                  <label class="cards-form__label">
+                    <input class="visually-hidden cards-form__input" type="radio" name="hit" value="yes" checked>
+                    Хиты продаж
+                  </label>
+                </li>
+                <li class="cards-form__item">
+                  <label class="cards-form__label">
+                    <input class="visually-hidden cards-form__input" type="radio" name="popular" value="no">
+                    Самые популярные
+                  </label>
+                </li>
+                <li class="cards-form__item">
+                  <label class="cards-form__label">
+                    <input class="visually-hidden cards-form__input" type="radio" name="new" value="no">
+                    Новые поступления
+                  </label>
+                </li>
+                <li class="cards-form__item">
+                  <label class="cards-form__label">
+                    <input class="visually-hidden cards-form__input" type="radio" name="promotion" value="no">
+                    Акционные товары
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <button class="visually-hidden" type="submit">Показать</button>
-            </form>
-          </div>
+            <button class="visually-hidden" type="submit">Показать</button>
+          </form>
+        </div>
 
-          <div class="cards__list">
-            <article class="card">
-              <div class="card__slider slider">
-                <div class="card__slider-wrapper slider__wrapper">
-                  <ul class="card__slider-list slider__list">
-                    <li class="card__slider-item slider__item">
-                      <a class="card__link">
-                        <picture>
-                          <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                          <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                          <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                          <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                          <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
-                        </picture>
-                      </a>
+
+        <div class="cards__catalog">
+          <article class="card">
+            <div class="card__wrapper">
+              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+
+              <div class="card__slider card-slider">
+                <div class="card__slider-wrapper card-slider__wrapper">
+                  <ul class="card__slider-list card-slider__list">
+                    <li class="card__slider-item card-slider__item">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                  </ul>
+                  <ul class="card__slider-pagination card-slider__pagination">
+                    <li class="card-slider__pagination-item">
+                      <button class="card__slider-pagination-btn card-slider__pagination-btn" type="button">
+                        <span class="visually-hidden">1 фото</span>
+                      </button>
+                    </li>
+                    <li class="card-slider__pagination-item">
+                      <button class="card__slider-pagination-btn card-slider__pagination-btn" type="button">
+                        <span class="visually-hidden">2 фото</span>
+                      </button>
+                    </li>
+                    <li class="card-slider__pagination-item">
+                      <button class="card__slider-pagination-btn card-slider__pagination-btn" type="button">
+                        <span class="visually-hidden">3 фото</span>
+                      </button>
+                    </li>
+                    <li class="card-slider__pagination-item">
+                      <button class="card__slider-pagination-btn card-slider__pagination-btn" type="button">
+                        <span class="visually-hidden">4 фото</span>
+                      </button>
                     </li>
                   </ul>
                 </div>
               </div>
 
-
-              <span class="card__mark">Новинка</span>
-              <button class="card__btn-favorite">
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
+              <a class="card__btn-favorite favorite-btn favorite-btn--active" href="">
+                <svg width="20" height="18" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
                 <span class="visually-hidden">Добавить в избранное</span>
-              </button>
+              </a>
 
-            </article>
-          </div>
+              <div class="card__content">
+                <p class="card__description">Foxxx Kitsune Mini Black Vintage RCA</p>
+                <p class="card__price">6 000 ₽</p>
+              </div>
+            </div>
+
+            <div class="card__btn-container">
+              <a class="card__btn-buy app-btn app-btn--light" href="">В корзину</a>
+            </div>
+          </article>
         </div>
       </section>
 
