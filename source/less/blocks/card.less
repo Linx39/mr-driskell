@@ -1,8 +1,18 @@
 .card {
-  width: 280px;
+  // width: 280px;
   padding-bottom: 20px;
 
   background: @color-back-light-02;
+
+  @media (min-width: @tablet-width) {
+    // width: 229px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    // width: 289px;
+  }
 }
 
 .card__wrapper {
@@ -25,12 +35,24 @@
 
 .card__slider-pagination {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .card__mark {
   position: absolute;
   top: 30px;
   left: 30px;
+
+  @media (min-width: @desktop-width) {
+    top: 15px;
+  }
 }
 
 .card__btn-favorite {
@@ -38,20 +60,31 @@
   z-index: 2;
   top: 30px;
   right: 30px;
+
+  @media (min-width: @desktop-width) {
+    top: 15px;
+  }
 }
 
 .card__content {
-  padding: 8px 30px 16px;
+  padding: 9px 30px 16px;
+
+
+  @media (min-width: @desktop-width) {
+    padding-top: 7px;
+  }
 }
 
-.card__description {
-  margin-bottom: 8px;
+.card__title {
+  margin-bottom: 7px;
 
   font-size: 15px;
   font-weight: 400;
   line-height: 21px;
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 9px;
+
     font-size: 17px;
     line-height: 24px;
   }
@@ -65,16 +98,20 @@
 }
 
 .card__btn-container {
-  padding: 0 30px;
-}
-
-.card__btn-buy {
-  width: 100%;
-  padding: 6px 10px 10px 10px;
-
-  background-color: @color-back-light-01;
+  padding: 0 26px;
 
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.card__btn-buy {
+  width: 100%;
+  padding: 6px 10px 10px;
+
+  background-color: @color-back-light-01;
+}
+
+.card__link:hover ~ .card__btn-container {
+  display: block;
 }

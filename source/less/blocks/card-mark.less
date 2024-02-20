@@ -1,24 +1,67 @@
 .card-mark {
-  padding: 4px 18px 6px 10px;
+  position: relative;
+
+  padding: 4px 18px 4px 9px;
 
   font-size: 15px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 19px;
 
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border: 1px solid @color-font-orange;
+  background-color: @color-back-light-02;
 
   &--new {
     color: @color-font-orange;
-    background-image: url("../../img/card-type-new.svg");
-    background-size: 85px 29px;
+    border: 1px solid @color-font-orange;
   }
 
   &--hit {
     color: @color-font-violet;
-    background-image: url("../../img/card-type-hit.svg");
-    background-size: 105px 29px;
+    border: 1px solid @color-font-violet;
   }
+}
+
+.card-mark__corner {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 11px;
+  height: 29px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    right: 0;
+
+    border-top: 14.5px solid transparent;
+    border-bottom: 14.5px solid transparent;
+    border-right: 11px solid transparent;
+  }
+
+  &::after {
+    right: -1px;
+
+    border-top: 14.5px solid transparent;
+    border-bottom: 14.5px solid transparent;
+    border-right: 11px solid @color-back-light-02;
+  }
+}
+
+.card-mark--new .card-mark__corner::before {
+  border-right-color: @color-font-orange;
+}
+
+.card-mark--hit .card-mark__corner::before {
+  border-right-color: @color-font-violet;
 }

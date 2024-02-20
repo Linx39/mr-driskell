@@ -1,4 +1,6 @@
 .app-btn {
+  position: relative;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -20,4 +22,59 @@
       background-color: @color-font-orange;
     }
   }
+}
+
+.app-btn__corner {
+  position: absolute;
+  top: 50%;
+
+  display: block;
+  width: 17px;
+  height: 19px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    border-top: 9.5px solid transparent;
+    border-bottom: 9.5px solid transparent;
+    border-right: 17px solid @color-font-orange;
+  }
+
+  &::after {
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+    border-right: 13px solid transparent;
+  }
+
+  &--left {
+    left: -17px;
+    transform: translateY(-50%);
+  }
+
+  &--right {
+    right: -17px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.app-btn--dark .app-btn__corner::after {
+  border-right-color: @color-btn-dark-orange;
+}
+
+.app-btn--light .app-btn__corner::after {
+  border-right-color: @color-back-light-01;
+}
+
+.app-btn--light:hover > .app-btn__corner::after {
+  border-right-color: @color-font-orange;
 }
