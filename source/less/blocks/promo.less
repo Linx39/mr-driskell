@@ -1,4 +1,4 @@
-.cards {
+.promo {
   padding-top: 51px;
   padding-bottom: 67px;
 
@@ -8,12 +8,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 110px;
+    padding-top: 108px;
     padding-bottom: 120px;
   }
 }
 
-.cards__filter {
+.promo__filter {
   box-sizing: border-box;
   .wrapper();
 
@@ -29,13 +29,13 @@
   }
 }
 
-.cards__form {
+.promo__form {
 }
 
-.cards__form-group {
+.promo__form-group {
 }
 
-.cards__form-list-container{
+.promo-filter__slider-wrapper{
   @media (max-width: (@tablet-width - 1)) {
     width: calc(100vw - 23px - 2 * @mobile-padding);
     padding-right: @mobile-padding;
@@ -44,36 +44,47 @@
   }
 }
 
-.cards__form-list {
-  display: flex;
-  gap: 24px;
-  transform: translateX(-346px);
+// .promo-filter__list {
+//   transform: translateX(-346px);
 
-  @media (min-width: @tablet-width) {
-    transform: translateX(0);
-  }
+//   @media (min-width: @tablet-width) {
+//     transform: translateX(0);
+//   }
 
-  @media (min-width: @desktop-width) {
-    justify-content: center;
-    gap: 60px;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//   }
+// }
 
-.cards__catalog {
+.promo__catalog {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, 280px);
   justify-content: center;
 
+  margin-bottom: 21px;
+
   .wrapper();
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: 520px) {
     grid-template-columns: repeat(auto-fit, 229px);
-    // width: 229px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(auto-fit, 289px);
-    // width: 289px;
+
+    margin-bottom: 50px;
   }
+}
+
+.promo__btn-container {
+  display: flex;
+  justify-content: center;
+
+  .wrapper();
+  margin: 0 auto;
+}
+
+.promo__btn-more {
+  min-width: 265px;
+  padding: 16px 10px 20px;
 }

@@ -4,7 +4,7 @@
 }
 
 .user-list__item {
-  height: 28px;
+  display: flex;
 }
 
 .user-list__link {
@@ -14,32 +14,35 @@
   height: 28px;
 
   .interactive-styles-links();
+
+  &--basket {
+    width: auto;
+    padding-right: 34px;
+  }
 }
 
-.user-list__item svg {
+.user-list__link svg {
   position: absolute;
 }
 
-.user-list__item--basket svg {
+.user-list__link--basket svg {
   top: 4px;
-  left: 4px;
+  right: 4px;
 }
 
-.user-list__item--favorites svg {
+.user-list__link--favorites svg {
   top: 5px;
   left: 4px;
 
   fill-rule: evenodd;
 }
 
-.user-list__item--private svg {
+.user-list__link--private svg {
   top: 5px;
   left: 5px;
 }
 
-.user-list__item--basket {
-  position: relative;
-
+.user-list__link--basket {
   display: flex;
   gap: 6px;
   align-items: center;
@@ -64,5 +67,10 @@
   font-size: 14px;
   line-height: 21px;
 
+  background-color: @color-font-orange;
+}
+
+.user-list__link:hover .user-list__item-quantity  {
+  color: @color-font-white;
   background-color: @color-font-orange;
 }
