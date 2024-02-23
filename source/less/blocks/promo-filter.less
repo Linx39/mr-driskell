@@ -28,7 +28,7 @@
   line-height: 23px;
   letter-spacing: 0.025em;
 
-  .interactive-styles-links();
+  .interactive-styles();
 
   @media (min-width: @desktop-width) {
     padding: 7px 0;
@@ -39,49 +39,5 @@
 }
 
 .promo-filter__link--current {
-  position: relative;
-
-  color: @color-font-orange;
-  border-bottom: 1px solid @color-font-orange;
-
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -2.4px;
-
-    width: 4.1px;
-    height: 4.1px;
-
-    background-color: @color-font-orange;
-    transform: rotate(45deg);
-  }
-
-  &::before {
-    left: -2px;
-  }
-
-  &::after {
-    right: -2px;
-  }
-
-  @media (min-width: @desktop-width) {
-    border-width: 2px;
-
-    &::before,
-    &::after {
-      bottom: -5.1px;
-
-      width: 8.3px;
-      height: 8.3px;
-    }
-
-    &::before {
-      left: -4px;
-    }
-
-    &::after {
-      right: -4px;
-    }
-  }
+  .line-decor();
 }
