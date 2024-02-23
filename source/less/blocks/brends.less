@@ -1,0 +1,48 @@
+.brends {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr min-content;
+
+  .wrapper();
+
+}
+
+.brends__title {
+  font-family: Forum, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.brends__btn-container {
+  justify-self: end;
+}
+
+.brends__btn {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.brends__slider {
+  grid-column: 1 / -1;
+}
+
+.brends__list {
+  display: grid;
+}
