@@ -61,15 +61,16 @@
   }
 }
 
-.decor-square(@width, @color) {
+.decor-rhombus(@width, @color) {
   width: @width;
   height: @width;
 
-  background-color: red;///////
+  background-color: @color;
+
   transform: rotate(45deg);
 }
 
-.border-decor-square(@width, @border-side, @border-width, @color) {
+.border-decor-rhombus(@width, @border-side, @border-width, @color) {
   position: relative;
 
   border-@{border-side}: @border-width solid @color;
@@ -78,11 +79,9 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: calc((-@width - @border-width) / 2 );
+    bottom: calc((-@width - @border-width)/ 2);
 
-    z-index: -1;
-
-    .decor-square(@width, @color);
+    .decor-rhombus(@width, @color);
   }
 
   &::before {
@@ -92,26 +91,6 @@
   &::after {
     right: calc(-@width / 2)
   }
-
-  // @media (min-width: @desktop-width) {
-  //   border-width: 2px;
-
-  //   &::before,
-  //   &::after {
-  //     bottom: -5.1px; //2.4
-
-  //     width: 8.3px; //4.1
-  //     height: 8.3px;
-  //   }
-
-  //   &::before {
-  //     left: -4px; //2px
-  //   }
-
-  //   &::after {
-  //     right: -4px;
-  //   }
-  // }
 }
 
 .decor-triangle(@width, @height, @color) {

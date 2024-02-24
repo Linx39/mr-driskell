@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.pagination-column() {
+  flex-direction: column-reverse;
+}
+
+.pagination__item {
+  display: flex;
+}
+
+.pagination__btn {
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid @color-btn-dark-orange;
+
+  &--current {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+
+      width: 10px;
+      height: 10px;
+      margin: auto;
+
+      background-color: @color-font-orange;
+    }
+  }
+}

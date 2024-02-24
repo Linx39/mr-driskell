@@ -6,6 +6,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
+  color: @color-font-white;
 
   background-color: inherit;
   background-image: url("../../img/loupe.svg");
@@ -13,8 +14,26 @@
   background-position: top 12px left 20px;
   background-size: 19px 19px;
   border: 1px solid @color-btn-dark-orange;
+
+  &:hover {
+    color: @color-font-orange;
+    border-color: @color-font-orange;
+  }
+
+  &:focus-visible {
+    border-color: @color-font-orange;
+    outline: none;
+  }
+
+  &:active {
+    border-color: @color-font-orange;
+  }
 }
 
 .search-form__input::placeholder {
   color: @color-font-grey;
 }
+
+// .search-form__input:hover::placeholder {
+//   color: @color-font-grey;
+// }

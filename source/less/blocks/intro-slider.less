@@ -2,27 +2,9 @@
   position: relative;
 
   width: 40px;
-  height: 63px;
+  height: 40px;
 
-  &::before {
-    position: absolute;
-    transform: translate(-50%);
-    content: "";
-
-    box-sizing: border-box;
-    width: 40px;
-    height: 40px;
-
-    border: 1.5px solid @color-font-orange;
-  }
-
-  &--prev::before {
-    bottom: 0;
-  }
-
-  &--next::before {
-    top: 0;
-  }
+  border: 1.5px solid @color-font-orange;
 
   &::after {
     position: absolute;
@@ -63,32 +45,5 @@
 
   &--next:hover::after {
     transform: rotate(0);
-  }
-}
-
-.intro-slider__pagination-item {
-  display: flex;
-}
-
-.intro-slider__pagination-btn {
-  width: 16px;
-  height: 16px;
-
-  border: 1px solid @color-btn-dark-orange;
-
-  &--current {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      inset: 0;
-
-      width: 10px;
-      height: 10px;
-      margin: auto;
-
-      background-color: @color-font-orange;
-    }
   }
 }

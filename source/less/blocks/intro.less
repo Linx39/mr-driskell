@@ -157,15 +157,15 @@
 }
 
 .intro__pagination {
-  display: none;
+  @media (max-width: (@tablet-width - 1)) {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: column-reverse;
+    .pagination-column();
   }
 }
