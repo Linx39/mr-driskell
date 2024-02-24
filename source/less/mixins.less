@@ -61,49 +61,112 @@
   }
 }
 
-.line-decor {
+.decor-square(@width, @color) {
+  width: @width;
+  height: @width;
+
+  background-color: red;///////
+  transform: rotate(45deg);
+}
+
+.border-decor-square(@width, @border-side, @border-width, @color) {
   position: relative;
 
-  border-bottom: 1px solid @color-font-orange;
+  border-@{border-side}: @border-width solid @color;
 
   &::before,
   &::after {
     position: absolute;
     content: "";
-    bottom: -2.4px;
+    bottom: calc((-@width - @border-width) / 2 );
 
-    width: 4.1px;
-    height: 4.1px;
+    z-index: -1;
 
-    background-color: @color-font-orange;
-    transform: rotate(45deg);
+    .decor-square(@width, @color);
   }
 
   &::before {
-    left: -2px;
+    left: calc(-@width / 2 );
   }
 
   &::after {
-    right: -2px;
+    right: calc(-@width / 2)
   }
 
-  @media (min-width: @desktop-width) {
-    border-width: 2px;
+  // @media (min-width: @desktop-width) {
+  //   border-width: 2px;
 
-    &::before,
-    &::after {
-      bottom: -5.1px;
+  //   &::before,
+  //   &::after {
+  //     bottom: -5.1px; //2.4
 
-      width: 8.3px;
-      height: 8.3px;
-    }
+  //     width: 8.3px; //4.1
+  //     height: 8.3px;
+  //   }
 
-    &::before {
-      left: -4px;
-    }
+  //   &::before {
+  //     left: -4px; //2px
+  //   }
 
-    &::after {
-      right: -4px;
-    }
+  //   &::after {
+  //     right: -4px;
+  //   }
+  // }
+}
+
+.decor-triangle(@width, @height, @color) {
+  width: 0;
+  height: 0;
+
+  border-right: calc(@height / 2) solid transparent;
+  border-left: calc(@height / 2) solid transparent;
+  border-top: @width solid @color;
+}
+
+.border-decor-triangle(@width, @height, @border-side, @border-width, @color) {
+  position: relative;
+
+  border-@{border-side}: @border-width solid @color;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+
+    .decor-triangle(@width, @height, @color);
+  }
+}
+
+.border-decor-triangle--horisontal(@width, @height, @border-side, @border-width, @color) {
+  .border-decor-triangle(@width, @height, @border-side, @border-width, @color);
+
+  &::before {
+    left: 0;
+    @{border-side}: calc((-@width - @border-width) / 2 );
+
+    transform: rotate(-90deg);
+  }
+
+  &::after {
+    right: 0;
+    @{border-side}: calc((-@width - @border-width) / 2 );
+
+    transform: rotate(90deg);
+  }
+}
+
+.border-decor-triangle--vertical(@width, @height, @border-side, @border-width, @color) {
+  .border-decor-triangle(@width, @height, @border-side, @border-width, @color);
+
+  &::before {
+    top: 0;
+    @{border-side}: calc((-@height - @border-width) / 2 );
+  }
+
+  &::after {
+    bottom: 0;
+    @{border-side}: calc((-@height - @border-width) / 2 );
+
+    transform: rotate(180deg);
   }
 }
