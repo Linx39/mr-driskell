@@ -5,6 +5,9 @@
 
   .wrapper();
 
+  @media (min-width: @desktop-width) {
+    padding: 0 80px;
+  }
 }
 
 .brends__title {
@@ -110,7 +113,7 @@
 }
 
 .brends__link {
-  padding: 20px 20px;
+  padding: 20px;
 }
 
 .brends__item:first-of-type .brends__link {
@@ -163,10 +166,10 @@
 
 .brends__arrow-btn {
   &--prev {
-    transform: translateX(-@desktop-padding);
+    left: -80px;
   }
 
   &--next {
-    transform: translateX(@desktop-padding);
+    right: -80px;
   }
 }
