@@ -12,22 +12,29 @@
   .interactive-styles();
 
   &:hover {
+    &::before,
     &::after {
       position: absolute;
-      bottom: -15px;
       right: 0;
       left: 0;
-
       content: "";
 
-      width: 6px;
-      height: 18px;
       margin: 0 auto;
+    }
 
-      background-image: url("../../img/line-15.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: auto;
+    &::before {
+      bottom: -15px;
+
+      width: 1px;
+      height: 15px;
+
+      background-color: @color-font-orange;
+    }
+
+    &::after {
+      bottom: 0;
+
+      .decor-rhombus(4.1px, @color-font-orange);
     }
   }
 }

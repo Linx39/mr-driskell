@@ -1,6 +1,18 @@
-.wrapper {
+.wrapper-width {
   box-sizing: border-box;
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+.wrapper {
+  .wrapper-width();
+
   padding-right: @mobile-padding;
   padding-left: @mobile-padding;
 
@@ -10,9 +22,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: @desktop-width;
-    margin-right: auto;
-    margin-left: auto;
     padding-right: @desktop-padding;
     padding-left: @desktop-padding;
   }
@@ -68,6 +77,33 @@
   background-color: @color;
 
   transform: rotate(45deg);
+}
+
+.line-decor-rhombus(@line-width, @line-height, @decor-width, @bottom, @color) {
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    content: "";
+
+    margin: 0 auto;
+  }
+
+  &::before {
+    bottom: @bottom;
+
+    width: @line-width;
+    height: @line-height;
+
+    background-color: @color;
+  }
+
+  &::after {
+    bottom: calc(@bottom + @line-height);
+
+    .decor-rhombus(@decor-width, @color);
+  }
 }
 
 .border-decor-rhombus(@width, @border-side, @border-width, @color) {
