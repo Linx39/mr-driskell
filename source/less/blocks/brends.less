@@ -63,6 +63,19 @@
   grid-column: 1 / -1;
 }
 
+.brends__slider-wrapper {
+  width: calc(100vw - 2 * @mobile-padding - 23px);
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    width: calc(100vw - 2 * @tablet-padding - 23px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(@desktop-width - 2 * 80px - 23px);
+  }
+}
+
 .brends__lists-container {
   display: flex;
   flex-direction: column;

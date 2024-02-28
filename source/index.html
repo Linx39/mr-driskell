@@ -10,10 +10,10 @@
   <body class="page__body">
     <header class="page-header">
       <h1 class="visually-hidden">Магазин товаров для татуажа Mr.Driskell</h1>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__site-toggle site-toggle site-toggle--closed" type="button">Меню</button>
 
-        <div class="main-nav__contacts contacts">
+        <div class="main-nav__contacts contacts contacts--closed">
           <a class="contacts__phone address address--phone" href="tel:+79525525252">
             <div class="address__icon-container">
               <svg width="21" height="21" aria-hidden="true" focusable="false">
@@ -23,15 +23,21 @@
             <span>+7 952 552-52-52</span>
           </a>
 
-          <ul class="contacts__social-list social-list">
+          <ul class="contacts__social-list social-list social-list--closed">
             <li class="social-list__item">
-              <a class="social-list__link">Viber</a>
+              <a class="social-list__link social-list__link--telegram">
+                <span class="social-list__link-text">Telegram</span>
+              </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link">Whats App</a>
+              <a class="social-list__link social-list__link--viber">
+                <span class="social-list__link-text">Viber</span>
+              </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link">Telegram</a>
+              <a class="social-list__link social-list__link--whatsapp">
+                <span class="social-list__link-text">Whats App</span>
+              </a>
             </li>
           </ul>
 
@@ -93,7 +99,7 @@
             <button class="visually-hidden" type="submit">Найти</button>
           </form>
 
-          <ul class="main-nav__site-list site-list">
+          <ul class="main-nav__site-list site-list site-list--nav-desktop">
             <li class="site-list__item">
               <a class="site-list__link" href="#">Промокоды</a>
             </li>
@@ -1170,6 +1176,32 @@
                   </a>
                 </div>
               </li>
+              <li class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__img-container">
+                    <picture>
+                      <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
+                      <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
+                    </picture>
+                  </div>
+                  <p class="reviews__text">
+                    Заказал первый раз, заказ пришёл во время, упаковано
+                    все отлично, все заказанное соответствует описанию, но есть
+                    один маленький ньюанс, коробки все мятые, толи при упаковке
+                    так случилось толи на складе так отномятся с товаром, в целом
+                    всем доволен, буду заказывать ещё, сайт-магазин рекомендую
+                    к покупкам, в целом всем доволен, буду заказывать ещё
+                  </p>
+                  <a class="reviews__link">
+                    <div class="reviews__link-icon-container">
+                      <svg class="reviews__link-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                      </svg>
+                    </div>
+                    <span class="reviews__link-text">@Velli7350</span>
+                  </a>
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -1215,64 +1247,72 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__menu-block">
-        <a class="page-footer__logo logo" href="">
-          <img class="page-footer__logo-img" src="img/logo.svg" width="192" height="163" alt="Логотип компании.">
-        </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__menu-block">
+          <a class="page-footer__logo logo" href="">
+            <img class="page-footer__logo-img" src="img/logo.svg" width="192" height="163" alt="Логотип компании.">
+          </a>
 
-        <p class="page-footer__policy">Политика конфенедциальности</p>
+          <a class="page-footer__policy">Политика конфиденциальности</a>
 
-        <ul class="page-footer__site-list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Промокоды</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Скидки</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Помощь</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">О нас</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
+          <ul class="page-footer__site-list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Промокоды</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Скидки</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Помощь</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">О нас</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="page-footer__contacts contacts">
-        <a class="contacts__phone address address--phone" href="tel:+79525525252">
-          <div class="address__icon-container">
-            <svg width="21" height="21" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>
-          </div>
-          <span>+7 952 552-52-52</span>
-        </a>
+        <div class="page-footer__contacts contacts">
+          <a class="contacts__phone address address--phone" href="tel:+79525525252">
+            <div class="address__icon-container">
+              <svg width="21" height="21" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <span>+7 952 552-52-52</span>
+          </a>
 
-        <ul class="contacts__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link">Viber</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link">Whats App</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link">Telegram</a>
-          </li>
-        </ul>
+          <ul class="contacts__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--telegram">
+                <span class="social-list__link-text">Telegram</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--viber">
+                <span class="social-list__link-text">Viber</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--whatsapp">
+                <span class="social-list__link-text">Whats App</span>
+              </a>
+            </li>
+          </ul>
 
-        <p class="contacts__schedule">Время работы: с 9:00 до 20:00 по мск</p>
+          <p class="contacts__schedule">Время работы: с 9:00 до 20:00 по мск</p>
 
-        <a class="contacts__mail address address--mail" href="https://Mr.Driskell@mail.ru">
-          <div class="address__icon-container">
-            <svg width="21" height="16" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite.svg#mail"></use>
-            </svg>
-          </div>
-          <span>Mr.Driskell@mail.ru</span>
-        </a>
+          <a class="contacts__mail address address--mail" href="https://Mr.Driskell@mail.ru">
+            <div class="address__icon-container">
+              <svg width="21" height="16" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+            </div>
+            <span>Mr.Driskell@mail.ru</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
