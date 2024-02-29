@@ -1,0 +1,171 @@
+.subscription {
+  .wrapper();
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.subscription__content {
+  @media (min-width: @desktop-width) {
+    padding-left: @desktop-padding;
+  }
+}
+
+.subscription__title {
+  margin-bottom: 20px;
+
+  .font-title();
+
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+}
+
+.subscription__description {
+  margin-bottom: 30px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+
+}
+
+.subscription__form {
+  color: @color-font-grey-2;
+}
+
+.subscription__field-continer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    gap: 20px;
+
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    gap: 16px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.subscription__label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  padding-top: 3px;
+}
+
+.subscription__label-title {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+
+.subscription__field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 23px 30px;
+
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+
+  background-color: @color-back-light-02;
+  border: none;
+
+  &:focus-visible {
+    outline: 1px solid @color-btn-dark-orange;
+  }
+}
+
+.subscription__field::placeholder {
+  color: @color-font-grey-1;
+}
+
+.subscription__submit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
+
+}
+
+.subscription__control {
+
+}
+
+.subscription__mark {
+
+}
+
+.subscription__control-title {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.subscription__btn {
+  width: 100%;
+  min-height: 70px;
+  padding: 18px;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+  }
+}
+
+.subscription__img-container {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-left: 8px;
+  }
+}

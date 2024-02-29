@@ -16,11 +16,11 @@
   &--light {
     color: @color-font-orange;
     background-color: @color-back-light-01;
+  }
 
-    &:hover {
-      color: @color-font-white;
-      background-color: @color-font-orange;
-    }
+  &:hover {
+    color: @color-font-white;
+    background-color: @color-font-orange;
   }
 }
 
@@ -75,6 +75,6 @@
   border-right-color: @color-back-light-01;
 }
 
-.app-btn--light:hover > .app-btn__decor::after {
+.app-btn:hover .app-btn__decor::after {
   border-right-color: @color-font-orange;
 }

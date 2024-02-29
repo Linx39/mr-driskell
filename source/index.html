@@ -1216,7 +1216,7 @@
 
           <ul class="reviews__pagination reviews-slider__pagination pagination">
             <li class="reviews-slider__pagination-item pagination__item">
-              <button class="reviews-slider__pagination-btn pagination__btn" type="button">
+              <button class="reviews-slider__pagination-btn pagination__btn reviews-slider__pagination-btn--current pagination__btn pagination__btn--current" type="button">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>
@@ -1236,7 +1236,7 @@
               </button>
             </li>
             <li class="reviews-slider__pagination-item pagination__item"">
-              <button class="reviews-slider__pagination-btn reviews-slider__pagination-btn--current pagination__btn pagination__btn--current" type="button">
+              <button class="reviews-slider__pagination-btn" type="button">
                 <span class="visually-hidden">5 фото</span>
               </button>
             </li>
@@ -1244,6 +1244,51 @@
         </div>
       </section>
 
+      <section class="subscription">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+
+        <div class="subscription__content">
+          <h3 class="subscription__title">Узнавайте первыми</h2>
+          <p class="subscription__description">
+            Подпишитесь на новостную рассылку
+            с самыми интересными новостями и акциями
+          </p>
+
+          <form class="subscription__form" action="" method="post">
+            <div class="subscription__field-continer">
+              <label class="subscription__label" for="email">
+                <span class="subscription__label-title">Эл. почта</span>
+                <input class="subscription__field" type="email" name="email" id="email" placeholder="Figur@mail.ru" required>
+              </label>
+              <label class="subscription__label" for="name">
+                <span class="subscription__label-title">Имя</span>
+                <input class="subscription__field" type="text" name="name" id="name" placeholder="Введите имя" required>
+              </label>
+            </div>
+
+            <div class="subscription__submit-container">
+              <label class="subscription__control" for="personal-data">
+                <input class="visually-hidden control__input" type="checkbox" name="personal-data" tabindex="-1">
+                <span class="subscription__mark mark" tabindex="0"></span>
+                <span class="subscription__control-title">Вы соглашаетесь на обработку ваших персональных данных</span>
+              </label>
+
+              <button class="subscription__btn app-btn app-btn--dark" type="submit">
+                <span class="app-btn__decor app-btn__decor--left"></span>
+                Подписаться
+                <span class="app-btn__decor app-btn__decor--right"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="subscription__img-container">
+          <picture>
+            <source type="image/webp" srcset="img/subscription/subscription.webp 1x, img/subscription/subscription@2x.webp 2x">
+            <img class="subscription__img" src="img/subscription/subscription.png" srcset="img/subscription/subscription@2x.png 2x" alt="Изображение товара.">
+          </picture>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">

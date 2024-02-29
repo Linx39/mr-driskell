@@ -1,3 +1,7 @@
+.font-title {
+  font-family: Forum, sans-serif;
+}
+
 .wrapper-width {
   box-sizing: border-box;
   width: 100%;
@@ -9,9 +13,7 @@
   }
 }
 
-.wrapper {
-  .wrapper-width();
-
+.wrapper-padding {
   padding-right: @mobile-padding;
   padding-left: @mobile-padding;
 
@@ -24,6 +26,12 @@
     padding-right: @desktop-padding;
     padding-left: @desktop-padding;
   }
+
+}
+
+.wrapper {
+  .wrapper-width();
+  .wrapper-padding();
 }
 
 .interactive-styles {
@@ -163,7 +171,7 @@
   }
 
   &::after {
-    right: 0;
+    right: 1px; //разобраться!!!!!!!
     @{border-side}: calc((-@width - @border-width) / 2 );
 
     transform: rotate(90deg);
