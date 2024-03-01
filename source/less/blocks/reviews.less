@@ -52,8 +52,11 @@
 
 .reviews__list {
   display: flex;
-  // justify-content: center;
   gap: 20px;
+
+  @media (min-width: @desktop-width) {
+    justify-content: center;
+  }
 }
 
 .reviews__item {
