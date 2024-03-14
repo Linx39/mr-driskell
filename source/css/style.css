@@ -826,6 +826,7 @@ a {
     border-right: calc(6px / 2) solid transparent;
     border-left: calc(6px / 2) solid transparent;
     border-top: 6px solid #524336;
+    z-index: 10;
   }
   .main-nav__menu-block::before {
     left: 0;
@@ -833,7 +834,7 @@ a {
     transform: rotate(-90deg);
   }
   .main-nav__menu-block::after {
-    right: 1px;
+    right: 0;
     top: calc((-6px - 1px) / 2);
     transform: rotate(90deg);
   }
@@ -1281,7 +1282,6 @@ a {
 .card:hover {
   z-index: 100;
   transition: 0.3s;
-  box-shadow: 0 20px 50px 0 #0000001a;
   cursor: pointer;
 }
 @media (min-width: 1280px) {
@@ -1300,6 +1300,9 @@ a {
     padding-top: 15px;
     padding-bottom: 30px;
   }
+}
+.card:hover .card__wrapper {
+  box-shadow: 0 20px 50px 0 #0000001a;
 }
 @media (min-width: 1280px) {
   .card:hover .card__wrapper {
@@ -1387,6 +1390,7 @@ a {
     opacity: 0;
     transition: transform 0.3s;
     transform: translateY(100%);
+    pointer-events: none;
   }
 }
 @media (min-width: 1280px) {
@@ -1830,13 +1834,13 @@ a {
 .offers__btn::after {
   right: calc(-4.1px / 2);
 }
-.offer__img-container {
+.offers__img-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-.offer__img {
+.offers__img {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -1962,18 +1966,19 @@ a {
   content: "";
   width: 0;
   height: 0;
-  border-right: calc(5.6px / 2) solid transparent;
-  border-left: calc(5.6px / 2) solid transparent;
-  border-top: 5.6px solid #d0d0d0;
+  border-right: calc(6px / 2) solid transparent;
+  border-left: calc(6px / 2) solid transparent;
+  border-top: 6px solid #d0d0d0;
+  z-index: 10;
 }
 .brends__list::before {
   left: 0;
-  bottom: calc((-5.6px - 1px) / 2);
+  bottom: calc((-6px - 1px) / 2);
   transform: rotate(-90deg);
 }
 .brends__list::after {
-  right: 1px;
-  bottom: calc((-5.6px - 1px) / 2);
+  right: 0;
+  bottom: calc((-6px - 1px) / 2);
   transform: rotate(90deg);
 }
 .brends__list:last-of-type {
@@ -2020,17 +2025,18 @@ a {
   content: "";
   width: 0;
   height: 0;
-  border-right: calc(5.6px / 2) solid transparent;
-  border-left: calc(5.6px / 2) solid transparent;
-  border-top: 5.6px solid #d0d0d0;
+  border-right: calc(6px / 2) solid transparent;
+  border-left: calc(6px / 2) solid transparent;
+  border-top: 6px solid #d0d0d0;
+  z-index: 10;
 }
 .brends__list:first-of-type .brends__item:not(:last-of-type)::before {
   top: 0;
-  right: calc((-5.6px - 1px) / 2);
+  right: calc((-6px - 1px) / 2);
 }
 .brends__list:first-of-type .brends__item:not(:last-of-type)::after {
   bottom: 0;
-  right: calc((-5.6px - 1px) / 2);
+  right: calc((-6px - 1px) / 2);
   transform: rotate(180deg);
 }
 .brends__list:first-of-type .brends__item:not(:last-of-type)::after {
@@ -2046,17 +2052,18 @@ a {
   content: "";
   width: 0;
   height: 0;
-  border-right: calc(5.6px / 2) solid transparent;
-  border-left: calc(5.6px / 2) solid transparent;
-  border-top: 5.6px solid #d0d0d0;
+  border-right: calc(6px / 2) solid transparent;
+  border-left: calc(6px / 2) solid transparent;
+  border-top: 6px solid #d0d0d0;
+  z-index: 10;
 }
 .brends__list:last-of-type .brends__item:not(:last-of-type)::before {
   top: 0;
-  right: calc((-5.6px - 1px) / 2);
+  right: calc((-6px - 1px) / 2);
 }
 .brends__list:last-of-type .brends__item:not(:last-of-type)::after {
   bottom: 0;
-  right: calc((-5.6px - 1px) / 2);
+  right: calc((-6px - 1px) / 2);
   transform: rotate(180deg);
 }
 .brends__list:last-of-type .brends__item:not(:last-of-type)::before {
@@ -2267,7 +2274,7 @@ a {
 }
 .reviews__slider-wrapper {
   width: calc(100vw - 2 * 20px - 23px);
-  margin-bottom: 54px;
+  margin-bottom: 34px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -2278,6 +2285,7 @@ a {
 .reviews__list {
   display: flex;
   gap: 20px;
+  padding-bottom: 20px;
 }
 @media (min-width: 1280px) {
   .reviews__list {
@@ -2298,18 +2306,19 @@ a {
   content: "";
   width: 0;
   height: 0;
-  border-right: calc(12px / 2) solid transparent;
-  border-left: calc(12px / 2) solid transparent;
-  border-top: 12px solid #bb8c5f;
+  border-right: calc(6px / 2) solid transparent;
+  border-left: calc(6px / 2) solid transparent;
+  border-top: 6px solid #bb8c5f;
+  z-index: 10;
 }
 .reviews__item::before {
   left: 0;
-  bottom: calc((-12px - 2px) / 2);
+  bottom: calc((-6px - 2px) / 2);
   transform: rotate(-90deg);
 }
 .reviews__item::after {
-  right: 1px;
-  bottom: calc((-12px - 2px) / 2);
+  right: 0;
+  bottom: calc((-6px - 2px) / 2);
   transform: rotate(90deg);
 }
 @media (min-width: 768px) {
@@ -2332,18 +2341,19 @@ a {
   content: "";
   width: 0;
   height: 0;
-  border-right: calc(12px / 2) solid transparent;
-  border-left: calc(12px / 2) solid transparent;
-  border-top: 12px solid #bb8c5f;
+  border-right: calc(6px / 2) solid transparent;
+  border-left: calc(6px / 2) solid transparent;
+  border-top: 6px solid #bb8c5f;
+  z-index: 10;
 }
 .reviews__item-content::before {
   left: 0;
-  top: calc((-12px - 2px) / 2);
+  top: calc((-6px - 2px) / 2);
   transform: rotate(-90deg);
 }
 .reviews__item-content::after {
-  right: 1px;
-  top: calc((-12px - 2px) / 2);
+  right: 0;
+  top: calc((-6px - 2px) / 2);
   transform: rotate(90deg);
 }
 @media (min-width: 768px) {
@@ -2626,18 +2636,19 @@ a {
   content: "";
   width: 0;
   height: 0;
-  border-right: calc(5.6px / 2) solid transparent;
-  border-left: calc(5.6px / 2) solid transparent;
-  border-top: 5.6px solid #524336;
+  border-right: calc(6px / 2) solid transparent;
+  border-left: calc(6px / 2) solid transparent;
+  border-top: 6px solid #524336;
+  z-index: 10;
 }
 .page-footer__menu-block::before {
   left: 0;
-  bottom: calc((-5.6px - 1px) / 2);
+  bottom: calc((-6px - 1px) / 2);
   transform: rotate(-90deg);
 }
 .page-footer__menu-block::after {
-  right: 1px;
-  bottom: calc((-5.6px - 1px) / 2);
+  right: 0;
+  bottom: calc((-6px - 1px) / 2);
   transform: rotate(90deg);
 }
 @media (min-width: 768px) {
@@ -2661,17 +2672,18 @@ a {
     content: "";
     width: 0;
     height: 0;
-    border-right: calc(5.6px / 2) solid transparent;
-    border-left: calc(5.6px / 2) solid transparent;
-    border-top: 5.6px solid #524336;
+    border-right: calc(6px / 2) solid transparent;
+    border-left: calc(6px / 2) solid transparent;
+    border-top: 6px solid #524336;
+    z-index: 10;
   }
   .page-footer__menu-block::before {
     top: 0;
-    right: calc((-5.6px - 1px) / 2);
+    right: calc((-6px - 1px) / 2);
   }
   .page-footer__menu-block::after {
     bottom: 0;
-    right: calc((-5.6px - 1px) / 2);
+    right: calc((-6px - 1px) / 2);
     transform: rotate(180deg);
   }
 }

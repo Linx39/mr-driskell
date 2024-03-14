@@ -10,7 +10,7 @@
     z-index: 100;
 
     transition: 0.3s;
-    box-shadow: 0 20px 50px 0 @color-shadow-grey; //тень отобраежается снизу неправильно
+    // box-shadow: 0 20px 50px 0 @color-shadow-grey; //тень отобраежается снизу неправильно
     cursor: pointer;
 
     @media (min-width: @desktop-width) {
@@ -34,6 +34,8 @@
 }
 
 .card:hover .card__wrapper {
+  box-shadow: 0 20px 50px 0 @color-shadow-grey; //тень отобраежается снизу неправильно
+
   @media (min-width: @desktop-width) {
     height: calc(100% + 70px);
   }
@@ -134,6 +136,7 @@
     opacity: 0;
     transition: transform 0.3s;
     transform: translateY(100%);
+    pointer-events: none;
   }
 }
 

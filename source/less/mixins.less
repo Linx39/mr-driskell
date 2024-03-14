@@ -156,6 +156,8 @@
     content: "";
 
     .decor-triangle(@width, @height, @color);
+
+    z-index: 10;
   }
 }
 
@@ -171,7 +173,7 @@
   }
 
   &::after {
-    right: 1px; //разобраться!!!!!!!
+    right: 0;
     @{border-side}: calc((-@width - @border-width) / 2 );
 
     transform: rotate(90deg);
