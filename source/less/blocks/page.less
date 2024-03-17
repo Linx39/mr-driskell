@@ -1,12 +1,12 @@
 .page {
-  min-width: @mobile-width;
+  min-width: @min-width;
   height: 100%;
   margin: 0 auto;
 
-  font-size: 17px;
-  color: @color-font-dark;
   font-family: @font-page;
+  font-size: 17px;
   line-height: 24px;
+  color: @color-font-dark;
   vertical-align: middle;
 
   background-color: @color-back-light-01;
@@ -25,13 +25,13 @@
 
   margin-bottom: 120px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     gap: 80px;
 
     margin-bottom: 160px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xl-width) {
     gap: 120px;
 
     margin-bottom: 200px;

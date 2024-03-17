@@ -4,11 +4,11 @@
 
   padding: 3px 0;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     justify-content: center;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xl-width) {
     gap: 60px;
 
     padding: 5px 0;
@@ -30,7 +30,7 @@
 
   .interactive-styles();
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xl-width) {
     padding: 7px 0;
 
     font-size: 30px;
@@ -41,9 +41,9 @@
 .promo-filter__link--current {
   color: @color-font-orange;
 
-  .border-decor-rhombus(4.1px, bottom, 1px, @color-font-orange);
+  .border-decor-rhombus--bottom(4.1px, 1px, @color-font-orange);
 
-  @media (min-width: @desktop-width) {
-    .border-decor-rhombus(8.3px, bottom, 2px, @color-font-orange);
+  @media (min-width: @xl-width) {
+    .border-decor-rhombus--bottom(8.3px, 2px, @color-font-orange);
   }
 }

@@ -6,8 +6,8 @@
   box-sizing: border-box;
   width: 100%;
 
-  @media (min-width: @desktop-width) {
-    max-width: @desktop-width;
+  @media (min-width: @xl-width) {
+    max-width: @max-width;
     margin-right: auto;
     margin-left: auto;
   }
@@ -17,12 +17,12 @@
   padding-right: @mobile-padding;
   padding-left: @mobile-padding;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     padding-right: @tablet-padding;
     padding-left: @tablet-padding;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xl-width) {
     padding-right: @desktop-padding;
     padding-left: @desktop-padding;
   }
@@ -47,6 +47,22 @@
 
   &:active {
     color: @color-font-orange;
+  }
+}
+
+.interactive-styles-alternative {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    opacity: 0.7;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }
 
@@ -86,37 +102,10 @@
   transform: rotate(45deg);
 }
 
-.line-decor-rhombus(@line-width, @line-height, @decor-width, @bottom, @color) {
-  &::before,
-  &::after {
-    position: absolute;
-    right: 0;
-    left: 0;
-    content: "";
-
-    margin: 0 auto;
-  }
-
-  &::before {
-    bottom: @bottom;
-
-    width: @line-width;
-    height: @line-height;
-
-    background-color: @color;
-  }
-
-  &::after {
-    bottom: calc(@bottom + @line-height);
-
-    .decor-rhombus(@decor-width, @color);
-  }
-}
-
-.border-decor-rhombus(@width, @border-side, @border-width, @color) {
+.border-decor-rhombus--bottom(@width, @border-width, @color) {
   position: relative;
 
-  border-@{border-side}: @border-width solid @color;
+  border-bottom: @border-width solid @color;
 
   &::before,
   &::after {
@@ -136,19 +125,17 @@
   }
 }
 
-.decor-triangle(@width, @height, @color) {
+.decor-triangle (@width, @height, @color) {
   width: 0;
   height: 0;
 
-  border-right: calc(@height / 2) solid transparent;
-  border-left: calc(@height / 2) solid transparent;
-  border-top: @width solid @color;
+  border-top: calc(@height / 2) solid transparent;
+  border-bottom: calc(@height / 2) solid transparent;
+  border-left: @width solid @color;
 }
 
-.border-decor-triangle(@width, @height, @border-side, @border-width, @color) {
+.border-decor-triangle(@width, @height, @color) {
   position: relative;
-
-  border-@{border-side}: @border-width solid @color;
 
   &::before,
   &::after {
@@ -161,37 +148,56 @@
   }
 }
 
-.border-decor-triangle--horisontal(@width, @height, @border-side, @border-width, @color) {
+.border-decor-triangle--top(@width, @height, @border-width, @color) {
   border: none;
-  .border-decor-triangle(@width, @height, @border-side, @border-width, @color);
+  border-top: @border-width solid @color;
+
+  .border-decor-triangle(@width, @height, @color);
 
   &::before {
     left: 0;
-    @{border-side}: calc((-@width - @border-width) / 2 );
-
-    transform: rotate(-90deg);
+    top: calc((-@width - @border-width) / 2 );
   }
 
   &::after {
     right: 0;
-    @{border-side}: calc((-@width - @border-width) / 2 );
-
-    transform: rotate(90deg);
+    top: calc((-@width - @border-width) / 2 );
+    transform: rotate(180deg);
   }
 }
 
-.border-decor-triangle--vertical(@width, @height, @border-side, @border-width, @color) {
-  .border-decor-triangle(@width, @height, @border-side, @border-width, @color);
+.border-decor-triangle--bottom(@width, @height, @border-width, @color) {
+  border: none;
+  border-bottom: @border-width solid @color;
+
+  .border-decor-triangle(@width, @height, @color);
+
+  &::before {
+    left: 0;
+    bottom: calc((-@width - @border-width) / 2 );
+  }
+
+  &::after {
+    right: 0;
+    bottom: calc((-@width - @border-width) / 2 );
+    transform: rotate(180deg);
+  }
+}
+
+.border-decor-triangle--right(@width, @height, @border-width, @color) {
+  .border-decor-triangle(@width, @height, @color);
 
   &::before {
     top: 0;
-    @{border-side}: calc((-@height - @border-width) / 2 );
+    right: calc((-@height - @border-width) / 2 );
+
+    transform: rotate(90deg);
   }
 
   &::after {
     bottom: 0;
-    @{border-side}: calc((-@height - @border-width) / 2 );
+    right: calc((-@height - @border-width) / 2 );
 
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
   }
 }

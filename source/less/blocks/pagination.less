@@ -13,24 +13,43 @@
 }
 
 .pagination__btn {
+  position: relative;
+
   width: 16px;
   height: 16px;
 
   border: 1px solid @color-btn-dark-orange;
 
-  &--current {
-    position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
 
-    &::before {
-      position: absolute;
-      content: "";
-      inset: 0;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+  }
 
-      width: 10px;
-      height: 10px;
-      margin: auto;
+  &:hover::before {
+    background-color: @color-btn-dark-orange;
+  }
 
-      background-color: @color-font-orange;
-    }
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::before {
+    background-color: @color-btn-dark-orange;
+  }
+
+  &--current:hover,
+  &--current:focus-visible {
+    border-color: @color-font-orange;
+  }
+
+  &--current::before,
+  &--current:hover:before,
+  &--current:focus-visible:before {
+    background-color: @color-font-orange;
   }
 }

@@ -1,5 +1,9 @@
 .app-btn {
   position: relative;
+  width: 295px;
+
+  min-height: 70px;
+  padding: 18px;
 
   font-weight: 400;
   font-size: 20px;
@@ -7,6 +11,16 @@
   text-align: center;
 
   border: 2px solid @color-font-orange;
+
+  @media (min-width: @md-width) {
+    width: 260px;
+  }
+
+  &--card {
+    width: 100%;
+    min-height: auto;
+    padding: 6px 10px 10px;
+  }
 
   &--dark {
     color: @color-font-white;
@@ -21,6 +35,12 @@
   &:hover {
     color: @color-font-white;
     background-color: @color-font-orange;
+  }
+
+  &:focus-visible {
+    color: @color-font-white;
+    background-color: @color-font-orange;
+    outline: none;
   }
 }
 
@@ -37,7 +57,7 @@
     position: absolute;
     content: "";
     top: 50%;
-    right: 0;
+    left: 0;
     transform: translateY(-50%);
 
     width: 0;
@@ -45,36 +65,33 @@
   }
 
   &::before {
-    border-top: 9.5px solid transparent;
-    border-bottom: 9.5px solid transparent;
-    border-right: 17px solid @color-font-orange;
+    .decor-triangle(17px, 19px, @color-font-orange);
   }
 
-  &::after {
-    border-top: 7.5px solid transparent;
-    border-bottom: 7.5px solid transparent;
-    border-right: 13px solid transparent;
-  }
+  // &::after {
+  //   .decor-triangle(13px, 15px, @color-btn-dark-orange);
+  // }
 
   &--left {
     left: -17px;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
   }
 
   &--right {
     right: -17px;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%);
   }
 }
 
 .app-btn--dark .app-btn__decor::after {
-  border-right-color: @color-btn-dark-orange;
+  .decor-triangle(13px, 15px, @color-btn-dark-orange);
 }
 
 .app-btn--light .app-btn__decor::after {
-  border-right-color: @color-back-light-01;
+  .decor-triangle(13px, 15px, @color-back-light-01);
 }
 
-.app-btn:hover .app-btn__decor::after {
-  border-right-color: @color-font-orange;
+.app-btn:hover .app-btn__decor::after,
+.app-btn:focus-visible .app-btn__decor::after {
+  .decor-triangle(13px, 15px, @color-font-orange);
 }
