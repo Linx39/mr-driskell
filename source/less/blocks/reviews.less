@@ -1,8 +1,9 @@
 .reviews {
+  .wrapper-width();
 }
 
 .reviews__title {
-  .wrapper();
+  .wrapper-padding();
 
   margin-bottom: 30px;
 
@@ -12,18 +13,19 @@
   font-weight: 400;
   line-height: 32px;
 
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
     margin-bottom: 40px;
 
     font-size: 50px;
     line-height: 50px;
   }
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 50px;
 
     font-size: 60px;
     line-height: 60px;
+    text-align: center;
   }
 
 }
@@ -31,22 +33,23 @@
 .reviews__slider {
   padding: 0 @mobile-padding;
 
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
     padding: 0;
   }
 }
 
 .reviews__slider-wrapper {
-  width: calc(100vw - 2 * @mobile-padding - 23px);
+  width: calc(100vw - 2 * @mobile-padding - 26px);
   margin-bottom: 34px;
 
   overflow: hidden;
 
-  @media (min-width: @md-width) {
-    width: calc(100vw - 23px);
+  @media (min-width: @tablet-width) {
+    width: calc(100vw - 26px);
   }
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }
 
@@ -56,7 +59,7 @@
 
   padding-bottom: 20px;
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     justify-content: center;
   }
 }
@@ -69,7 +72,7 @@
 
   .border-decor-triangle--bottom(6px, 6px, 2px, @color-font-orange);
 
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
     width: 598px;
     padding-top: 50px;
   }
@@ -84,7 +87,7 @@
   background-color: @color-back-black-01;
   .border-decor-triangle--top(6px, 6px, 2px, @color-font-orange);
 
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
     padding: 50px;
   }
 }
@@ -94,7 +97,7 @@
   top: -30px;
   left: 20px;
 
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
     top: -50px;
     left: 50px;
   }
@@ -104,7 +107,7 @@
   width: 60px;
   height: 60px;
 
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
   }
@@ -118,7 +121,7 @@
   line-height: 21px;
   color: @color-font-grey-1;
 
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 24px;
 

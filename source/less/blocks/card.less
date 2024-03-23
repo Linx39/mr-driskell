@@ -1,8 +1,8 @@
 .card {
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
   }
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
   }
 
 
@@ -13,7 +13,7 @@
     // box-shadow: 0 20px 50px 0 @color-shadow-grey; //тень отобраежается снизу неправильно
     cursor: pointer;
 
-    @media (min-width: @xl-width) {
+    @media (min-width: @desktop-width) {
       transform: translateY(-25px);
     }
   }
@@ -31,7 +31,7 @@
 
   background: @color-back-light-02;
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     padding-top: 15px;
     padding-bottom: 30px;
   }
@@ -40,7 +40,7 @@
 .card:hover .card__wrapper {
   box-shadow: 0 20px 50px 0 @color-shadow-grey; //тень отобраежается снизу неправильно
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     height: calc(100% + 70px);
   }
 }
@@ -84,7 +84,7 @@
 .card__slider-pagination {
   display: none;
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     position: relative;
     z-index: 10;
 
@@ -105,7 +105,7 @@
   padding: 9px 30px 0;
 
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     padding-top: 6px;
   }
 }
@@ -117,7 +117,7 @@
   font-weight: 400;
   line-height: 21px;
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 10px;
 
     font-size: 17px;
@@ -139,7 +139,7 @@
 
   background-color: @color-back-light-02;
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -155,7 +155,7 @@
 }
 
 .card:hover .card__btn-container {
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     transform: translateY(0);
     bottom: 30px;
     opacity: 1;
@@ -172,7 +172,7 @@
 }
 
 .card:hover .card__btn-buy {
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     pointer-events: all;
   }
 }
@@ -194,7 +194,7 @@
 .card__btn-buy-text {
   display: none;
 
-  @media (min-width: @xl-width) {
+  @media (min-width: @desktop-width) {
     display: inline;
   }
 }

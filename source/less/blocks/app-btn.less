@@ -1,6 +1,6 @@
 .app-btn {
   position: relative;
-  width: 295px;
+  width: calc(@min-width - 2 * @mobile-padding);
 
   min-height: 70px;
   padding: 18px;
@@ -12,7 +12,7 @@
 
   border: 2px solid @color-font-orange;
 
-  @media (min-width: @md-width) {
+  @media (min-width: @tablet-width) {
     width: 260px;
   }
 
@@ -48,9 +48,9 @@
   position: absolute;
   top: 50%;
 
-  display: block;
-  width: 17px;
-  height: 19px;
+  // display: block;
+  // width: 17px;
+  // height: 20px;
 
   &::before,
   &::after {
@@ -65,33 +65,29 @@
   }
 
   &::before {
-    .decor-triangle(17px, 19px, @color-font-orange);
+    .decor-triangle(17px, 20px, @color-font-orange);
   }
 
-  // &::after {
-  //   .decor-triangle(13px, 15px, @color-btn-dark-orange);
-  // }
-
   &--left {
-    left: -17px;
-    transform: translateY(-50%) rotate(180deg);
+    left: 0;
+    transform: translateX(-100%) translateY(-50%) rotate(180deg);
   }
 
   &--right {
-    right: -17px;
-    transform: translateY(-50%);
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
   }
 }
 
 .app-btn--dark .app-btn__decor::after {
-  .decor-triangle(13px, 15px, @color-btn-dark-orange);
+  .decor-triangle(13px, 16px, @color-btn-dark-orange);
 }
 
 .app-btn--light .app-btn__decor::after {
-  .decor-triangle(13px, 15px, @color-back-light-01);
+  .decor-triangle(13px, 16px, @color-back-light-01);
 }
 
 .app-btn:hover .app-btn__decor::after,
 .app-btn:focus-visible .app-btn__decor::after {
-  .decor-triangle(13px, 15px, @color-font-orange);
+  .decor-triangle(13px, 16px, @color-font-orange);
 }
