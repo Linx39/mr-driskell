@@ -10,7 +10,8 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    // gap: 20px;
+    gap: 0;
     align-items: center;
   }
 }
@@ -40,7 +41,8 @@
   .wrapper-padding();
 
   @media (min-width: @desktop-width) {
-    padding-left: 0;
+    width: calc(@desktop-width / 2);
+    padding-left: 10px;
   }
 }
 

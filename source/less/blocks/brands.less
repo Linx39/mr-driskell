@@ -70,6 +70,7 @@
 
 .brands__slider-wrapper {
   .wrapper();
+
   overflow: hidden;
 }
 
@@ -168,8 +169,8 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-
     top: 50%;
+    left: 50%;
 
     display: flex;
     justify-content: space-between;
@@ -178,7 +179,7 @@
     max-width: 1376px;
     margin: 0 auto;
 
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX((-50%));
   }
 }
 
