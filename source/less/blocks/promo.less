@@ -11,49 +11,47 @@
   margin-bottom: 30px;
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 35px;
+    margin-bottom: 4px;
   }
 }
 
 .promo-filter__slider-wrapper{
+  width: 100%;
   overflow-x: hidden;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 20px;
+  }
 }
 
 .promo-filter__list {
   box-sizing: border-box;
-  width: @min-width;
+  width: calc(@min-width - 2 * @mobile-padding);
 
   @media (min-width: @desktop-width) {
-    padding-left: 25px;
+    width: auto;
   }
 }
 
 .promo__catalog {
   display: grid;
-  gap: 20px;
+  column-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-rows: 0;
   justify-content: center;
 
   width: 100%;
   margin-bottom: 21px;
 
-  @media (min-width: @tablet-width) {
-    grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
-  }
+  overflow-y: hidden;
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    // grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 20px;
 
     margin-bottom: 50px;
+    padding-top: 25px;
   }
-}
-
-// .promo__btn-container {
-//   display: flex;
-//   justify-content: center;
-
-//   margin: 0 auto;
-// }
-
-.promo__btn {
 }

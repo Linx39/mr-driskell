@@ -10,36 +10,36 @@
   line-height: 30px;
   text-align: center;
 
-  border: 2px solid @color-font-orange;
+  border: 2px solid @color-orange;
 
   @media (min-width: @tablet-width) {
-    width: 260px;
+    width: 245px;
   }
 
   &--card {
     width: 100%;
     min-height: auto;
-    padding: 6px 10px 10px;
+    padding: 8px;
   }
 
   &--dark {
     color: @color-font-white;
-    background-color: @color-btn-dark-orange;
+    background-color: @color-dark-orange;
   }
 
   &--light {
-    color: @color-font-orange;
+    color: @color-orange;
     background-color: @color-back-light-01;
   }
 
   &:hover {
     color: @color-font-white;
-    background-color: @color-font-orange;
+    background-color: @color-orange;
   }
 
   &:focus-visible {
     color: @color-font-white;
-    background-color: @color-font-orange;
+    background-color: @color-orange;
     outline: none;
   }
 }
@@ -47,10 +47,6 @@
 .app-btn__decor {
   position: absolute;
   top: 50%;
-
-  // display: block;
-  // width: 17px;
-  // height: 20px;
 
   &::before,
   &::after {
@@ -65,7 +61,7 @@
   }
 
   &::before {
-    .decor-triangle(17px, 20px, @color-font-orange);
+    .decor-triangle(17px, 20px, @color-orange);
   }
 
   &--left {
@@ -80,7 +76,7 @@
 }
 
 .app-btn--dark .app-btn__decor::after {
-  .decor-triangle(13px, 16px, @color-btn-dark-orange);
+  .decor-triangle(13px, 16px, @color-dark-orange);
 }
 
 .app-btn--light .app-btn__decor::after {
@@ -89,5 +85,5 @@
 
 .app-btn:hover .app-btn__decor::after,
 .app-btn:focus-visible .app-btn__decor::after {
-  .decor-triangle(13px, 16px, @color-font-orange);
+  .decor-triangle(13px, 16px, @color-orange);
 }

@@ -10,7 +10,6 @@
     z-index: 100;
 
     transition: 0.3s;
-    // box-shadow: 0 20px 50px 0 @color-shadow-grey; //тень отобраежается снизу неправильно
     cursor: pointer;
 
     @media (min-width: @desktop-width) {
@@ -38,7 +37,7 @@
 }
 
 .card:hover .card__wrapper {
-  box-shadow: 0 20px 50px 0 @color-shadow-grey; //тень отобраежается снизу неправильно
+  box-shadow: 0 20px 50px 0 @color-shadow-grey;
 
   @media (min-width: @desktop-width) {
     height: calc(100% + 70px);
@@ -70,6 +69,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.card__slider-wrapper {
+  overflow: hidden;
+}
+
+.card__list {
+  display: flex;
+}
+
+.card__item {
+  flex-shrink: 0;
+
+  width: 100%;
 }
 
 .card:hover .card__slider {
@@ -126,7 +139,7 @@
 }
 
 .card__price {
-  color: @color-font-orange;
+  color: @color-orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 31px;

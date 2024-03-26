@@ -18,7 +18,7 @@
 
   @media (min-width: @desktop-width) {
     justify-self: end;
-    
+
     width: calc(@desktop-width / 2);
     padding-right: 84px;
   }
@@ -27,8 +27,7 @@
 .subscription__title {
   margin-bottom: 20px;
 
-  .font-title();
-
+  font-family: @font-title;
   font-size: 25px;
   font-weight: 400;
   line-height: 32px;
@@ -51,8 +50,11 @@
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
+    max-width: 540px;
+
     font-size: 25px;
     line-height: 29px;
+    letter-spacing: 0.02em;
   }
 
   @media (min-width: @desktop-width) {
@@ -64,22 +66,22 @@
   color: @color-font-grey-2;
 }
 
-.subscription__field-continer {
-  display: flex;
-  flex-direction: column;
+.subscription__field-container {
+  display: grid;
+
   gap: 16px;
 
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 
     margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 16px;
 
     margin-bottom: 20px;
@@ -114,20 +116,20 @@
   border: none;
 
   &:hover {
-    color: @color-btn-dark-orange;
-    outline: 1px solid @color-btn-dark-orange;
+    color: @color-dark-orange;
+    outline: 1px solid @color-dark-orange;
   }
 
   &:focus-visible {
-    outline: 1px solid @color-btn-dark-orange;
+    outline: 1px solid @color-dark-orange;
   }
 
   &:active {
-    outline: 1px solid @color-btn-dark-orange;
+    outline: 1px solid @color-dark-orange;
   }
 
   // &:focus-visible {
-  //   outline: 1px solid @color-btn-dark-orange;
+  //   outline: 1px solid @color-dark-orange;
   // }
 }
 
@@ -143,22 +145,62 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    gap: 45px;
+
+    padding-left: 15px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
     align-items: start;
+    gap: 46px;
   }
 
 }
 
 .subscription__control {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
+.subscription__control:focus-visible {
+  outline: none;
+}
+
+.subscription__input:focus-visible {
+  outline: none;
 }
 
 .subscription__mark {
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid @color-orange;
 
 }
+
+.subscription__input:checked + .subscription__mark {
+  background-color: @color-orange;
+  background-image: url("../../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 17px 14px;
+}
+
+.subscription__input:hover + .subscription__mark {
+  background-color: @color-orange;
+}
+
+.subscription__mark:focus-visible {
+  background-color: @color-orange;
+  outline: none;
+}
+
+
 
 .subscription__control-title {
   font-size: 13px;

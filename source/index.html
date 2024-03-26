@@ -25,11 +25,6 @@
 
           <ul class="contacts__social-list social-list social-list--closed">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--telegram">
-                <span class="social-list__link-text">Telegram</span>
-              </a>
-            </li>
-            <li class="social-list__item">
               <a class="social-list__link social-list__link--viber">
                 <span class="social-list__link-text">Viber</span>
               </a>
@@ -37,6 +32,11 @@
             <li class="social-list__item">
               <a class="social-list__link social-list__link--whatsapp">
                 <span class="social-list__link-text">Whats App</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--telegram">
+                <span class="social-list__link-text">Telegram</span>
               </a>
             </li>
           </ul>
@@ -135,6 +135,16 @@
                   <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
                 </picture>
               </li>
+              <li class="intro__list-item intro-slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                  <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                  <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                </picture>
+              </li>
             </ul>
           </div>
 
@@ -216,7 +226,89 @@
         </div>
 
         <div class="promo__catalog">
-          <article class="card">
+          <article class="promo__catalog-card card">
+            <h3 class="visually-hidden">Карточка товара</h3>
+
+            <div class="card__wrapper">
+              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+
+              <div class="card__slider card-slider">
+                <div class="card__slider-wrapper card-slider__wrapper">
+                  <ul class="card__list card-slider__list">
+                    <li class="card__item card-slider__item">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item card-slider__item">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+
+                <ul class="card__slider-pagination card-slider__pagination">
+                  <li class="card-slider__pagination-item">
+                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                      <span class="visually-hidden">1 фото</span>
+                    </button>
+                  </li>
+                  <li class="card-slider__pagination-item">
+                    <button class="card-slider__pagination-btn" type="button">
+                      <span class="visually-hidden">2 фото</span>
+                    </button>
+                  </li>
+                  <li class="card-slider__pagination-item">
+                    <button class="card-slider__pagination-btn" type="button">
+                      <span class="visually-hidden">3 фото</span>
+                    </button>
+                  </li>
+                  <li class="card-slider__pagination-item">
+                    <button class="card-slider__pagination-btn" type="button">
+                      <span class="visually-hidden">4 фото</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card__content">
+                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                <p class="card__price">6 000 ₽</p>
+              </div>
+
+              <div class="card__btn-container">
+                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                  <span class="app-btn__decor app-btn__decor--left"></span>
+                  <span class="card__btn-buy-text">Добавить</span> в корзину
+                  <span class="app-btn__decor app-btn__decor--right"></span>
+                </a>
+              </div>
+
+              <span class="card__mark card-mark card-mark--new">
+                Новинка
+                <span class="card-mark__decor"></span>
+              </span>
+
+              <a class="card__btn-favorite favorite-btn" href="">
+                <svg width="20" height="18" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </a>
+            </div>
+          </article>
+          <article class="promo__catalog-card card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -288,7 +380,7 @@
               </a>
             </div>
           </article>
-          <article class="card">
+          <article class="promo__catalog-card card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -360,7 +452,7 @@
               </a>
             </div>
           </article>
-          <article class="card">
+          <article class="promo__catalog-card card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -432,7 +524,7 @@
               </a>
             </div>
           </article>
-          <article class="card">
+          <article class="promo__catalog-card card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -504,7 +596,7 @@
               </a>
             </div>
           </article>
-          <article class="card">
+          <article class="promo__catalog-card card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -576,7 +668,7 @@
               </a>
             </div>
           </article>
-          <article class="card">
+          <article class="promo__catalog-card card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -648,79 +740,7 @@
               </a>
             </div>
           </article>
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
-
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
-
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
-                </div>
-
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
-
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
-
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
-
-              <a class="card__btn-favorite favorite-btn" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="card">
+          <article class="promo__catalog-card card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -794,13 +814,11 @@
           </article>
         </div>
 
-        <!-- <div class="promo__btn-container"> -->
-          <a class="promo__btn app-btn app-btn--light" href="">
-            <span class="app-btn__decor app-btn__decor--left"></span>
-            Показать ещё
-            <span class="app-btn__decor app-btn__decor--right"></span>
-          </a>
-        <!-- </div> -->
+        <a class="promo__btn app-btn app-btn--light" href="">
+          <span class="app-btn__decor app-btn__decor--left"></span>
+          Показать ещё
+          <span class="app-btn__decor app-btn__decor--right"></span>
+        </a>
       </section>
 
       <section class="catalog">
@@ -951,13 +969,11 @@
           </li>
         </ul>
 
-        <div class="catalog__btn-container">
-          <a class="catalog__btn app-btn app-btn--light" href="">
-            <span class="app-btn__decor app-btn__decor--left"></span>
-            Смотреть каталог
-            <span class="app-btn__decor app-btn__decor--right"></span>
-          </a>
-        </div>
+        <a class="catalog__btn app-btn app-btn--light" href="">
+          <span class="app-btn__decor app-btn__decor--left"></span>
+          Смотреть каталог
+          <span class="app-btn__decor app-btn__decor--right"></span>
+        </a>
       </section>
 
       <section class="offers">
@@ -965,9 +981,7 @@
         <div class="offers__block">
           <div class="offers__block-content">
             <h3 class="offers__subtitle">Краски Lip Nitn</h3>
-            <div class="offers__btn-container">
-              <a class="offers__btn" href="">Смотреть в каталоге</a>
-            </div>
+            <a class="offers__btn" href="">Смотреть в каталоге</a>
           </div>
           <div class="offers__img-container">
             <picture>
@@ -983,9 +997,7 @@
         <div class="offers__block">
           <div class="offers__block-content">
             <h3 class="offers__subtitle">Foxx viper — хит 2021 года</h3>
-            <div class="offers__btn-container">
-              <a class="offers__btn" href="">Смотреть в каталоге</a>
-            </div>
+            <a class="offers__btn" href="">Смотреть в каталоге</a>
           </div>
           <div class="offers__img-container">
             <picture>
@@ -1008,92 +1020,98 @@
 
         <div class="brands__slider brands-slider">
           <div class="brands__slider-wrapper brands-slider__wrapper">
-            <div class="brands__lists-container">
-              <ul class="brands__list brands-slider__list">
-                <li class="brands__item">
+            <ul class="brands__list brands-slider__list">
+              <li class="brands__item">
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-01.webp 1x, img/brands/brand-01@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-01.png" srcset="img/brands/brand-01@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-                <li class="brands__item">
+                </div>
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-02.webp 1x, img/brands/brand-02@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-02.png" srcset="img/brands/brand-02@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-                <li class="brands__item">
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-03.webp 1x, img/brands/brand-03@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-03.png" srcset="img/brands/brand-03@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-                <li class="brands__item">
+                </div>
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-04.webp 1x, img/brands/brand-04@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-04.png" srcset="img/brands/brand-04@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-                <li class="brands__item">
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-05.webp 1x, img/brands/brand-05@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-05.png" srcset="img/brands/brand-05@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-              </ul>
-              <ul class="brands__list brands-slider__list">
-                <li class="brands__item">
+                </div>
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-06.webp 1x, img/brands/brand-06@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-06.png" srcset="img/brands/brand-06@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-                <li class="brands__item">
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-07.webp 1x, img/brands/brand-07@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-07.png" srcset="img/brands/brand-07@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-                <li class="brands__item">
+                </div>
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-08.webp 1x, img/brands/brand-08@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-08.png" srcset="img/brands/brand-08@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-                <li class="brands__item">
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
-                      <source type="image/webp" srcset="img/brands/brand-09.webp 1x, img/brands/brand-09@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-09.png" srcset="img/brands/brand-09@2x.png 2x" alt="Изображение товара.">
+                      <source type="image/webp" srcset="img/brands/brand-01.webp 1x, img/brands/brand-01@2x.webp 2x">
+                      <img class="brands__img" src="img/brands/brand-01.png" srcset="img/brands/brand-01@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-                <li class="brands__item">
+                </div>
+                <div class="brands__link-container">
                   <a class="brands__link">
                     <picture>
-                      <source type="image/webp" srcset="img/brands/brand-10.webp 1x, img/brands/brand-10@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-10.png" srcset="img/brands/brand-10@2x.png 2x" alt="Изображение товара.">
+                      <source type="image/webp" srcset="img/brands/brand-02.webp 1x, img/brands/brand-02@2x.webp 2x">
+                      <img class="brands__img" src="img/brands/brand-02.png" srcset="img/brands/brand-02@2x.png 2x" alt="Изображение товара.">
                     </picture>
                   </a>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div class="brands__slider-controls brands-slider__controls">
@@ -1153,55 +1171,59 @@
           <div class="reviews__slider-wrapper reviews-slider__wrapper">
             <ul class="reviews__list reviews-slider__list">
               <li class="reviews__item">
-                <div class="reviews__item-content">
-                  <div class="reviews__img-container">
-                    <picture>
-                      <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
-                      <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
-                    </picture>
-                  </div>
-                  <p class="reviews__text">
-                    Заказал первый раз, заказ пришёл во время, упаковано
-                    все отлично, все заказанное соответствует описанию, но есть
-                    один маленький ньюанс, коробки все мятые, толи при упаковке
-                    так случилось толи на складе так отномятся с товаром, в целом
-                    всем доволен, буду заказывать ещё, сайт-магазин рекомендую
-                    к покупкам, в целом всем доволен, буду заказывать ещё
-                  </p>
-                  <a class="reviews__link">
-                    <div class="reviews__link-icon-container">
-                      <svg class="reviews__link-icon" width="16" height="16" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite.svg#instagram"></use>
-                      </svg>
+                <div class="reviews__item-wrapper">
+                  <div class="reviews__item-content">
+                    <div class="reviews__img-container">
+                      <picture>
+                        <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
+                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
+                      </picture>
                     </div>
-                    <span class="reviews__link-text">@Velli7350</span>
-                  </a>
+                    <p class="reviews__text">
+                      Заказал первый раз, заказ пришёл во время, упаковано
+                      все отлично, все заказанное соответствует описанию, но есть
+                      один маленький ньюанс, коробки все мятые, толи при упаковке
+                      так случилось толи на складе так отномятся с товаром, в целом
+                      всем доволен, буду заказывать ещё, сайт-магазин рекомендую
+                      к покупкам, в целом всем доволен, буду заказывать ещё
+                    </p>
+                    <a class="reviews__link">
+                      <div class="reviews__link-icon-container">
+                        <svg class="reviews__link-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg>
+                      </div>
+                      <span class="reviews__link-text">@Velli7350</span>
+                    </a>
+                  </div>
                 </div>
               </li>
               <li class="reviews__item">
-                <div class="reviews__item-content">
-                  <div class="reviews__img-container">
-                    <picture>
-                      <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
-                      <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
-                    </picture>
-                  </div>
-                  <p class="reviews__text">
-                    Заказал первый раз, заказ пришёл во время, упаковано
-                    все отлично, все заказанное соответствует описанию, но есть
-                    один маленький ньюанс, коробки все мятые, толи при упаковке
-                    так случилось толи на складе так отномятся с товаром, в целом
-                    всем доволен, буду заказывать ещё, сайт-магазин рекомендую
-                    к покупкам, в целом всем доволен, буду заказывать ещё
-                  </p>
-                  <a class="reviews__link">
-                    <div class="reviews__link-icon-container">
-                      <svg class="reviews__link-icon" width="16" height="16" aria-hidden="true" focusable="false">
-                        <use xlink:href="img/sprite.svg#instagram"></use>
-                      </svg>
+                <div class="reviews__item-wrapper">
+                  <div class="reviews__item-content">
+                    <div class="reviews__img-container">
+                      <picture>
+                        <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
+                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
+                      </picture>
                     </div>
-                    <span class="reviews__link-text">@Velli7350</span>
-                  </a>
+                    <p class="reviews__text">
+                      Заказал первый раз, заказ пришёл во время, упаковано
+                      все отлично, все заказанное соответствует описанию, но есть
+                      один маленький ньюанс, коробки все мятые, толи при упаковке
+                      так случилось толи на складе так отномятся с товаром, в целом
+                      всем доволен, буду заказывать ещё, сайт-магазин рекомендую
+                      к покупкам, в целом всем доволен, буду заказывать ещё
+                    </p>
+                    <a class="reviews__link">
+                      <div class="reviews__link-icon-container">
+                        <svg class="reviews__link-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg>
+                      </div>
+                      <span class="reviews__link-text">@Velli7350</span>
+                    </a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -1238,7 +1260,7 @@
               </button>
             </li>
             <li class="reviews-slider__pagination-item pagination__item">
-              <button class="reviews-slider__pagination-btn" type="button">
+              <button class="reviews-slider__pagination-btn pagination__btn" type="button">
                 <span class="visually-hidden">5 фото</span>
               </button>
             </li>
@@ -1253,11 +1275,11 @@
           <h3 class="subscription__title">Узнавайте первыми</h3>
           <p class="subscription__description">
             Подпишитесь на новостную рассылку
-            с самыми интересными новостями и акциями
+            с самыми&nbsp;интересными новостями и акциями
           </p>
 
           <form class="subscription__form" action="" method="post">
-            <div class="subscription__field-continer">
+            <div class="subscription__field-container">
               <label class="subscription__label" for="email">
                 <span class="subscription__label-title">Эл. почта</span>
                 <input class="subscription__field" type="email" name="email" id="email" placeholder="Figur@mail.ru" required>
@@ -1270,7 +1292,7 @@
 
             <div class="subscription__btn-container">
               <label class="subscription__control" for="personal-data">
-                <input class="visually-hidden" type="checkbox" name="personal-data" id="personal-data" tabindex="-1">
+                <input class="subscription__input visually-hidden" type="checkbox" name="personal-data" id="personal-data" tabindex="-1">
                 <span class="subscription__mark mark" tabindex="0"></span>
                 <span class="subscription__control-title">Вы соглашаетесь на обработку ваших персональных данных</span>
               </label>
@@ -1322,13 +1344,13 @@
         </div>
 
         <div class="page-footer__contacts contacts">
-          <a class="contacts__phone address address--phone" href="tel:+79525525252">
+          <a class="contacts__phone address address--phone" href="tel:88006006191">
             <div class="address__icon-container">
               <svg width="21" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
             </div>
-            <span>+7 952 552-52-52</span>
+            <span>8 800 600-61-91</span>
           </a>
 
           <ul class="contacts__social-list social-list">

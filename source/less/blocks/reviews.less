@@ -7,14 +7,13 @@
 
   margin-bottom: 30px;
 
-  .font-title();
-
+  font-family: @font-title;
   font-size: 25px;
   font-weight: 400;
   line-height: 32px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 
     font-size: 50px;
     line-height: 50px;
@@ -41,9 +40,13 @@
 .reviews__slider-wrapper {
   .wrapper();
 
-  margin-bottom: 34px;
+  margin-bottom: 48px;
 
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .reviews__list-container {
@@ -57,7 +60,6 @@
   gap: 20px;
 
   max-width: 280px;
-  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     max-width: 598px;
@@ -67,29 +69,35 @@
 .reviews__item {
   flex-shrink: 0;
 
-  // max-width: 280px;
   width: 100%;
-  min-height: 100%;
   padding-top: 30px;
-
-  .border-decor-triangle--bottom(6px, 6px, 2px, @color-font-orange);
+  padding-bottom: 6px;
 
   @media (min-width: @tablet-width) {
-    // max-width: 598px;
     padding-top: 50px;
   }
+}
+
+.reviews__item-wrapper {
+  .border-decor-triangle--bottom(12px, 12px, 2px, @color-orange);
 }
 
 .reviews__item-content {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   box-sizing: border-box;
+  min-height: 403px;
   padding: 50px 20px 40px;
 
   background-color: @color-back-black-01;
-  .border-decor-triangle--top(6px, 6px, 2px, @color-font-orange);
+  .border-decor-triangle--top(12px, 12px, 2px, @color-orange);
 
   @media (min-width: @tablet-width) {
+    min-height: 307px;
     padding: 50px;
   }
 }
@@ -100,7 +108,7 @@
   left: 20px;
 
   @media (min-width: @tablet-width) {
-    top: -50px;
+    top: -51px;
     left: 50px;
   }
 }
@@ -116,8 +124,6 @@
 }
 
 .reviews__text {
-  margin-bottom: 33px;
-
   font-size: 15px;
   font-weight: 400;
   line-height: 21px;
@@ -126,9 +132,7 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 24px;
-
   }
-
 }
 
 .reviews__link {
@@ -136,22 +140,23 @@
   align-items: center;
   gap: 15px;
 
-  .font-title();
-
+  font-family: @font-title;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
-  color: @color-font-orange;
+  color: @color-orange;
 
   .interactive-styles-alternative();
 }
 
 .reviews__link-icon-container {
   position: relative;
+
+  box-sizing: border-box;
   width: 28px;
   height: 28px;
 
-  border: 1px solid @color-font-orange;
+  border: 1px solid @color-orange;
 }
 
 .reviews__link-icon {
