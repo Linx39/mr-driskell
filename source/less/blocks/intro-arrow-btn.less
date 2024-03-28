@@ -1,11 +1,10 @@
-.intro-slider__arrow {
+.intro-arrow-btn {
   position: relative;
 
   width: 40px;
   height: 40px;
 
   border: 1.5px solid @color-orange;
-
 
   &::before,
   &::after {
@@ -17,15 +16,12 @@
     margin: 0 auto;
   }
 
+
   &::before {
     width: 2px;
     height: 36px;
 
     background-color: @color-orange;
-  }
-
-  &::after {
-    .decor-rhombus(5.9px, @color-orange);
   }
 
   &--prev::before {
@@ -36,23 +32,28 @@
     top: 21px;
   }
 
+  &:hover::before {
+    height: 64px;
+  }
+
+
+  &::after {
+    .decor-rhombus(6px, @color-orange);
+  }
+
   &--prev::after {
     bottom: 54px;
   }
 
   &--next::after {
-    top: 56px;
-  }
-
-  &:hover::before {
-    height: 64px;
+    top: 54px;
   }
 
   &--prev:hover::after {
-    bottom: 83px;
+    bottom: 82px;
   }
 
   &--next:hover::after {
-    top: 83px;
+    top: 82px;
   }
 }

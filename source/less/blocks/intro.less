@@ -54,7 +54,6 @@
     grid-row: 1 / -1;
     grid-column: 1 / -1;
 
-    grid-template-rows: min-content min-content;
     grid-template-columns: 1fr;
     gap: 70px;
     justify-content: start;
@@ -64,7 +63,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-rows: auto;
     grid-template-columns: 1fr min-content;
     align-items: center;
 
@@ -74,7 +72,7 @@
 }
 
 .intro__content {
-  max-width: 295px;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
     grid-row: 1 / 2;
@@ -89,13 +87,12 @@
 }
 
 .intro__title {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   font-family: @font-title;
   font-weight: 400;
   font-size: 35px;
   line-height: 35px;
-
   color: @color-orange;
 
   @media (min-width: @tablet-width) {
@@ -112,7 +109,7 @@
 }
 
 .intro__description {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 
   font-size: 20px;
   font-weight: 400;
@@ -166,13 +163,5 @@
 .intro__pagination {
   @media (max-width: (@tablet-width - 0.2px)) {
     display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-
-  }
-
-  @media (min-width: @desktop-width) {
-    .pagination-column();
   }
 }

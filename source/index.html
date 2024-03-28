@@ -13,7 +13,7 @@
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__site-toggle site-toggle site-toggle--closed" type="button">Меню</button>
 
-        <div class="main-nav__contacts contacts contacts--closed">
+        <div class="main-nav__contacts contacts contacts--desktop">
           <a class="contacts__phone address address--phone" href="tel:+79525525252">
             <div class="address__icon-container">
               <svg width="21" height="21" aria-hidden="true" focusable="false">
@@ -23,7 +23,7 @@
             <span>+7 952 552-52-52</span>
           </a>
 
-          <ul class="contacts__social-list social-list social-list--closed">
+          <ul class="contacts__social-list social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--viber">
                 <span class="social-list__link-text">Viber</span>
@@ -53,8 +53,8 @@
           </a>
         </div>
 
-        <a class="main-nav__logo" href="">
-          <img class="main-nav__logo-img" src="img/logo.svg" width="192" height="163" alt="Логотип компании.">
+        <a class="main-nav__logo logo" href="">
+          <img class="main-nav__logo-img" src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
         </a>
 
         <div class="main-nav__user-block">
@@ -89,7 +89,7 @@
         </div>
 
         <div class="main-nav__menu-block">
-          <button class="main-nav__catalog-toggle catalog-toggle catalog-toggle--closed" type="button">Каталог</button>
+          <button class="main-nav__menu-toggle menu-toggle menu-toggle--closed" type="button">Каталог</button>
 
           <form class="main-nav__search-form search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label for="search">
@@ -99,7 +99,7 @@
             <button class="visually-hidden" type="submit">Найти</button>
           </form>
 
-          <ul class="main-nav__site-list site-list site-list--nav-desktop">
+          <ul class="main-nav__site-list site-list site-list--header">
             <li class="site-list__item">
               <a class="site-list__link" href="#">Промокоды</a>
             </li>
@@ -161,10 +161,10 @@
             </div>
 
             <div class="intro__slider-controls intro-slider__controls">
-              <button class="intro__arrow-btn intro-slider__arrow intro-slider__arrow--prev" type="button">
+              <button class="intro__arrow-btn intro-arrow-btn intro-arrow-btn--prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
-              <ul class="intro__pagination intro-slider__pagination pagination">
+              <ul class="intro__pagination intro-slider__pagination pagination pagination--rotate">
                 <li class="intro-slider__pagination-item pagination__item">
                   <button class="intro-slider__pagination-btn pagination__btn" type="button">
                     <span class="visually-hidden">1 фото</span>
@@ -191,7 +191,7 @@
                   </button>
                 </li>
               </ul>
-              <button class="intro__arrow-btn intro-slider__arrow intro-slider__arrow--next" type="button">
+              <button class="intro__arrow-btn intro-arrow-btn intro-arrow-btn--next" type="button">
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
@@ -225,8 +225,8 @@
           </div>
         </div>
 
-        <div class="promo__catalog">
-          <article class="promo__catalog-card card">
+        <div class="promo__cards">
+          <article class="card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -258,24 +258,24 @@
                   </ul>
                 </div>
 
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                <ul class="card__slider-pagination card-pagination card-slider__pagination">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
                       <span class="visually-hidden">1 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">2 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">3 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">4 фото</span>
                     </button>
                   </li>
@@ -295,10 +295,76 @@
                 </a>
               </div>
 
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
+
+              <a class="card__btn-favorite favorite-btn favorite-btn--active" href="">
+                <svg width="20" height="18" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
+                <span class="visually-hidden">Добавить в избранное</span>
+              </a>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="visually-hidden">Карточка товара</h3>
+
+            <div class="card__wrapper">
+              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+
+              <div class="card__slider card-slider">
+                <div class="card__slider-wrapper card-slider__wrapper">
+                  <ul class="card__list card-slider__list">
+                    <li class="card__item card-slider__item">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+
+                <ul class="card__slider-pagination card-slider__pagination">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                      <span class="visually-hidden">1 фото</span>
+                    </button>
+                  </li>
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                      <span class="visually-hidden">2 фото</span>
+                    </button>
+                  </li>
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                      <span class="visually-hidden">3 фото</span>
+                    </button>
+                  </li>
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                      <span class="visually-hidden">4 фото</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card__content">
+                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                <p class="card__price">6 000 ₽</p>
+              </div>
+
+              <div class="card__btn-container">
+                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                  <span class="app-btn__decor app-btn__decor--left"></span>
+                  <span class="card__btn-buy-text">Добавить</span> в корзину
+                  <span class="app-btn__decor app-btn__decor--right"></span>
+                </a>
+              </div>
+
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
 
               <a class="card__btn-favorite favorite-btn" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -308,7 +374,7 @@
               </a>
             </div>
           </article>
-          <article class="promo__catalog-card card">
+          <article class="card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -331,23 +397,23 @@
                 </div>
 
                 <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
                       <span class="visually-hidden">1 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">2 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">3 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">4 фото</span>
                     </button>
                   </li>
@@ -367,10 +433,7 @@
                 </a>
               </div>
 
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
 
               <a class="card__btn-favorite favorite-btn" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -380,7 +443,7 @@
               </a>
             </div>
           </article>
-          <article class="promo__catalog-card card">
+          <article class="card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -403,23 +466,23 @@
                 </div>
 
                 <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
                       <span class="visually-hidden">1 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">2 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">3 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">4 фото</span>
                     </button>
                   </li>
@@ -439,10 +502,7 @@
                 </a>
               </div>
 
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
 
               <a class="card__btn-favorite favorite-btn" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -452,7 +512,7 @@
               </a>
             </div>
           </article>
-          <article class="promo__catalog-card card">
+          <article class="card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -475,23 +535,23 @@
                 </div>
 
                 <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
                       <span class="visually-hidden">1 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">2 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">3 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">4 фото</span>
                     </button>
                   </li>
@@ -511,10 +571,7 @@
                 </a>
               </div>
 
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
 
               <a class="card__btn-favorite favorite-btn" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -524,7 +581,7 @@
               </a>
             </div>
           </article>
-          <article class="promo__catalog-card card">
+          <article class="card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -547,23 +604,23 @@
                 </div>
 
                 <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
                       <span class="visually-hidden">1 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">2 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">3 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">4 фото</span>
                     </button>
                   </li>
@@ -583,10 +640,7 @@
                 </a>
               </div>
 
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
 
               <a class="card__btn-favorite favorite-btn" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -596,7 +650,7 @@
               </a>
             </div>
           </article>
-          <article class="promo__catalog-card card">
+          <article class="card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -619,23 +673,23 @@
                 </div>
 
                 <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
                       <span class="visually-hidden">1 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">2 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">3 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">4 фото</span>
                     </button>
                   </li>
@@ -655,10 +709,7 @@
                 </a>
               </div>
 
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
 
               <a class="card__btn-favorite favorite-btn" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -668,7 +719,7 @@
               </a>
             </div>
           </article>
-          <article class="promo__catalog-card card">
+          <article class="card">
             <h3 class="visually-hidden">Карточка товара</h3>
 
             <div class="card__wrapper">
@@ -691,23 +742,23 @@
                 </div>
 
                 <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
                       <span class="visually-hidden">1 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">2 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">3 фото</span>
                     </button>
                   </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
+                  <li class="card-pagination__item card-slider__pagination-item">
+                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
                       <span class="visually-hidden">4 фото</span>
                     </button>
                   </li>
@@ -727,82 +778,7 @@
                 </a>
               </div>
 
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
-
-              <a class="card__btn-favorite favorite-btn" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="promo__catalog-card card">
-            <h3 class="visually-hidden">Карточка товара</h3>
-
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
-
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
-                </div>
-
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-slider__pagination-item">
-                    <button class="card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
-
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
-
-              <span class="card__mark card-mark card-mark--new">
-                Новинка
-                <span class="card-mark__decor"></span>
-              </span>
+              <span class="card__mark card-mark card-mark--new">Новинка</span>
 
               <a class="card__btn-favorite favorite-btn" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -1155,13 +1131,11 @@
             день становились лучше, чтобы показать, на что они способны, и помочь
             раскрыть ваш потенциал.
           </p>
-          <div class="about__btn-container">
-            <a class="about__btn app-btn app-btn--light" href="">
-              <span class="app-btn__decor app-btn__decor--left"></span>
-              О компании
-              <span class="app-btn__decor app-btn__decor--right"></span>
-            </a>
-          </div>
+          <a class="about__btn app-btn app-btn--light" href="">
+            <span class="app-btn__decor app-btn__decor--left"></span>
+            О компании
+            <span class="app-btn__decor app-btn__decor--right"></span>
+          </a>
         </div>
       </section>
 
@@ -1187,14 +1161,7 @@
                       всем доволен, буду заказывать ещё, сайт-магазин рекомендую
                       к покупкам, в целом всем доволен, буду заказывать ещё
                     </p>
-                    <a class="reviews__link">
-                      <div class="reviews__link-icon-container">
-                        <svg class="reviews__link-icon" width="16" height="16" aria-hidden="true" focusable="false">
-                          <use xlink:href="img/sprite.svg#instagram"></use>
-                        </svg>
-                      </div>
-                      <span class="reviews__link-text">@Velli7350</span>
-                    </a>
+                    <a class="reviews__link">@Velli7350</a>
                   </div>
                 </div>
               </li>
@@ -1215,14 +1182,7 @@
                       всем доволен, буду заказывать ещё, сайт-магазин рекомендую
                       к покупкам, в целом всем доволен, буду заказывать ещё
                     </p>
-                    <a class="reviews__link">
-                      <div class="reviews__link-icon-container">
-                        <svg class="reviews__link-icon" width="16" height="16" aria-hidden="true" focusable="false">
-                          <use xlink:href="img/sprite.svg#instagram"></use>
-                        </svg>
-                      </div>
-                      <span class="reviews__link-text">@Velli7350</span>
-                    </a>
+                    <a class="reviews__link">@Velli7350</a>
                   </div>
                 </div>
               </li>
@@ -1281,19 +1241,19 @@
           <form class="subscription__form" action="" method="post">
             <div class="subscription__field-container">
               <label class="subscription__label" for="email">
-                <span class="subscription__label-title">Эл. почта</span>
+                Эл. почта
                 <input class="subscription__field" type="email" name="email" id="email" placeholder="Figur@mail.ru" required>
               </label>
               <label class="subscription__label" for="name">
-                <span class="subscription__label-title">Имя</span>
+                Имя
                 <input class="subscription__field" type="text" name="name" id="name" placeholder="Введите имя" required>
               </label>
             </div>
 
-            <div class="subscription__btn-container">
+            <div class="subscription__submit-container">
               <label class="subscription__control" for="personal-data">
-                <input class="subscription__input visually-hidden" type="checkbox" name="personal-data" id="personal-data" tabindex="-1">
-                <span class="subscription__mark mark" tabindex="0"></span>
+                <input class="subscription__control-field visually-hidden" type="checkbox" name="personal-data" id="personal-data" tabindex="-1">
+                <span class="subscription__control-mark" tabindex="0"></span>
                 <span class="subscription__control-title">Вы соглашаетесь на обработку ваших персональных данных</span>
               </label>
 
@@ -1319,7 +1279,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__menu-block">
           <a class="page-footer__logo logo" href="">
-            <img class="page-footer__logo-img" src="img/logo.svg" width="192" height="163" alt="Логотип компании.">
+            <img class="page-footer__logo-img" src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
           </a>
 
           <a class="page-footer__policy">Политика конфиденциальности</a>
@@ -1353,7 +1313,7 @@
             <span>8 800 600-61-91</span>
           </a>
 
-          <ul class="contacts__social-list social-list">
+          <ul class="contacts__social-list social-list social-list--block">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--telegram">
                 <span class="social-list__link-text">Telegram</span>

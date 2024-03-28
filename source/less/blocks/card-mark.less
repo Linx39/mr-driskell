@@ -7,29 +7,6 @@
   font-weight: 400;
   line-height: 19px;
 
-  background-color: @color-back-light-02;
-
-  &--new {
-    color: @color-orange;
-    border: 1px solid @color-orange;
-  }
-
-  &--hit {
-    color: @color-violet;
-    border: 1px solid @color-violet;
-  }
-}
-
-.card-mark__decor {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-
-  display: block;
-  width: 11px;
-  height: 29px;
-
   &::before,
   &::after {
     position: absolute;
@@ -56,12 +33,21 @@
     border-bottom: 14.5px solid transparent;
     border-right: 11px solid @color-back-light-02;
   }
+
+  &--new {
+    .set-color(@color-orange);
+  }
+
+  &--hit {
+    .set-color(@color-violet);
+  }
 }
 
-.card-mark--new .card-mark__decor::before {
-  border-right-color: @color-orange;
-}
+.set-color(@color) {
+  color: @color;
+  border: 1px solid @color;
 
-.card-mark--hit .card-mark__decor::before {
-  border-right-color: @color-violet;
+  &::before {
+    border-right-color: @color;
+  }
 }

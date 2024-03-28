@@ -5,7 +5,7 @@
 .reviews__title {
   .wrapper();
 
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-family: @font-title;
   font-size: 25px;
@@ -20,21 +20,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
 
     font-size: 60px;
     line-height: 60px;
     text-align: center;
   }
 
-}
-
-.reviews__slider {
-  // padding: 0 @mobile-padding;
-
-  // @media (min-width: @tablet-width) {
-  //   padding: 0;
-  // }
 }
 
 .reviews__slider-wrapper {
@@ -47,12 +39,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 41px;
   }
-}
 
-.reviews__list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .reviews__list {
@@ -91,7 +81,7 @@
 
   box-sizing: border-box;
   min-height: 403px;
-  padding: 50px 20px 40px;
+  padding: 50px 20px 39px;
 
   background-color: @color-back-black-01;
   .border-decor-triangle--top(12px, 12px, 2px, @color-orange);
@@ -104,7 +94,7 @@
 
 .reviews__img-container {
   position: absolute;
-  top: -30px;
+  top: -31px;
   left: 20px;
 
   @media (min-width: @tablet-width) {
@@ -136,9 +126,13 @@
 }
 
 .reviews__link {
+  position: relative;
+
   display: flex;
   align-items: center;
-  gap: 15px;
+
+  height: 28px;
+  padding-left: 43px;
 
   font-family: @font-title;
   font-size: 20px;
@@ -146,23 +140,23 @@
   line-height: 26px;
   color: @color-orange;
 
-  .interactive-styles-alternative();
-}
+  &::before {
+    position: absolute;
+    content: "";
+    top: 1px;
+    left: 0;
 
-.reviews__link-icon-container {
-  position: relative;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
 
-  box-sizing: border-box;
-  width: 28px;
-  height: 28px;
+    border: 1px solid @color-orange;
 
-  border: 1px solid @color-orange;
-}
-
-.reviews__link-icon {
-  position: absolute;
-  top: 6px;
-  left: 6px;
+    background-image: url("../../img/instagram.svg");
+    background-size: 16px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .reviews__slider-controls {

@@ -2,10 +2,12 @@
   display: flex;
   gap: 15px;
   justify-content: center;
-}
 
-.pagination-column() {
-  flex-direction: column-reverse;
+  &--rotate {
+    @media (min-width: @desktop-width) {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .pagination__item {
@@ -48,8 +50,8 @@
   }
 
   &--current::before,
-  &--current:hover:before,
-  &--current:focus-visible:before {
+  &--current:hover::before,
+  &--current:focus-visible::before {
     background-color: @color-orange;
   }
 }

@@ -2,34 +2,17 @@
   font-size: 17px;
   font-weight: 400;
   line-height: 23px;
-}
 
-.site-list__item {
-  width: fit-content;
-
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
+  &--header {
+    line-height: 26px;
   }
 }
 
 .site-list__link {
-  padding: 5px 0;
-
   .interactive-styles();
 }
 
-
-.site-list--nav-desktop {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.site-list--nav-desktop .site-list__item {
-  margin-bottom: 0;
-}
-
-.site-list--nav-desktop .site-list__link {
+.site-list--header .site-list__link {
   position: relative;
 
   &:hover {
@@ -44,7 +27,7 @@
     }
 
     &::before {
-      bottom: -15px;
+      bottom: -20px;
 
       width: 1px;
       height: 15px;
@@ -53,9 +36,9 @@
     }
 
     &::after {
-      bottom: 0;
+      bottom: -5px;
 
-      .decor-rhombus(4.1px, @color-orange);
+      .decor-rhombus(4.2px, @color-orange);
     }
   }
 }
