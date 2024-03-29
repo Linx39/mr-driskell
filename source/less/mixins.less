@@ -24,7 +24,6 @@
     padding-right: @desktop-padding;
     padding-left: @desktop-padding;
   }
-
 }
 
 .wrapper {
@@ -39,7 +38,6 @@
 
   &:focus-visible {
     color: @color-orange;
-
     outline: none;
   }
 
@@ -48,14 +46,13 @@
   }
 }
 
-.interactive-styles-alternative {
+.interactive-styles-custom {
   &:hover {
     opacity: 0.7;
   }
 
   &:focus-visible {
     opacity: 0.7;
-
     outline: none;
   }
 
@@ -123,7 +120,7 @@
   }
 }
 
-.decor-triangle (@width, @height, @color) {
+.decor-triangle(@width, @height, @color) {
   width: 0;
   height: 0;
 
@@ -140,9 +137,8 @@
   &::before,
   &::after {
     position: absolute;
-    inset: auto;
-
     content: "";
+    inset: auto;
 
     .decor-triangle(@width, @height, @color);
 

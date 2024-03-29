@@ -14,13 +14,13 @@
         <button class="main-nav__site-toggle site-toggle site-toggle--closed" type="button">Меню</button>
 
         <div class="main-nav__contacts contacts contacts--desktop">
-          <a class="contacts__phone address address--phone" href="tel:+79525525252">
-            <div class="address__icon-container">
+          <a class="contacts__address contacts__address--phone" href="tel:+79525525252">
+            <div class="icon-container">
               <svg width="21" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
             </div>
-            <span>+7 952 552-52-52</span>
+            +7 952 552-52-52
           </a>
 
           <ul class="contacts__social-list social-list">
@@ -43,17 +43,17 @@
 
           <p class="contacts__schedule">Время работы: с 9:00 до 20:00 по мск</p>
 
-          <a class="contacts__mail address address--mail" href="https://Mr.Driskell@mail.ru">
-            <div class="address__icon-container">
+          <a class="contacts__address contacts__address--mail " href="https://Mr.Driskell@mail.ru">
+            <div class="icon-container">
               <svg width="21" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
             </div>
-            <span>Mr.Driskell@mail.ru</span>
+            Mr.Driskell@mail.ru
           </a>
         </div>
 
-        <a class="main-nav__logo logo" href="">
+        <a class="main-nav__logo" href="">
           <img class="main-nav__logo-img" src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
         </a>
 
@@ -61,28 +61,34 @@
           <ul class="main-nav__user-list user-list">
             <li class="main-nav__basket user-list__item">
               <a class="user-list__link user-list__link--basket" href="">
-                <span class="visually-hidden">Корзина</span>
-                <span class="user-list__item-text">37 280 ₽</span>
-                <svg width="20" height="20" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#bag"></use>
-                </svg>
-                <span class="user-list__item-quantity">17</span>
+                <span class="user-list__link-title">Корзина</span>
+                <span class="user-list__link-text">37 280 ₽</span>
+                <div class="user-list__link-icon icon-container">
+                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#bag"></use>
+                  </svg>
+                </div>
               </a>
+              <span class="user-list__item-quantity">17</span>
             </li>
             <li class="main-nav__favorites user-list__item">
               <a class="user-list__link user-list__link--favorites" href="">
-                <span class="visually-hidden">Избранное</span>
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
+                <span class="user-list__link-title">Избранное</span>
+                <div class="user-list__link-icon icon-container">
+                  <svg width="20" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#heart"></use>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="main-nav__private user-list__item">
               <a class="user-list__link user-list__link--private" href="">
-                <span class="visually-hidden">Личный кабинет</span>
-                <svg width="19" height="19" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#man"></use>
-                </svg>
+                <span class="user-list__link-title">Личный кабинет</span>
+                <div class="user-list__link-icon icon-container">
+                  <svg width="19" height="19" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#man"></use>
+                  </svg>
+                </div>
               </a>
             </li>
           </ul>
@@ -1278,7 +1284,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__menu-block">
-          <a class="page-footer__logo logo" href="">
+          <a class="page-footer__logo" href="">
             <img class="page-footer__logo-img" src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
           </a>
 
@@ -1304,8 +1310,8 @@
         </div>
 
         <div class="page-footer__contacts contacts">
-          <a class="contacts__phone address address--phone" href="tel:88006006191">
-            <div class="address__icon-container">
+          <a class="contacts__address--phone address" href="tel:88006006191">
+            <div class="icon-container">
               <svg width="21" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
@@ -1314,11 +1320,6 @@
           </a>
 
           <ul class="contacts__social-list social-list social-list--block">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--telegram">
-                <span class="social-list__link-text">Telegram</span>
-              </a>
-            </li>
             <li class="social-list__item">
               <a class="social-list__link social-list__link--viber">
                 <span class="social-list__link-text">Viber</span>
@@ -1329,12 +1330,17 @@
                 <span class="social-list__link-text">Whats App</span>
               </a>
             </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--telegram">
+                <span class="social-list__link-text">Telegram</span>
+              </a>
+            </li>
           </ul>
 
           <p class="contacts__schedule">Время работы: с 9:00 до 20:00 по мск</p>
 
-          <a class="contacts__mail address address--mail" href="https://Mr.Driskell@mail.ru">
-            <div class="address__icon-container">
+          <a class="contacts__address--mail address" href="https://Mr.Driskell@mail.ru">
+            <div class="icon-container">
               <svg width="21" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>

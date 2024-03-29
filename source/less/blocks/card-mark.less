@@ -12,7 +12,6 @@
     position: absolute;
     content: "";
     top: 50%;
-    transform: translateY(-50%);
 
     width: 0;
     height: 0;
@@ -20,18 +19,14 @@
 
   &::before {
     right: 0;
-
-    border-top: 14.5px solid transparent;
-    border-bottom: 14.5px solid transparent;
-    border-right: 11px solid transparent;
+    transform: translateY(-50%) rotate(180deg) ;
   }
 
   &::after {
     right: -1px;
 
-    border-top: 14.5px solid transparent;
-    border-bottom: 14.5px solid transparent;
-    border-right: 11px solid @color-back-light-02;
+    .decor-triangle(11px, 29px, @color-back-light-02);
+    transform: translateY(-50%) rotate(180deg);
   }
 
   &--new {
@@ -48,6 +43,6 @@
   border: 1px solid @color;
 
   &::before {
-    border-right-color: @color;
+    .decor-triangle(11px, 29px, @color);
   }
 }

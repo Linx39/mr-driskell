@@ -14,6 +14,16 @@
   }
 }
 
+.contacts__address {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  white-space: nowrap;
+
+  .interactive-styles();
+}
+
 .contacts__schedule {
   margin-bottom: 10px;
 
@@ -31,7 +41,7 @@
   }
 }
 
-.contacts__mail {
+.contacts__address--mail {
   @media (min-width: @tablet-width) {
     grid-column: span 2;
   }
@@ -48,7 +58,7 @@
   line-height: 23px;
 }
 
-.contacts--desktop .contacts__phone {
+.contacts--desktop .contacts__address--phone {
   grid-row: 1 / 1;
   grid-column: 1 / 2;
 }
@@ -62,7 +72,7 @@
   display: none;
 }
 
-.contacts--desktop .contacts__mail {
+.contacts--desktop .contacts__address--mail {
   grid-row: 1 / 1;
   grid-column: 2 / 3;
 }

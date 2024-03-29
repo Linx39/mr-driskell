@@ -20,6 +20,10 @@
 
 .social-list--block .social-list__item {
   display: flex;
+
+  &:last-of-type {
+    order: -1;
+  }
 }
 
 .social-list--block .social-list__link {
@@ -48,7 +52,7 @@
     background-position: 7px 6px;
   }
 
-  .interactive-styles-alternative();
+  .interactive-styles-custom();
 }
 
 .social-list--block .social-list__link-text {
