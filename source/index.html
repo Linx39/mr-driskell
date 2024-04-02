@@ -54,7 +54,7 @@
         </div>
 
         <a class="main-nav__logo" href="">
-          <img class="main-nav__logo-img" src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
+          <img src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
         </a>
 
         <div class="main-nav__user-block">
@@ -167,10 +167,10 @@
             </div>
 
             <div class="intro__slider-controls intro-slider__controls">
-              <button class="intro__arrow-btn intro-arrow-btn intro-arrow-btn--prev" type="button">
+              <button class="intro__arrow-btn needle-btn needle-btn--prev intro-slider__btn-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
-              <ul class="intro__pagination intro-slider__pagination pagination pagination--rotate">
+              <ul class="intro__pagination intro-slider__pagination pagination pagination--vertical">
                 <li class="intro-slider__pagination-item pagination__item">
                   <button class="intro-slider__pagination-btn pagination__btn" type="button">
                     <span class="visually-hidden">1 фото</span>
@@ -197,7 +197,7 @@
                   </button>
                 </li>
               </ul>
-              <button class="intro__arrow-btn intro-arrow-btn intro-arrow-btn--next" type="button">
+              <button class="intro__arrow-btn needle-btn needle-btn--next intro-slider__btn-next" type="button">
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
@@ -226,8 +226,6 @@
                 </li>
               </ul>
             </div>
-
-            <button class="visually-hidden" type="submit">Показать</button>
           </div>
         </div>
 
@@ -303,7 +301,7 @@
 
               <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-              <a class="card__btn-favorite favorite-btn favorite-btn--active" href="">
+              <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -372,7 +370,7 @@
 
               <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-              <a class="card__btn-favorite favorite-btn" href="">
+              <a class="card__btn-favorite favorite-btn icon-container" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -441,7 +439,7 @@
 
               <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-              <a class="card__btn-favorite favorite-btn" href="">
+              <a class="card__btn-favorite favorite-btn icon-container" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -510,7 +508,7 @@
 
               <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-              <a class="card__btn-favorite favorite-btn" href="">
+              <a class="card__btn-favorite favorite-btn icon-container" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -579,7 +577,7 @@
 
               <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-              <a class="card__btn-favorite favorite-btn" href="">
+              <a class="card__btn-favorite favorite-btn icon-container" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -648,7 +646,7 @@
 
               <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-              <a class="card__btn-favorite favorite-btn" href="">
+              <a class="card__btn-favorite favorite-btn icon-container" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -717,7 +715,7 @@
 
               <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-              <a class="card__btn-favorite favorite-btn" href="">
+              <a class="card__btn-favorite favorite-btn icon-container" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -786,7 +784,7 @@
 
               <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-              <a class="card__btn-favorite favorite-btn" href="">
+              <a class="card__btn-favorite favorite-btn icon-container" href="">
                 <svg width="20" height="18" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -1097,10 +1095,10 @@
           </div>
 
           <div class="brands__slider-controls brands-slider__controls">
-            <button class="brands__arrow-btn brands__arrow-btn--prev brands-slider__arrow brands-slider__arrow--prev arrow-btn arrow-btn--prev" type="button">
+            <button class="brands-slider__arrow brands-slider__arrow--prev arrow-btn arrow-btn--prev" type="button">
               <span class="visually-hidden">Предыдущий слайдер</span>
             </button>
-            <button class="brands__arrow-btn brands__arrow-btn--next brands-slider__arrow brands-slider__arrow--next arrow-btn arrow-btn--next" type="button">
+            <button class="brands-slider__arrow brands-slider__arrow--next arrow-btn arrow-btn--next" type="button">
               <span class="visually-hidden">Следующий слайдер</span>
             </button>
           </div>
@@ -1150,7 +1148,7 @@
         <div class="reviews__slider reviews-slider">
           <div class="reviews__slider-wrapper reviews-slider__wrapper">
             <ul class="reviews__list reviews-slider__list">
-              <li class="reviews__item">
+              <li class="reviews__item reviews-slider__item">
                 <div class="reviews__item-wrapper">
                   <div class="reviews__item-content">
                     <div class="reviews__img-container">
@@ -1171,7 +1169,7 @@
                   </div>
                 </div>
               </li>
-              <li class="reviews__item">
+              <li class="reviews__item reviews-slider__item">
                 <div class="reviews__item-wrapper">
                   <div class="reviews__item-content">
                     <div class="reviews__img-container">
@@ -1196,17 +1194,17 @@
           </div>
 
           <div class="reviews__slider-controls reviews-slider__controls">
-            <button class="reviews__arrow-btn reviews__arrow-btn--prev reviews-slider__arrow reviews-slider__arrow--prev arrow-btn arrow-btn--prev" type="button">
+            <button class="reviews-slider__arrow reviews-slider__arrow--prev arrow-btn arrow-btn--prev" type="button">
               <span class="visually-hidden">Предыдущий слайдер</span>
             </button>
-            <button class="reviews__arrow-btn reviews__arrow-btn--next reviews-slider__arrow reviews-slider__arrow--next arrow-btn arrow-btn--next" type="button">
+            <button class="reviews-slider__arrow reviews-slider__arrow--next arrow-btn arrow-btn--next" type="button">
               <span class="visually-hidden">Следующий слайдер</span>
             </button>
           </div>
 
           <ul class="reviews__pagination reviews-slider__pagination pagination">
             <li class="reviews-slider__pagination-item pagination__item">
-              <button class="reviews-slider__pagination-btn pagination__btn reviews-slider__pagination-btn--current pagination__btn pagination__btn--current" type="button">
+              <button class="reviews-slider__pagination-btn reviews-slider__pagination-btn--current pagination__btn pagination__btn--current" type="button">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>
@@ -1285,7 +1283,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__menu-block">
           <a class="page-footer__logo" href="">
-            <img class="page-footer__logo-img" src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
+            <img src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
           </a>
 
           <a class="page-footer__policy">Политика конфиденциальности</a>
@@ -1310,7 +1308,7 @@
         </div>
 
         <div class="page-footer__contacts contacts">
-          <a class="contacts__address--phone address" href="tel:88006006191">
+          <a class="contacts__address contacts__address--phone" href="tel:88006006191">
             <div class="icon-container">
               <svg width="21" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#phone"></use>
@@ -1339,7 +1337,7 @@
 
           <p class="contacts__schedule">Время работы: с 9:00 до 20:00 по мск</p>
 
-          <a class="contacts__address--mail address" href="https://Mr.Driskell@mail.ru">
+          <a class="contacts__address contacts__address--mail" href="https://Mr.Driskell@mail.ru">
             <div class="icon-container">
               <svg width="21" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#mail"></use>
