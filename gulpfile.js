@@ -25,6 +25,13 @@ export const html = () => {
   return gulp.src('source/*.html');
 }
 
+// Scripts
+export const scripts = () => {
+  return gulp.src('source/js/*.js')
+    // .pipe(gulp.dest('docs/js'))
+    .pipe(browser.stream());
+}
+
 // WebP
 export const createWebp = () => {
   return gulp.src([
@@ -67,6 +74,7 @@ const reload = (done) => {
 // Watcher
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -75,6 +83,7 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
   ),
   gulp.series(
     server,

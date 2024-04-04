@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин товаров для татуажа Mr.Driskell</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
@@ -127,31 +128,80 @@
     </header>
 
     <main class="page__main">
+      <!-- <section class="test">
+        <div class="test__slider swiper">
+          <div class="test__wrapper swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/catalog/catalog-1-mobile.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/catalog/catalog-2-mobile.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/catalog/catalog-3-mobile.png">
+            </div>
+          </div>
+
+          <div class="test__pagination swiper-pagination"></div>
+
+          <div class="test__button-prev swiper-button-prev"></div>
+          <div class="test__button-next swiper-button-next"></div>
+        </div>
+      </section> -->
+
       <section class="intro">
-        <div class="intro__slider intro-slider">
-          <div class="intro__slider-wrapper intro-slider__wrapper">
-            <ul class="intro__list intro-slider__list">
-              <li class="intro__list-item intro-slider__item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
-                  <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
-                </picture>
-              </li>
-              <li class="intro__list-item intro-slider__item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
-                  <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
-                </picture>
-              </li>
-            </ul>
+        <div class="intro__slider swiper">
+          <div class="intro__slider-wrapper swiper-wrapper">
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+              </picture>
+            </div>
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+              </picture>
+            </div>
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+              </picture>
+            </div>
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+              </picture>
+            </div>
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+              </picture>
+            </div>
           </div>
 
           <div class="intro__wrapper">
@@ -166,38 +216,33 @@
               </a>
             </div>
 
-            <div class="intro__slider-controls intro-slider__controls">
-              <button class="intro__arrow-btn needle-btn needle-btn--prev intro-slider__btn-prev" type="button">
+            <div class="intro__slider-controls">
+              <button class="intro__arrow-btn needle-btn needle-btn--prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
-              <ul class="intro__pagination intro-slider__pagination pagination pagination--vertical">
-                <li class="intro-slider__pagination-item pagination__item">
-                  <button class="intro-slider__pagination-btn pagination__btn" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="intro-slider__pagination-item pagination__item">
-                  <button class="intro-slider__pagination-btn pagination__btn" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="intro-slider__pagination-item pagination__item">
-                  <button class="intro-slider__pagination-btn pagination__btn" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-                <li class="intro-slider__pagination-item pagination__item">
-                  <button class="intro-slider__pagination-btn pagination__btn" type="button">
-                    <span class="visually-hidden">4 фото</span>
-                  </button>
-                </li>
-                <li class="intro-slider__pagination-item pagination__item">
-                  <button class="intro-slider__pagination-btn intro-slider__pagination-btn--current pagination__btn pagination__btn--current" type="button">
-                    <span class="visually-hidden">5 фото</span>
-                  </button>
-                </li>
-              </ul>
-              <button class="intro__arrow-btn needle-btn needle-btn--next intro-slider__btn-next" type="button">
+
+              <div class="intro__pagination pagination pagination--vertical">
+                <button class="pagination__btn pagination__btn--current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">4 фото</span>
+                </button>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">5 фото</span>
+                </button>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">5 фото</span>
+                </button>
+              </div>
+
+              <button class="intro__arrow-btn needle-btn needle-btn--next" type="button">
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
@@ -1348,5 +1393,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
