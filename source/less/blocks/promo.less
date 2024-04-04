@@ -3,27 +3,29 @@
   flex-direction: column;
   align-items: center;
 
-  .wrapper();
 }
 
 .promo__filter {
   width: 100%;
   margin-bottom: 30px;
 
+  .wrapper();
+  padding-right: 0;
+
   @media (min-width: @desktop-width) {
     margin-bottom: 4px;
   }
 }
 
-.promo-filter__slider-wrapper{
-  width: 100%;
-  overflow-x: hidden;
+// .promo-filter__slider-wrapper{
+//   width: 100%;
+//   overflow-x: hidden;
 
-  @media (min-width: @desktop-width) {
-    width: auto;
-    padding: 0 20px;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     width: auto;
+//     padding: 0 20px;
+//   }
+// }
 
 .promo-filter__list {
   box-sizing: border-box;
@@ -44,6 +46,8 @@
 
   width: 100%;
   margin-bottom: 21px;
+
+  .wrapper();
 
   overflow-y: hidden;
 

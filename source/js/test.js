@@ -6,8 +6,6 @@ const mySwiper = new Swiper('.test__slider', {
     el: '.test__pagination',
     bulletElement: 'button',
     clickable: true,
-    // bulletClass: 'pagination__btn',
-    // bulletActiveClass: 'pagination__btn--current',
   },
 
   navigation: {

@@ -159,7 +159,7 @@
                 <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
               </picture>
             </div>
             <div class="intro__slider-item swiper-slide">
@@ -169,7 +169,7 @@
                 <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
               </picture>
             </div>
             <div class="intro__slider-item swiper-slide">
@@ -179,7 +179,7 @@
                 <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
               </picture>
             </div>
             <div class="intro__slider-item swiper-slide">
@@ -189,7 +189,7 @@
                 <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
               </picture>
             </div>
             <div class="intro__slider-item swiper-slide">
@@ -199,7 +199,7 @@
                 <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                <img class="intro__list-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
               </picture>
             </div>
           </div>
@@ -237,9 +237,6 @@
                 <button class="pagination__btn" type="button">
                   <span class="visually-hidden">5 фото</span>
                 </button>
-                <button class="pagination__btn" type="button">
-                  <span class="visually-hidden">5 фото</span>
-                </button>
               </div>
 
               <button class="intro__arrow-btn needle-btn needle-btn--next" type="button">
@@ -254,23 +251,21 @@
         <h2 class="visually-hidden">Промо товары</h2>
         <div class="promo__filter promo-filter">
           <h3 class="visually-hidden">Фильтры</h3>
-          <div class="promo-filter__slider promo-slider">
-            <div class="promo-filter__slider-wrapper promo-slider__wrapper">
-              <ul class="promo-filter__list promo-slider__list">
-                <li class="promo-filter__item promo-slider__item">
-                  <a class="promo-filter__link" href="">Хиты продаж</a>
-                </li>
-                <li class="promo-filter__item promo-slider__item">
-                  <a class="promo-filter__link" href="">Самые популярные</a>
-                </li>
-                <li class="promo-filter__item promo-slider__item">
-                  <a class="promo-filter__link promo-filter__link--current" href="">Новые поступления</a>
-                </li>
-                <li class="promo-filter__item promo-slider__item">
-                  <a class="promo-filter__link" href="">Акционные товары</a>
-                </li>
-              </ul>
-            </div>
+          <div class="promo-filter__slider swiper">
+            <ul class="promo-filter__list swiper-wrapper">
+              <li class="promo-filter__item swiper-slide">
+                <a class="promo-filter__link" href="">Хиты продаж</a>
+              </li>
+              <li class="promo-filter__item swiper-slide">
+                <a class="promo-filter__link" href="">Самые популярные</a>
+              </li>
+              <li class="promo-filter__item swiper-slide">
+                <a class="promo-filter__link promo-filter__link--current" href="">Новые поступления</a>
+              </li>
+              <li class="promo-filter__item swiper-slide">
+                <a class="promo-filter__link" href="">Акционные товары</a>
+              </li>
+            </ul>
           </div>
         </div>
 
