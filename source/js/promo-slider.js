@@ -1,7 +1,7 @@
 import { Width } from "./const.js";
 
 const initSwiper = () => {
-  const cardsSlider = new Swiper('.promo__slider', {
+  const promoSlider = new Swiper('.promo__slider', {
     direction: 'horizontal',
     loop: false,
     slidesPerView: 1,
@@ -31,22 +31,22 @@ const initSwiper = () => {
     }
   });
 
-  return cardsSlider;
+  return promoSlider;
 }
 
 let isSliderInit = false;
-let cardsSlider = Swiper;
+let promoSlider = Swiper;
 
 const changeSliderMode = () => {
   const isDesktopWidth = window.matchMedia(`(min-width: ${Width.DESKTOP}px)`).matches;
 
   if (!isDesktopWidth && !isSliderInit){
-    cardsSlider = initSwiper();
+    promoSlider = initSwiper();
     isSliderInit = true;
   }
 
   if (isDesktopWidth && isSliderInit) {
-    cardsSlider.destroy();
+    promoSlider.destroy();
     isSliderInit = false;
   }
 

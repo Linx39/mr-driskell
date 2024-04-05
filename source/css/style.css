@@ -1304,11 +1304,11 @@ button {
 }
 .card:hover {
   z-index: 100;
-  transition: 0.3s;
   cursor: pointer;
 }
 @media (min-width: 1280px) {
   .card:hover {
+    transition: transform 0.3s;
     transform: translateY(-25px);
   }
 }
@@ -1353,9 +1353,6 @@ button {
   flex-direction: column;
   justify-content: center;
 }
-.card__slider-wrapper {
-  overflow: hidden;
-}
 .card__list {
   display: flex;
 }
@@ -1364,7 +1361,6 @@ button {
   width: 100%;
 }
 .card:hover .card__slider {
-  pointer-events: none;
   z-index: 12;
 }
 .card__img {
@@ -1429,13 +1425,13 @@ button {
     z-index: 12;
     padding: 21px 30px 0;
     opacity: 0;
-    transition: transform 0.3s;
     transform: translateY(100%);
     pointer-events: none;
   }
 }
 @media (min-width: 1280px) {
   .card:hover .card__btn-container {
+    transition: transform 0.3s;
     transform: translateY(0);
     bottom: 30px;
     opacity: 1;
