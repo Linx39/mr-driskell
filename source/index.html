@@ -269,576 +269,599 @@
           </div>
         </div>
 
-        <div class="promo__cards">
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
+        <div class="promo__slider swiper">
+            <div class="promo__cards swiper-wrapper">
+              <article class="card swiper-slide">
+                <h3 class="visually-hidden">Карточка товара</h3>
 
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+                <div class="card__wrapper">
+                  <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
 
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
+                  <div class="card__slider card-slider">
+                    <div class="card__slider-wrapper card-slider__wrapper">
+                      <ul class="card__list card-slider__list">
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <ul class="card__slider-pagination card-pagination card-slider__pagination">
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                          <span class="visually-hidden">1 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">2 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">3 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">4 фото</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card__content">
+                    <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                    <p class="card__price">6 000 ₽</p>
+                  </div>
+
+                  <div class="card__btn-container">
+                    <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                      <span class="app-btn__decor app-btn__decor--left"></span>
+                      <span class="card__btn-buy-text">Добавить</span> в корзину
+                      <span class="app-btn__decor app-btn__decor--right"></span>
+                    </a>
+                  </div>
+
+                  <span class="card__mark card-mark card-mark--new">Новинка1</span>
+
+                  <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
+                    <svg width="20" height="18" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </a>
                 </div>
+              </article>
+              <article class="card swiper-slide">
+                <h3 class="visually-hidden">Карточка товара</h3>
 
-                <ul class="card__slider-pagination card-pagination card-slider__pagination">
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <div class="card__wrapper">
+                  <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
 
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
+                  <div class="card__slider card-slider">
+                    <div class="card__slider-wrapper card-slider__wrapper">
+                      <ul class="card__list card-slider__list">
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
 
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
+                    <ul class="card__slider-pagination card-slider__pagination">
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                          <span class="visually-hidden">1 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">2 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">3 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">4 фото</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
 
-              <span class="card__mark card-mark card-mark--new">Новинка</span>
+                  <div class="card__content">
+                    <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                    <p class="card__price">6 000 ₽</p>
+                  </div>
 
-              <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
+                  <div class="card__btn-container">
+                    <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                      <span class="app-btn__decor app-btn__decor--left"></span>
+                      <span class="card__btn-buy-text">Добавить</span> в корзину
+                      <span class="app-btn__decor app-btn__decor--right"></span>
+                    </a>
+                  </div>
 
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+                  <span class="card__mark card-mark card-mark--new">Новинка2</span>
 
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
+                  <a class="card__btn-favorite favorite-btn icon-container" href="">
+                    <svg width="20" height="18" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </a>
                 </div>
+              </article>
+              <article class="card swiper-slide">
+                <h3 class="visually-hidden">Карточка товара</h3>
 
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <div class="card__wrapper">
+                  <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
 
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
+                  <div class="card__slider card-slider">
+                    <div class="card__slider-wrapper card-slider__wrapper">
+                      <ul class="card__list card-slider__list">
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
 
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
+                    <ul class="card__slider-pagination card-slider__pagination">
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                          <span class="visually-hidden">1 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">2 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">3 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">4 фото</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
 
-              <span class="card__mark card-mark card-mark--new">Новинка</span>
+                  <div class="card__content">
+                    <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                    <p class="card__price">6 000 ₽</p>
+                  </div>
 
-              <a class="card__btn-favorite favorite-btn icon-container" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
+                  <div class="card__btn-container">
+                    <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                      <span class="app-btn__decor app-btn__decor--left"></span>
+                      <span class="card__btn-buy-text">Добавить</span> в корзину
+                      <span class="app-btn__decor app-btn__decor--right"></span>
+                    </a>
+                  </div>
 
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+                  <span class="card__mark card-mark card-mark--new">Новинка3</span>
 
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
+                  <a class="card__btn-favorite favorite-btn icon-container" href="">
+                    <svg width="20" height="18" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </a>
                 </div>
+              </article>
+              <article class="card swiper-slide">
+                <h3 class="visually-hidden">Карточка товара</h3>
 
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <div class="card__wrapper">
+                  <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
 
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
+                  <div class="card__slider card-slider">
+                    <div class="card__slider-wrapper card-slider__wrapper">
+                      <ul class="card__list card-slider__list">
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
 
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
+                    <ul class="card__slider-pagination card-slider__pagination">
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                          <span class="visually-hidden">1 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">2 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">3 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">4 фото</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
 
-              <span class="card__mark card-mark card-mark--new">Новинка</span>
+                  <div class="card__content">
+                    <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                    <p class="card__price">6 000 ₽</p>
+                  </div>
 
-              <a class="card__btn-favorite favorite-btn icon-container" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
+                  <div class="card__btn-container">
+                    <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                      <span class="app-btn__decor app-btn__decor--left"></span>
+                      <span class="card__btn-buy-text">Добавить</span> в корзину
+                      <span class="app-btn__decor app-btn__decor--right"></span>
+                    </a>
+                  </div>
 
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+                  <span class="card__mark card-mark card-mark--new">Новинка4</span>
 
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
+                  <a class="card__btn-favorite favorite-btn icon-container" href="">
+                    <svg width="20" height="18" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </a>
                 </div>
+              </article>
+              <article class="card swiper-slide">
+                <h3 class="visually-hidden">Карточка товара</h3>
 
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <div class="card__wrapper">
+                  <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
 
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
+                  <div class="card__slider card-slider">
+                    <div class="card__slider-wrapper card-slider__wrapper">
+                      <ul class="card__list card-slider__list">
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
 
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
+                    <ul class="card__slider-pagination card-slider__pagination">
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                          <span class="visually-hidden">1 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">2 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">3 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">4 фото</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
 
-              <span class="card__mark card-mark card-mark--new">Новинка</span>
+                  <div class="card__content">
+                    <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                    <p class="card__price">6 000 ₽</p>
+                  </div>
 
-              <a class="card__btn-favorite favorite-btn icon-container" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
+                  <div class="card__btn-container">
+                    <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                      <span class="app-btn__decor app-btn__decor--left"></span>
+                      <span class="card__btn-buy-text">Добавить</span> в корзину
+                      <span class="app-btn__decor app-btn__decor--right"></span>
+                    </a>
+                  </div>
 
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+                  <span class="card__mark card-mark card-mark--new">Новинка5</span>
 
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
+                  <a class="card__btn-favorite favorite-btn icon-container" href="">
+                    <svg width="20" height="18" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </a>
                 </div>
+              </article>
+              <article class="card swiper-slide">
+                <h3 class="visually-hidden">Карточка товара</h3>
 
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <div class="card__wrapper">
+                  <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
 
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
+                  <div class="card__slider card-slider">
+                    <div class="card__slider-wrapper card-slider__wrapper">
+                      <ul class="card__list card-slider__list">
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
 
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
+                    <ul class="card__slider-pagination card-slider__pagination">
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                          <span class="visually-hidden">1 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">2 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">3 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">4 фото</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
 
-              <span class="card__mark card-mark card-mark--new">Новинка</span>
+                  <div class="card__content">
+                    <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                    <p class="card__price">6 000 ₽</p>
+                  </div>
 
-              <a class="card__btn-favorite favorite-btn icon-container" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
+                  <div class="card__btn-container">
+                    <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                      <span class="app-btn__decor app-btn__decor--left"></span>
+                      <span class="card__btn-buy-text">Добавить</span> в корзину
+                      <span class="app-btn__decor app-btn__decor--right"></span>
+                    </a>
+                  </div>
 
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+                  <span class="card__mark card-mark card-mark--new">Новинка6</span>
 
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
+                  <a class="card__btn-favorite favorite-btn icon-container" href="">
+                    <svg width="20" height="18" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </a>
                 </div>
+              </article>
+              <article class="card swiper-slide">
+                <h3 class="visually-hidden">Карточка товара</h3>
 
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <div class="card__wrapper">
+                  <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
 
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
+                  <div class="card__slider card-slider">
+                    <div class="card__slider-wrapper card-slider__wrapper">
+                      <ul class="card__list card-slider__list">
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
 
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
+                    <ul class="card__slider-pagination card-slider__pagination">
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                          <span class="visually-hidden">1 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">2 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">3 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">4 фото</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
 
-              <span class="card__mark card-mark card-mark--new">Новинка</span>
+                  <div class="card__content">
+                    <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                    <p class="card__price">6 000 ₽</p>
+                  </div>
 
-              <a class="card__btn-favorite favorite-btn icon-container" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
+                  <div class="card__btn-container">
+                    <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                      <span class="app-btn__decor app-btn__decor--left"></span>
+                      <span class="card__btn-buy-text">Добавить</span> в корзину
+                      <span class="app-btn__decor app-btn__decor--right"></span>
+                    </a>
+                  </div>
 
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+                  <span class="card__mark card-mark card-mark--new">Новинка7</span>
 
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
+                  <a class="card__btn-favorite favorite-btn icon-container" href="">
+                    <svg width="20" height="18" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </a>
                 </div>
+              </article>
+              <article class="card swiper-slide">
+                <h3 class="visually-hidden">Карточка товара</h3>
 
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <div class="card__wrapper">
+                  <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
 
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
+                  <div class="card__slider card-slider">
+                    <div class="card__slider-wrapper card-slider__wrapper">
+                      <ul class="card__list card-slider__list">
+                        <li class="card__item card-slider__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                            <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
 
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
+                    <ul class="card__slider-pagination card-slider__pagination">
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
+                          <span class="visually-hidden">1 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">2 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">3 фото</span>
+                        </button>
+                      </li>
+                      <li class="card-pagination__item card-slider__pagination-item">
+                        <button class="card-pagination__btn card-slider__pagination-btn" type="button">
+                          <span class="visually-hidden">4 фото</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
 
-              <span class="card__mark card-mark card-mark--new">Новинка</span>
+                  <div class="card__content">
+                    <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
+                    <p class="card__price">6 000 ₽</p>
+                  </div>
 
-              <a class="card__btn-favorite favorite-btn icon-container" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
-            </div>
-          </article>
-          <article class="card">
-            <h3 class="visually-hidden">Карточка товара</h3>
+                  <div class="card__btn-container">
+                    <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                      <span class="app-btn__decor app-btn__decor--left"></span>
+                      <span class="card__btn-buy-text">Добавить</span> в корзину
+                      <span class="app-btn__decor app-btn__decor--right"></span>
+                    </a>
+                  </div>
 
-            <div class="card__wrapper">
-              <a class="card__link" href=""><span class="visually-hidden">Перейти к товару</span></a>
+                  <span class="card__mark card-mark card-mark--new">Новинка8</span>
 
-              <div class="card__slider card-slider">
-                <div class="card__slider-wrapper card-slider__wrapper">
-                  <ul class="card__list card-slider__list">
-                    <li class="card__item card-slider__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                  </ul>
+                  <a class="card__btn-favorite favorite-btn icon-container" href="">
+                    <svg width="20" height="18" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </a>
                 </div>
-
-                <ul class="card__slider-pagination card-slider__pagination">
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-pagination__btn--active card-slider__pagination-btn card-slider__pagination-btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                  <li class="card-pagination__item card-slider__pagination-item">
-                    <button class="card-pagination__btn card-slider__pagination-btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="card__content">
-                <p class="card__title">Foxxx Kitsune Mini Black Vintage RCA</p>
-                <p class="card__price">6 000 ₽</p>
-              </div>
-
-              <div class="card__btn-container">
-                <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  <span class="card__btn-buy-text">Добавить</span> в корзину
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
-
-              <span class="card__mark card-mark card-mark--new">Новинка</span>
-
-              <a class="card__btn-favorite favorite-btn icon-container" href="">
-                <svg width="20" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#heart"></use>
-                </svg>
-                <span class="visually-hidden">Добавить в избранное</span>
-              </a>
+              </article>
             </div>
-          </article>
+
+            <div class="promo__pagination pagination">
+              <button class="pagination__btn pagination__btn--current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+              <button class="pagination__btn" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+              <button class="pagination__btn" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+              <button class="pagination__btn" type="button">
+                <span class="visually-hidden">4 фото</span>
+              </button>
+            </div>
+
+            <a class="promo__btn app-btn app-btn--light" href="">
+              <span class="app-btn__decor app-btn__decor--left"></span>
+              Показать ещё
+              <span class="app-btn__decor app-btn__decor--right"></span>
+            </a>
         </div>
 
-        <a class="promo__btn app-btn app-btn--light" href="">
+        <!-- <a class="promo__btn app-btn app-btn--light" href="">
           <span class="app-btn__decor app-btn__decor--left"></span>
           Показать ещё
           <span class="app-btn__decor app-btn__decor--right"></span>
-        </a>
+        </a> -->
       </section>
 
       <section class="catalog">

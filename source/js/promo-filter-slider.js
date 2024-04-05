@@ -1,3 +1,5 @@
+import { Width } from "./const.js";
+
 const promoFilterSlider = new Swiper('.promo-filter__slider', {
   direction: 'horizontal',
   loop: false,
@@ -8,7 +10,7 @@ const promoFilterSlider = new Swiper('.promo-filter__slider', {
   initialSlide: 2,
 
   breakpoints: {
-    1280: {
+    [Width.DESKTOP]: {
       spaceBetween: 46,
     },
   }
