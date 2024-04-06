@@ -23,7 +23,15 @@
     transform: translateX(-50%) translateY(-50%);
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &:hover::before {
+    background-color: @color-dark-orange;
+  }
+
+  &:focus-visible::before {
     background-color: @color-dark-orange;
   }
 

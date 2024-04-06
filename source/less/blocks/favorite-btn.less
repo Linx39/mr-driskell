@@ -1,9 +1,23 @@
 .favorite-btn {
-    color: @color-dark-orange;
+  color: @color-dark-orange;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .favorite-btn svg {
   fill-rule: evenodd;
+}
+
+.favorite-btn:hover svg {
+  color: @color-orange;
+  fill-rule: nonzero;
+}
+
+.favorite-btn:focus-visible svg {
+  color: @color-orange;
+  fill-rule: nonzero;
 }
 
 .favorite-btn--active svg {
@@ -11,7 +25,12 @@
   fill-rule: nonzero;
 }
 
-.favorite-btn:hover svg {
-  color: @color-orange;
-  fill-rule: nonzero;
+.favorite-btn--active:hover svg {
+  color: @color-dark-orange;
+  fill-rule: evenodd;
+}
+
+.favorite-btn--active:focus-visible svg {
+  color: @color-dark-orange;
+  fill-rule: evenodd;
 }
