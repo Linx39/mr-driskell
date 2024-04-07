@@ -22,11 +22,9 @@
   flex-shrink: 0;
 
   width: auto;
-  // padding-bottom: 3px;
   padding: 0 3px 3px;
 
   @media (min-width: @desktop-width) {
-    // padding-bottom: 7px;
     padding: 0 7px 7px;
   }
 }
@@ -39,7 +37,7 @@
   line-height: 23px;
   letter-spacing: 0.025em;
 
-  // .interactive-styles();
+  .interactive-styles();
 
   @media (min-width: @desktop-width) {
     padding-bottom: 7px;
@@ -52,6 +50,8 @@
     color: @color-orange;
 
     .border-decor-rhombus--bottom(4.2px, 1px, @color-orange);
+
+    .interactive-styles-custom();
 
     @media (min-width: @desktop-width) {
       .border-decor-rhombus--bottom(8.3px, 2px, @color-orange);
