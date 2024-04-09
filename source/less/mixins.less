@@ -20,7 +20,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: @desktop-width;
     padding-right: @desktop-padding;
     padding-left: @desktop-padding;
   }
@@ -29,6 +28,21 @@
 .wrapper {
   .wrapper-width();
   .wrapper-padding();
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+  }
+}
+
+.wrapper-max {
+  .wrapper-width();
+  .wrapper-padding();
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width-max;
+    padding-left: @desktop-padding-max;
+    padding-right: @desktop-padding-max;
+  }
 }
 
 .interactive-styles {

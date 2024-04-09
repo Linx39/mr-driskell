@@ -1,3 +1,7 @@
+.brands {
+  .wrapper-width();
+}
+
 .brands__content {
   display: flex;
   justify-content: space-between;
@@ -62,13 +66,7 @@
 .brands__slider-container {
   position: relative;
 
-  .wrapper();
-
-  @media (min-width: @desktop-width) {
-    max-width: 1400px;
-    padding-left: 92px;
-    padding-right: 92px;;
-  }
+  .wrapper-max();
 }
 
 .brands__slider {
@@ -77,8 +75,6 @@
 
 .brands__list {
   display: flex;
-
-  // width: @min-width;
 }
 
 .brands__item {

@@ -1,9 +1,9 @@
-const cardSlider = new Swiper('.card__slider1', {
+const cardSlider = new Swiper('.card__slider', {
   direction: 'horizontal',
   loop: true,
 
   pagination: {
-    el: '.card-pagination',
+    el: '.card__slider-pagination',
     bulletElement: 'button',
     clickable: true,
     bulletClass: 'card-pagination__btn',

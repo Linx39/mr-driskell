@@ -3,7 +3,7 @@ const introSlider = new Swiper('.intro__slider', {
   loop: true,
 
   pagination: {
-    el: '.pagination',
+    el: '.intro__pagination',
     bulletElement: 'button',
     clickable: true,
     bulletClass: 'pagination__btn',

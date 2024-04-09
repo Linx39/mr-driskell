@@ -8,14 +8,6 @@ const initSwiper = () => {
     slidesPerGroup: 1,
     spaceBetween: 20,
 
-    pagination: {
-      el: '.pagination',
-      bulletElement: 'button',
-      clickable: true,
-      bulletClass: 'pagination__btn',
-      bulletActiveClass: 'pagination__btn--current',
-    },
-
     breakpoints: {
       [Width.MOBILE]: {
         slidesPerView: 2,
@@ -26,18 +18,25 @@ const initSwiper = () => {
       [Width.TABLET]: {
         slidesPerView: 3,
         slidesPerGroup: 3,
-
       },
-    }
+    },
+
+    pagination: {
+      el: '.promo__pagination',
+      bulletElement: 'button',
+      clickable: true,
+      bulletClass: 'pagination__btn',
+      bulletActiveClass: 'pagination__btn--current',
+    },
   });
 
   return promoSlider;
-}
+};
 
 let isSliderInit = false;
 let promoSlider = Swiper;
 
-const changeSliderMode = () => {
+const setSliderMode = () => {
   const isDesktopWidth = window.matchMedia(`(min-width: ${Width.DESKTOP}px)`).matches;
 
   if (!isDesktopWidth && !isSliderInit){
@@ -49,14 +48,12 @@ const changeSliderMode = () => {
     promoSlider.destroy();
     isSliderInit = false;
   }
-
-}
+};
 
 window.addEventListener('load', () => {
-  changeSliderMode();
-})
+  setSliderMode();
+});
 
 window.addEventListener('resize', () => {
-  changeSliderMode();
-})
-
+  setSliderMode();
+});

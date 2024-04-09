@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
 
-    .decor-triangle(12px, 11px, @color-orange);
+    .decor-triangle(10px, 12px, @color-orange);
   }
 
   &--prev::before {
@@ -26,11 +26,33 @@
     transform: translateX(-50%) translateY(-50%);
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     border-color: @color-dark-orange;
 
+    outline: none;
+
     &::before {
-      .decor-triangle(12px, 11px, @color-dark-orange);
+      .decor-triangle(10px, 12px, @color-dark-orange);
+    }
+  }
+
+  &--disabled {
+    opacity: 0.3;
+
+    &::before {
+      .decor-triangle(10px, 12px, @color-orange);
+    }
+
+    &:hover,
+    &:focus-visible {
+      border-color: @color-orange;
+
+      outline: none;
+
+      &::before {
+        .decor-triangle(10px, 12px, @color-orange);
+      }
     }
   }
 }

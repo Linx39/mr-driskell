@@ -21,7 +21,7 @@
   display: grid;
   gap: 40px;
 
-  padding: 56px @mobile-padding;
+  padding: 56px @mobile-padding 55px;
 
   .border-decor-triangle--bottom(6px, 6px, 1px, @color-dark-orange);
 
@@ -29,7 +29,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: min-content 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: min-content min-content;
     gap: 24px 110px;
 
     padding: 70px @tablet-padding;
@@ -109,7 +109,7 @@
 }
 
 .page-footer__site-list li {
-  margin-bottom: 30px;
+  margin-bottom: 30.5px;
 }
 
 .page-footer__contacts {

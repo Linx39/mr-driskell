@@ -6,7 +6,6 @@ const promoFilterSlider = new Swiper('.promo-filter__slider', {
   slidesPerView: 'auto',
   spaceBetween: 18,
   centerInsufficientSlides: true,
-  // centeredSlidesBounds: true,
   initialSlide: 2,
 
   breakpoints: {

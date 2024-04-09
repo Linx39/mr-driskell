@@ -1,11 +1,12 @@
 const brandsSlider = new Swiper('.brands__slider', {
   direction: 'horizontal',
-  loop: false,
+  loop: true,
   slidesPerView: 'auto',
   centerInsufficientSlides: true,
 
   navigation: {
-    prevEl: '.arrow-btn--prev',
-    nextEl: '.arrow-btn--next',
+    prevEl: '.brands__slider-btn--prev',
+    nextEl: '.brands__slider-btn--next',
+    disabledClass: 'arrow-btn--disabled',
   },
 });
