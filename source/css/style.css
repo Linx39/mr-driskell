@@ -986,6 +986,12 @@ button {
   height: 40px;
   border: 1.5px solid #bb8c5f;
 }
+.needle-btn--disabled {
+  opacity: 0.3;
+}
+.needle-btn:focus-visible {
+  outline: none;
+}
 .needle-btn::before,
 .needle-btn::after {
   position: absolute;
@@ -1005,7 +1011,8 @@ button {
 .needle-btn--next::before {
   top: 21px;
 }
-.needle-btn:hover::before {
+.needle-btn:not(.needle-btn--disabled):hover::before,
+.needle-btn:not(.needle-btn--disabled):focus-visible::before {
   height: 64px;
 }
 .needle-btn::after {
@@ -1020,10 +1027,12 @@ button {
 .needle-btn--next::after {
   top: 54px;
 }
-.needle-btn--prev:hover::after {
+.needle-btn--prev:not(.needle-btn--disabled):hover::after,
+.needle-btn--prev:not(.needle-btn--disabled):focus-visible::after {
   bottom: 82px;
 }
-.needle-btn--next:hover::after {
+.needle-btn--next:not(.needle-btn--disabled):hover::after,
+.needle-btn--next:not(.needle-btn--disabled):focus-visible::after {
   top: 82px;
 }
 .intro {
@@ -1047,19 +1056,19 @@ button {
   flex-shrink: 0;
   width: 100%;
 }
-.intro__slider-img {
+.intro__slider-img img {
   width: 100%;
   height: 321px;
   object-fit: cover;
   object-position: center;
 }
 @media (min-width: 768px) {
-  .intro__slider-img {
+  .intro__slider-img img {
     height: 536px;
   }
 }
 @media (min-width: 1280px) {
-  .intro__slider-img {
+  .intro__slider-img img {
     height: 700px;
   }
 }

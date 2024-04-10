@@ -1,6 +1,6 @@
 const introSlider = new Swiper('.intro__slider', {
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
   pagination: {
     el: '.intro__pagination',
@@ -11,7 +11,8 @@ const introSlider = new Swiper('.intro__slider', {
   },
 
   navigation: {
-    prevEl: '.needle-btn--prev',
-    nextEl: '.needle-btn--next',
+    prevEl: '.intro__arrow-btn--prev',
+    nextEl: '.intro__arrow-btn--next',
+    disabledClass: 'needle-btn--disabled'
   },
 });

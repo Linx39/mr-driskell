@@ -6,6 +6,14 @@
 
   border: 1.5px solid @color-orange;
 
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -32,7 +40,8 @@
     top: 21px;
   }
 
-  &:hover::before {
+  &:not(&--disabled):hover::before,
+  &:not(&--disabled):focus-visible::before {
     height: 64px;
   }
 
@@ -49,11 +58,13 @@
     top: 54px;
   }
 
-  &--prev:hover::after {
+  &--prev:not(&--disabled):hover::after,
+  &--prev:not(&--disabled):focus-visible::after {
     bottom: 82px;
   }
 
-  &--next:hover::after {
+  &--next:not(&--disabled):hover::after,
+  &--next:not(&--disabled):focus-visible::after {
     top: 82px;
   }
 }
