@@ -1,6 +1,6 @@
 const introSlider = new Swiper('.intro__slider', {
   direction: 'horizontal',
-  loop: false,
+  loop: true,
 
   pagination: {
     el: '.intro__pagination',

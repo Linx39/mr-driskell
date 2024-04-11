@@ -570,13 +570,15 @@ button {
   background-color: #eeeeee;
 }
 .page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   margin: 0;
 }
 .page__main {
-  display: grid;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   gap: 60px;
   margin-bottom: 120px;
 }
@@ -941,45 +943,6 @@ button {
   color: #faf6f2;
   background-color: #050402;
 }
-.test {
-  width: 100%;
-  box-sizing: border-box;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 50px;
-}
-@media (min-width: 1280px) {
-  .test {
-    max-width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-@media (min-width: 768px) {
-  .test {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-@media (min-width: 1280px) {
-  .test {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
-}
-@media (min-width: 1280px) {
-  .test {
-    max-width: 1280px;
-  }
-}
-.test__wrapper {
-  width: 320px;
-  height: 200px;
-}
-.test img {
-  width: 100%;
-  height: 100%;
-}
 .needle-btn {
   position: relative;
   width: 40px;
@@ -1039,50 +1002,9 @@ button {
   color: #faf6f2;
   background-color: #030201;
 }
-.intro__slider {
-  display: grid;
-}
-.intro__slider-wrapper {
-  display: flex;
-  width: calc(100vw - 70px);
-}
-@media (min-width: 768px) {
-  .intro__slider-wrapper {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
-  }
-}
-.intro__slider-item {
-  flex-shrink: 0;
-  width: 100%;
-}
-.intro__slider-img img {
-  width: 100%;
-  height: 321px;
-  object-fit: cover;
-  object-position: center;
-}
-@media (min-width: 768px) {
-  .intro__slider-img img {
-    height: 536px;
-  }
-}
-@media (min-width: 1280px) {
-  .intro__slider-img img {
-    height: 700px;
-  }
-}
 .intro__wrapper {
-  display: grid;
-  justify-content: center;
-  width: 100%;
   box-sizing: border-box;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  z-index: 10;
-  pointer-events: none;
+  width: 100%;
 }
 @media (min-width: 1280px) {
   .intro__wrapper {
@@ -1091,40 +1013,88 @@ button {
     margin-left: auto;
   }
 }
+.intro__slider {
+  position: relative;
+}
+.intro__slider-wrapper {
+  display: flex;
+}
+.intro__slider-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+.intro__slider-img {
+  width: 100%;
+  height: 321px;
+  object-fit: cover;
+  object-position: center;
+}
 @media (min-width: 768px) {
-  .intro__wrapper {
+  .intro__slider-img {
+    height: 536px;
+  }
+}
+@media (min-width: 1280px) {
+  .intro__slider-img {
+    height: 700px;
+  }
+}
+.intro__content-container {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  pointer-events: none;
+}
+@media (min-width: 1280px) {
+  .intro__content-container {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 768px) {
+  .intro__content-container {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
 @media (min-width: 1280px) {
-  .intro__wrapper {
+  .intro__content-container {
     padding-right: 32px;
     padding-left: 32px;
   }
 }
 @media (min-width: 1280px) {
-  .intro__wrapper {
+  .intro__content-container {
     max-width: 1280px;
   }
 }
 @media (min-width: 768px) {
-  .intro__wrapper {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
+  .intro__content-container {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
     grid-template-columns: 1fr;
     gap: 70px;
     justify-content: start;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     padding-top: 48px;
     padding-bottom: 72px;
   }
 }
 @media (min-width: 1280px) {
-  .intro__wrapper {
+  .intro__content-container {
     grid-template-columns: 1fr min-content;
     align-items: center;
-    padding-top: 110px;
-    padding-bottom: 210px;
+    padding-top: 50px;
+    padding-bottom: 150px;
   }
 }
 .intro__content {
@@ -1663,7 +1633,6 @@ button {
   }
 }
 .promo__cards {
-  width: 229px;
   margin-bottom: 48px;
 }
 @media (min-width: 768px) {
