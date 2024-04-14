@@ -23,6 +23,10 @@
 
   border: 1px solid @color-dark-orange;
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -33,26 +37,17 @@
     margin: auto;
   }
 
-  &:hover::before {
-    background-color: @color-dark-orange;
+  &--current::before {
+    background-color: @color-orange;
   }
 
-  &:focus-visible {
-    outline: none;
-  }
-
-  &:focus-visible::before {
+  &:not(&--current):hover::before,
+  &:not(&--current):focus-visible::before {
     background-color: @color-dark-orange;
   }
 
   &--current:hover,
   &--current:focus-visible {
     border-color: @color-orange;
-  }
-
-  &--current::before,
-  &--current:hover::before,
-  &--current:focus-visible::before {
-    background-color: @color-orange;
   }
 }

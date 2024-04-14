@@ -1,5 +1,7 @@
 .card {
+  &:hover,
   &:focus-visible {
+    transform: none;
     outline: none;
   }
 }
@@ -179,4 +181,9 @@
   @media (min-width: @desktop-width) {
     display: inline;
   }
+}
+
+/* NO-JS */
+.card--no-js .card__slider-pagination {
+  display: none;
 }

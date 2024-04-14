@@ -6,5 +6,3 @@ export const Width = {
   TABLET: 768,
   DESKTOP: 1280,
 }
-
-

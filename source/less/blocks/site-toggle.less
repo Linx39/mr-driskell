@@ -1,26 +1,12 @@
 .site-toggle {
-  position: relative;
-
   padding-right: 38px;
 
-  font-weight: 400;
   font-size: 25px;
   line-height: 35px;
+  font-weight: 400;
 
-  &--closed::after {
-    position: absolute;
-    right: 0;
-    bottom: 1px;
-
-    content: "";
-
-    width: 28px;
-    height: 28px;
-
-    background-image: url("../../img/burger.svg");
-    background-repeat: no-repeat;
-    background-size: 24px 14px;
-    background-position: center;
+  &--closed {
+    .burger-icon(@color-orange);
   }
 
   &--opened {

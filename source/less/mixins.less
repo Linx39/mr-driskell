@@ -75,6 +75,26 @@
   }
 }
 
+.burger-icon(@color) {
+  position: relative;
+
+  &::before{
+    position: absolute;
+    top: 6px;
+    bottom: 0;
+    right: 2px;
+
+    width: 24px;
+    height: 2px;
+    margin: auto 0;
+
+    background-color: @color;
+    box-shadow: 0 6px @color, 0 -6px @color;
+
+    content: "";
+  }
+}
+
 .cross-icon(@color) {
   position: relative;
 

@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.intro__slider-wrapper {
+.intro__slider-list {
   display: flex;
 }
 
@@ -26,8 +26,6 @@
   height: 321px;
   object-fit: cover;
   object-position: center;
-
-  // mix-blend-mode: darken;
 
   @media (min-width: @tablet-width) {
     height: 536px;
@@ -173,4 +171,9 @@
   @media (max-width: (@tablet-width - 0.2px)) {
     display: none;
   }
+}
+
+/* NO-JS */
+.intro--no-js .intro__slider-controls {
+  display: none;
 }
