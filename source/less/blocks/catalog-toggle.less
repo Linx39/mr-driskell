@@ -1,0 +1,22 @@
+.catalog-toggle {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+
+  .interactive-styles();
+
+  @media (min-width: @desktop-width) {
+    padding-right: 37px;
+
+    font-size: 25px;
+    line-height: 35px;
+
+    &--closed {
+      .burger-icon(@color-orange);
+    }
+
+    &--opened {
+      .cross-icon(@color-orange);
+    }
+  }
+}

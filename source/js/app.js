@@ -1,3 +1,4 @@
+import './main-nav.js';
 import './intro-slider.js';
 import './promo-filter-slider.js';
 import './promo-slider.js';
