@@ -1,3 +1,15 @@
+.user-list--only-icon {
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.user-list--only-text {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
 .user-list__item {
   position: relative;
 }
@@ -10,18 +22,24 @@
   .interactive-styles();
 }
 
-.user-list__link-title {
+.user-list--only-icon .user-list__link-title {
+  display: none;
+}
+
+.user-list--only-text .user-list__link-title {
+  display: block;
+}
+
+.user-list--only-icon .user-list__link-icon {
+  display: flex;
+}
+
+.user-list--only-text .user-list__link-icon {
   display: none;
 }
 
 .user-list__link--favorites svg {
   fill-rule: evenodd;
-}
-
-.user-list__link-text {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 23px;
 }
 
 .user-list__item-quantity {

@@ -67,8 +67,73 @@
             <button class="visually-hidden" type="submit">Найти</button>
           </form>
 
-          <div class="main-nav__user-block">
-            <ul class="main-nav__user-list user-list">
+          <ul class="main-nav__top-user-list user-list user-list--only-icon">
+            <li class="main-nav__basket user-list__item">
+              <a class="user-list__link user-list__link--basket" href="">
+                <span class="user-list__link-title">Корзина</span>
+                <span class="user-list__link-text">37 280 ₽</span>
+                <div class="user-list__link-icon icon-container">
+                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#bag"></use>
+                  </svg>
+                </div>
+              </a>
+              <span class="user-list__item-quantity">17</span>
+            </li>
+            <li class="main-nav__favorites user-list__item">
+              <a class="user-list__link user-list__link--favorites" href="">
+                <span class="user-list__link-title">Избранное</span>
+                <div class="user-list__link-icon icon-container">
+                  <svg width="20" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#heart"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="main-nav__private user-list__item">
+              <a class="user-list__link user-list__link--private" href="">
+                <span class="user-list__link-title">Личный кабинет</span>
+                <div class="user-list__link-icon icon-container">
+                  <svg width="19" height="19" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#man"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-nav__bottom">
+          <div class="main-nav__bottom-menu">
+            <button class="main-nav__catalog-toggle catalog-toggle catalog-toggle--closed" type="button">Каталог</button>
+
+            <form class="main-nav__bottom-search-form search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label for="search">
+                <input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск" required>
+              </label>
+
+              <button class="visually-hidden" type="submit">Найти</button>
+            </form>
+
+            <ul class="main-nav__site-list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Промокоды</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Скидки</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Помощь</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">О нас</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__bottom-user-list user-list user-list--only-text">
               <li class="main-nav__basket user-list__item">
                 <a class="user-list__link user-list__link--basket" href="">
                   <span class="user-list__link-title">Корзина</span>
@@ -103,36 +168,6 @@
               </li>
             </ul>
           </div>
-        </div>
-
-        <div class="main-nav__bottom">
-          <button class="main-nav__catalog-toggle catalog-toggle catalog-toggle--closed" type="button">Каталог</button>
-
-          <ul class="main-nav__site-list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Промокоды</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Скидки</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Помощь</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">О нас</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Контакты</a>
-            </li>
-          </ul>
-
-          <form class="main-nav__bottom-search-form search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label for="search">
-              <input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск" required>
-            </label>
-
-            <button class="visually-hidden" type="submit">Найти</button>
-          </form>
 
           <div class="main-nav__bottom-contacts contacts">
             <a class="contacts__address contacts__address--phone" href="tel:+79525525252">

@@ -1,5 +1,4 @@
 const MAIN_NAV_CLASS = 'main-nav';
-// const MAIN_NAV_CLOSED_CLASS = 'main-nav--closed';
 const MAIN_NAV_OPENED_CLASS = 'main-nav--opened';
 
 const SITE_TOGGLE_CLASS = 'site-toggle';
@@ -24,5 +23,4 @@ siteToogle.addEventListener('click', () => {
   }
 
   mainNav.classList.toggle(MAIN_NAV_OPENED_CLASS);
-
 })
