@@ -1,7 +1,6 @@
 .main-nav {
-  position: relative;
-  display: grid;
-  grid-template-rows: min-content auto;
+  color: @color-font-white;
+  background-color: @color-back-black-01;
 }
 
 .main-nav__top {
@@ -9,8 +8,6 @@
   grid-template-columns: min-content auto;
   align-items: center;
   column-gap: 50px;
-
-  z-index: 11;
 
   min-height: 80px;
   .wrapper();
@@ -102,28 +99,26 @@
   }
 }
 
+
 .main-nav__bottom {
   position: absolute;
-  top: 0;
+  top: 80px;
   left:0;
-  z-index: 10;
 
-  grid-column: 1 / -1;
-  grid-row: 2 / -1;
+  max-width: @mobile-width;
 
-  width: 100%;
+  color: inherit;
+  background-color: inherit;
 
-  color: @color-font-white;
-  background-color: @color-back-black-01;
-
-  transition: transform 1s, opacity 1s;
-  transform: translateY(-100%);
+  transition: transform .7s, opacity .7s;
+  transform: translateX(-100%);
   opacity: 0;
 
 
   @media (min-width: @desktop-width) {
     position: static;
 
+    width: 100%;
     .wrapper();
 
     transition: none;
@@ -133,21 +128,20 @@
 }
 
 .main-nav--opened .main-nav__bottom {
-  z-index: 100;
-
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
 }
 
 .main-nav__bottom-menu  {
   position: relative;
 
+  display: grid;
+
   padding: 25px @mobile-padding 40px;
 
   .border-decor-triangle--top(6px, 6px, 1px, @color-dark-orange);
 
   @media (min-width: @desktop-width) {
-    display: grid;
     grid-template-columns: min-content 1fr auto;
     gap: 60px;
     align-items: center;
