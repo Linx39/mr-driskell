@@ -1,23 +1,11 @@
 .products {
-  @media (min-width: @desktop-width) {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
-    justify-content: center;
-
-    padding-top: 25px;
-  }
-}
-
-/* NO-JS */
-.products--no-js {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
-  grid-template-rows: 1fr;
   justify-content: center;
 
   @media (min-width: @desktop-width) {
     padding-top: 25px;
+    padding-bottom: 50px;
   }
 }

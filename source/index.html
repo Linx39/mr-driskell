@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин товаров для татуажа Mr.Driskell</title>
     <link rel="stylesheet" href="./swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
 
   <body class="page__body">
@@ -71,7 +71,7 @@
             <li class="main-nav__basket user-list__item">
               <a class="user-list__link user-list__link--basket" href="">
                 <span class="user-list__link-title">Корзина</span>
-                <span class="user-list__link-text">37 280 ₽</span>
+                <span class="user-list__link-text">37&nbsp;280 ₽</span>
                 <div class="user-list__link-icon icon-container">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#bag"></use>
@@ -106,6 +106,58 @@
         <div class="main-nav__bottom">
           <div class="main-nav__bottom-menu">
             <button class="main-nav__catalog-toggle catalog-toggle catalog-toggle--closed" type="button">Каталог</button>
+
+            <div class="main-nav__catalog">
+              <div class="">
+                <ul class="main-nav__catalog-filter-list filter__list filter__list--small">
+                  <li class="filter__item">
+                    <a class="filter__link filter__link--current" href="#">По категории</a>
+                  </li>
+                  <li class="filter__item">
+                    <a class="filter__link" href="#">По брендам</a>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="main-nav__catalog-list catalog-list">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Новинки</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Наборы для татуировок</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Тату машинки</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Тату краски</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Тату иглы</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Тату держатели</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Тату наконечники</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Блоки питания</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Педали и провода</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Аксессуары</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Принтеры и планшеты</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link">Защита, ёмкости, расходные материалы</a>
+                </li>
+              </ul>
+            </div>
 
             <form class="main-nav__bottom-search-form search-form" action="https://echo.htmlacademy.ru/" method="get">
               <label for="search">
@@ -315,21 +367,21 @@
 
       <section class="promo promo--no-js">
         <h2 class="visually-hidden">Промо товары</h2>
-        <div class="promo__filter promo-filter promo-filter--no-js">
+        <div class="promo__filter filter filter--no-js">
           <h3 class="visually-hidden">Фильтры</h3>
-          <div class="promo-filter__slider swiper">
-            <ul class="promo-filter__list swiper-wrapper">
-              <li class="promo-filter__item swiper-slide">
-                <a class="promo-filter__link" href="#">Хиты продаж</a>
+          <div class="promo__filter-slider swiper">
+            <ul class="promo__filter-list filter__list swiper-wrapper">
+              <li class="filter__item swiper-slide">
+                <a class="filter__link" href="#">Хиты продаж</a>
               </li>
-              <li class="promo-filter__item swiper-slide">
-                <a class="promo-filter__link" href="#">Самые популярные</a>
+              <li class="filter__item swiper-slide">
+                <a class="filter__link" href="#">Самые популярные</a>
               </li>
-              <li class="promo-filter__item swiper-slide">
-                <a class="promo-filter__link promo-filter__link--current" href="#">Новые поступления</a>
+              <li class="filter__item swiper-slide">
+                <a class="filter__link filter__link--current" href="#">Новые поступления</a>
               </li>
-              <li class="promo-filter__item swiper-slide">
-                <a class="promo-filter__link" href="#">Акционные товары</a>
+              <li class="filter__item swiper-slide">
+                <a class="filter__link" href="#">Акционные товары</a>
               </li>
             </ul>
           </div>
@@ -355,50 +407,37 @@
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                   </ul>
 
-                  <div class="card__slider-pagination card-pagination">
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </div>
+                  <div class="card__slider-pagination card-pagination"></div>
                 </div>
 
                 <div class="card__description">
@@ -424,7 +463,7 @@
                 </a>
               </div>
             </article>
-            <article class="card swiper-slide" tabindex="0">
+            <article class="card card--no-js swiper-slide" tabindex="0">
               <div class="card__wrapper">
                 <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
 
@@ -432,12 +471,12 @@
                   <ul class="card__list swiper-wrapper">
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
@@ -452,12 +491,12 @@
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
@@ -472,20 +511,7 @@
                     </li>
                   </ul>
 
-                  <div class="card__slider-pagination card-pagination">
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </div>
+                  <div class="card__slider-pagination card-pagination"></div>
                 </div>
 
                 <div class="card__description">
@@ -501,9 +527,9 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка1</span>
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-                <a class="card__btn-favorite favorite-btn icon-container" href="">
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
@@ -511,7 +537,7 @@
                 </a>
               </div>
             </article>
-            <article class="card swiper-slide" tabindex="0">
+            <article class="card card--no-js swiper-slide" tabindex="0">
               <div class="card__wrapper">
                 <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
 
@@ -519,22 +545,12 @@
                   <ul class="card__list swiper-wrapper">
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
-                      </picture>
-                    </li>
-                    <li class="card__item swiper-slide">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
@@ -549,30 +565,27 @@
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                   </ul>
 
-                  <div class="card__slider-pagination card-pagination">
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </div>
+                  <div class="card__slider-pagination card-pagination"></div>
                 </div>
 
                 <div class="card__description">
@@ -588,9 +601,9 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка1</span>
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-                <a class="card__btn-favorite favorite-btn icon-container" href="">
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
@@ -598,7 +611,7 @@
                 </a>
               </div>
             </article>
-            <article class="card swiper-slide" tabindex="0">
+            <article class="card card--no-js swiper-slide" tabindex="0">
               <div class="card__wrapper">
                 <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
 
@@ -606,60 +619,47 @@
                   <ul class="card__list swiper-wrapper">
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-04-desktop.webp 1x, img/cards/card-04-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-04-tablet.webp 1x, img/cards/card-04-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-04-mobile.webp 1x, img/cards/card-04-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-04-desktop.png 1x, img/cards/card-04-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-04-tablet.png 1x, img/cards/card-04-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-04-mobile.png" srcset="img/cards/card-04-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-04-desktop.webp 1x, img/cards/card-04-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-04-tablet.webp 1x, img/cards/card-04-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-04-mobile.webp 1x, img/cards/card-04-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-04-desktop.png 1x, img/cards/card-04-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-04-tablet.png 1x, img/cards/card-04-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-04-mobile.png" srcset="img/cards/card-04-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-04-desktop.webp 1x, img/cards/card-04-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-04-tablet.webp 1x, img/cards/card-04-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-04-mobile.webp 1x, img/cards/card-04-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-04-desktop.png 1x, img/cards/card-04-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-04-tablet.png 1x, img/cards/card-04-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-04-mobile.png" srcset="img/cards/card-04-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-04-desktop.webp 1x, img/cards/card-04-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-04-tablet.webp 1x, img/cards/card-04-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-04-mobile.webp 1x, img/cards/card-04-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-04-desktop.png 1x, img/cards/card-04-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-04-tablet.png 1x, img/cards/card-04-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-04-mobile.png" srcset="img/cards/card-04-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                   </ul>
 
-                  <div class="card__slider-pagination card-pagination">
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </div>
+                  <div class="card__slider-pagination card-pagination"></div>
                 </div>
 
                 <div class="card__description">
@@ -675,9 +675,9 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка1</span>
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-                <a class="card__btn-favorite favorite-btn icon-container" href="">
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
@@ -685,7 +685,7 @@
                 </a>
               </div>
             </article>
-            <article class="card swiper-slide" tabindex="0">
+            <article class="card card--no-js swiper-slide" tabindex="0">
               <div class="card__wrapper">
                 <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
 
@@ -693,60 +693,47 @@
                   <ul class="card__list swiper-wrapper">
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-05-desktop.webp 1x, img/cards/card-05-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-05-tablet.webp 1x, img/cards/card-05-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-05-mobile.webp 1x, img/cards/card-05-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-05-desktop.png 1x, img/cards/card-05-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-05-tablet.png 1x, img/cards/card-05-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-05-mobile.png" srcset="img/cards/card-05-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-05-desktop.webp 1x, img/cards/card-05-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-05-tablet.webp 1x, img/cards/card-05-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-05-mobile.webp 1x, img/cards/card-05-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-05-desktop.png 1x, img/cards/card-05-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-05-tablet.png 1x, img/cards/card-05-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-05-mobile.png" srcset="img/cards/card-05-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-05-desktop.webp 1x, img/cards/card-05-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-05-tablet.webp 1x, img/cards/card-05-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-05-mobile.webp 1x, img/cards/card-05-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-05-desktop.png 1x, img/cards/card-05-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-05-tablet.png 1x, img/cards/card-05-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-05-mobile.png" srcset="img/cards/card-05-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-05-desktop.webp 1x, img/cards/card-05-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-05-tablet.webp 1x, img/cards/card-05-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-05-mobile.webp 1x, img/cards/card-05-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-05-desktop.png 1x, img/cards/card-05-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-05-tablet.png 1x, img/cards/card-05-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-05-mobile.png" srcset="img/cards/card-05-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                   </ul>
 
-                  <div class="card__slider-pagination card-pagination">
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </div>
+                  <div class="card__slider-pagination card-pagination"></div>
                 </div>
 
                 <div class="card__description">
@@ -762,9 +749,9 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка1</span>
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-                <a class="card__btn-favorite favorite-btn icon-container" href="">
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
@@ -772,7 +759,7 @@
                 </a>
               </div>
             </article>
-            <article class="card swiper-slide" tabindex="0">
+            <article class="card card--no-js swiper-slide" tabindex="0">
               <div class="card__wrapper">
                 <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
 
@@ -780,60 +767,47 @@
                   <ul class="card__list swiper-wrapper">
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-06-desktop.webp 1x, img/cards/card-06-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-06-tablet.webp 1x, img/cards/card-06-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-06-mobile.webp 1x, img/cards/card-06-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-06-desktop.png 1x, img/cards/card-06-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-06-tablet.png 1x, img/cards/card-06-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-06-mobile.png" srcset="img/cards/card-06-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-06-desktop.webp 1x, img/cards/card-06-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-06-tablet.webp 1x, img/cards/card-06-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-06-mobile.webp 1x, img/cards/card-06-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-06-desktop.png 1x, img/cards/card-06-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-06-tablet.png 1x, img/cards/card-06-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-06-mobile.png" srcset="img/cards/card-06-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-06-desktop.webp 1x, img/cards/card-06-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-06-tablet.webp 1x, img/cards/card-06-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-06-mobile.webp 1x, img/cards/card-06-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-06-desktop.png 1x, img/cards/card-06-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-06-tablet.png 1x, img/cards/card-06-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-06-mobile.png" srcset="img/cards/card-06-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-06-desktop.webp 1x, img/cards/card-06-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-06-tablet.webp 1x, img/cards/card-06-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-06-mobile.webp 1x, img/cards/card-06-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-06-desktop.png 1x, img/cards/card-06-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-06-tablet.png 1x, img/cards/card-06-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-06-mobile.png" srcset="img/cards/card-06-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                   </ul>
 
-                  <div class="card__slider-pagination card-pagination">
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </div>
+                  <div class="card__slider-pagination card-pagination"></div>
                 </div>
 
                 <div class="card__description">
@@ -849,9 +823,9 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка1</span>
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-                <a class="card__btn-favorite favorite-btn icon-container" href="">
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
@@ -859,7 +833,7 @@
                 </a>
               </div>
             </article>
-            <article class="card swiper-slide" tabindex="0">
+            <article class="card card--no-js swiper-slide" tabindex="0">
               <div class="card__wrapper">
                 <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
 
@@ -867,60 +841,47 @@
                   <ul class="card__list swiper-wrapper">
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-07-desktop.webp 1x, img/cards/card-07-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-07-tablet.webp 1x, img/cards/card-07-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-07-mobile.webp 1x, img/cards/card-07-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-07-desktop.png 1x, img/cards/card-07-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-07-tablet.png 1x, img/cards/card-07-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-07-mobile.png" srcset="img/cards/card-07-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-07-desktop.webp 1x, img/cards/card-07-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-07-tablet.webp 1x, img/cards/card-07-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-07-mobile.webp 1x, img/cards/card-07-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-07-desktop.png 1x, img/cards/card-07-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-07-tablet.png 1x, img/cards/card-07-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-07-mobile.png" srcset="img/cards/card-07-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-07-desktop.webp 1x, img/cards/card-07-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-07-tablet.webp 1x, img/cards/card-07-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-07-mobile.webp 1x, img/cards/card-07-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-07-desktop.png 1x, img/cards/card-07-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-07-tablet.png 1x, img/cards/card-07-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-07-mobile.png" srcset="img/cards/card-07-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-07-desktop.webp 1x, img/cards/card-07-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-07-tablet.webp 1x, img/cards/card-07-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-07-mobile.webp 1x, img/cards/card-07-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-07-desktop.png 1x, img/cards/card-07-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-07-tablet.png 1x, img/cards/card-07-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-07-mobile.png" srcset="img/cards/card-07-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                   </ul>
 
-                  <div class="card__slider-pagination card-pagination">
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </div>
+                  <div class="card__slider-pagination card-pagination"></div>
                 </div>
 
                 <div class="card__description">
@@ -936,9 +897,9 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка1</span>
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-                <a class="card__btn-favorite favorite-btn icon-container" href="">
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
@@ -946,7 +907,7 @@
                 </a>
               </div>
             </article>
-            <article class="card swiper-slide" tabindex="0">
+            <article class="card card--no-js swiper-slide" tabindex="0">
               <div class="card__wrapper">
                 <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
 
@@ -954,60 +915,47 @@
                   <ul class="card__list swiper-wrapper">
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.webp 1x, img/cards/card-01-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-01-tablet.webp 1x, img/cards/card-01-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-01-mobile.webp 1x, img/cards/card-01-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-01-desktop.png 1x, img/cards/card-01-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-01-tablet.png 1x, img/cards/card-01-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-01-mobile.png" srcset="img/cards/card-01-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-08-desktop.webp 1x, img/cards/card-08-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-08-tablet.webp 1x, img/cards/card-08-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-08-mobile.webp 1x, img/cards/card-08-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-08-desktop.png 1x, img/cards/card-08-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-08-tablet.png 1x, img/cards/card-08-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-08-mobile.png" srcset="img/cards/card-08-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-08-desktop.webp 1x, img/cards/card-08-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-08-tablet.webp 1x, img/cards/card-08-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-08-mobile.webp 1x, img/cards/card-08-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-08-desktop.png 1x, img/cards/card-08-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-08-tablet.png 1x, img/cards/card-08-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-08-mobile.png" srcset="img/cards/card-08-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.webp 1x, img/cards/card-03-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-03-tablet.webp 1x, img/cards/card-03-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-03-mobile.webp 1x, img/cards/card-03-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-03-desktop.png 1x, img/cards/card-03-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-03-tablet.png 1x, img/cards/card-03-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-03-mobile.png" srcset="img/cards/card-03-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-08-desktop.webp 1x, img/cards/card-08-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-08-tablet.webp 1x, img/cards/card-08-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-08-mobile.webp 1x, img/cards/card-08-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-08-desktop.png 1x, img/cards/card-08-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-08-tablet.png 1x, img/cards/card-08-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-08-mobile.png" srcset="img/cards/card-08-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                     <li class="card__item swiper-slide">
                       <picture>
-                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.webp 1x, img/cards/card-02-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-02-tablet.webp 1x, img/cards/card-02-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/cards/card-02-mobile.webp 1x, img/cards/card-02-mobile@2x.webp 2x">
-                        <source media="(min-width: 1280px)" srcset="img/cards/card-02-desktop.png 1x, img/cards/card-02-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/cards/card-02-tablet.png 1x, img/cards/card-02-tablet@2x.png 2x">
-                        <img class="card__img" src="img/cards/card-02-mobile.png" srcset="img/cards/card-02-mobile@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-08-desktop.webp 1x, img/cards/card-08-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-08-tablet.webp 1x, img/cards/card-08-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-08-mobile.webp 1x, img/cards/card-08-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-08-desktop.png 1x, img/cards/card-08-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-08-tablet.png 1x, img/cards/card-08-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-08-mobile.png" srcset="img/cards/card-08-mobile@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </li>
                   </ul>
 
-                  <div class="card__slider-pagination card-pagination">
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                    <button class="card-pagination__btn card-pagination__btn--active" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                    <button class="card-pagination__btn" type="button">
-                      <span class="visually-hidden">4 фото</span>
-                    </button>
-                  </div>
+                  <div class="card__slider-pagination card-pagination"></div>
                 </div>
 
                 <div class="card__description">
@@ -1023,9 +971,305 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка1</span>
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
 
-                <a class="card__btn-favorite favorite-btn icon-container" href="">
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
+                  <svg width="20" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#heart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </a>
+              </div>
+            </article>
+            <article class="card card--no-js swiper-slide" tabindex="0">
+              <div class="card__wrapper">
+                <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
+
+                <div class="card__slider swiper">
+                  <ul class="card__list swiper-wrapper">
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-09-desktop.webp 1x, img/cards/card-09-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-09-tablet.webp 1x, img/cards/card-09-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-09-mobile.webp 1x, img/cards/card-09-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-09-desktop.png 1x, img/cards/card-09-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-09-tablet.png 1x, img/cards/card-09-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-09-mobile.png" srcset="img/cards/card-09-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-09-desktop.webp 1x, img/cards/card-09-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-09-tablet.webp 1x, img/cards/card-09-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-09-mobile.webp 1x, img/cards/card-09-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-09-desktop.png 1x, img/cards/card-09-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-09-tablet.png 1x, img/cards/card-09-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-09-mobile.png" srcset="img/cards/card-09-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-09-desktop.webp 1x, img/cards/card-09-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-09-tablet.webp 1x, img/cards/card-09-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-09-mobile.webp 1x, img/cards/card-09-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-09-desktop.png 1x, img/cards/card-09-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-09-tablet.png 1x, img/cards/card-09-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-09-mobile.png" srcset="img/cards/card-09-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-09-desktop.webp 1x, img/cards/card-09-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-09-tablet.webp 1x, img/cards/card-09-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-09-mobile.webp 1x, img/cards/card-09-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-09-desktop.png 1x, img/cards/card-09-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-09-tablet.png 1x, img/cards/card-09-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-09-mobile.png" srcset="img/cards/card-09-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                  </ul>
+
+                  <div class="card__slider-pagination card-pagination"></div>
+                </div>
+
+                <div class="card__description">
+                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
+                  <p class="card__price">6 000 ₽</p>
+                </div>
+
+                <div class="card__btn-container">
+                  <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                    <span class="app-btn__decor app-btn__decor--left"></span>
+                    <span class="card__btn-buy-text">Добавить</span> в корзину
+                    <span class="app-btn__decor app-btn__decor--right"></span>
+                  </a>
+                </div>
+
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
+
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
+                  <svg width="20" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#heart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </a>
+              </div>
+            </article>
+            <article class="card card--no-js swiper-slide" tabindex="0">
+              <div class="card__wrapper">
+                <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
+
+                <div class="card__slider swiper">
+                  <ul class="card__list swiper-wrapper">
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-10-desktop.webp 1x, img/cards/card-10-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-10-tablet.webp 1x, img/cards/card-10-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-10-mobile.webp 1x, img/cards/card-10-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-10-desktop.png 1x, img/cards/card-10-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-10-tablet.png 1x, img/cards/card-10-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-10-mobile.png" srcset="img/cards/card-10-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-10-desktop.webp 1x, img/cards/card-10-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-10-tablet.webp 1x, img/cards/card-10-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-10-mobile.webp 1x, img/cards/card-10-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-10-desktop.png 1x, img/cards/card-10-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-10-tablet.png 1x, img/cards/card-10-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-10-mobile.png" srcset="img/cards/card-10-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-10-desktop.webp 1x, img/cards/card-10-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-10-tablet.webp 1x, img/cards/card-10-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-10-mobile.webp 1x, img/cards/card-10-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-10-desktop.png 1x, img/cards/card-10-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-10-tablet.png 1x, img/cards/card-10-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-10-mobile.png" srcset="img/cards/card-10-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-10-desktop.webp 1x, img/cards/card-10-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-10-tablet.webp 1x, img/cards/card-10-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-10-mobile.webp 1x, img/cards/card-10-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-10-desktop.png 1x, img/cards/card-10-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-10-tablet.png 1x, img/cards/card-10-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-10-mobile.png" srcset="img/cards/card-10-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                  </ul>
+
+                  <div class="card__slider-pagination card-pagination"></div>
+                </div>
+
+                <div class="card__description">
+                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
+                  <p class="card__price">6 000 ₽</p>
+                </div>
+
+                <div class="card__btn-container">
+                  <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                    <span class="app-btn__decor app-btn__decor--left"></span>
+                    <span class="card__btn-buy-text">Добавить</span> в корзину
+                    <span class="app-btn__decor app-btn__decor--right"></span>
+                  </a>
+                </div>
+
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
+
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
+                  <svg width="20" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#heart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </a>
+              </div>
+            </article>
+            <article class="card card--no-js swiper-slide" tabindex="0">
+              <div class="card__wrapper">
+                <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
+
+                <div class="card__slider swiper">
+                  <ul class="card__list swiper-wrapper">
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-11-desktop.webp 1x, img/cards/card-11-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-11-tablet.webp 1x, img/cards/card-11-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-11-mobile.webp 1x, img/cards/card-11-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-11-desktop.png 1x, img/cards/card-11-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-11-tablet.png 1x, img/cards/card-11-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-11-mobile.png" srcset="img/cards/card-11-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-11-desktop.webp 1x, img/cards/card-11-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-11-tablet.webp 1x, img/cards/card-11-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-11-mobile.webp 1x, img/cards/card-11-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-11-desktop.png 1x, img/cards/card-11-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-11-tablet.png 1x, img/cards/card-11-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-11-mobile.png" srcset="img/cards/card-11-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-11-desktop.webp 1x, img/cards/card-11-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-11-tablet.webp 1x, img/cards/card-11-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-11-mobile.webp 1x, img/cards/card-11-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-11-desktop.png 1x, img/cards/card-11-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-11-tablet.png 1x, img/cards/card-11-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-11-mobile.png" srcset="img/cards/card-11-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-11-desktop.webp 1x, img/cards/card-11-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-11-tablet.webp 1x, img/cards/card-11-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-11-mobile.webp 1x, img/cards/card-11-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-11-desktop.png 1x, img/cards/card-11-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-11-tablet.png 1x, img/cards/card-11-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-11-mobile.png" srcset="img/cards/card-11-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                  </ul>
+
+                  <div class="card__slider-pagination card-pagination"></div>
+                </div>
+
+                <div class="card__description">
+                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
+                  <p class="card__price">6 000 ₽</p>
+                </div>
+
+                <div class="card__btn-container">
+                  <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                    <span class="app-btn__decor app-btn__decor--left"></span>
+                    <span class="card__btn-buy-text">Добавить</span> в корзину
+                    <span class="app-btn__decor app-btn__decor--right"></span>
+                  </a>
+                </div>
+
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
+
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
+                  <svg width="20" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#heart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </a>
+              </div>
+            </article>
+            <article class="card card--no-js swiper-slide" tabindex="0">
+              <div class="card__wrapper">
+                <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
+
+                <div class="card__slider swiper">
+                  <ul class="card__list swiper-wrapper">
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-12-desktop.webp 1x, img/cards/card-12-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-12-tablet.webp 1x, img/cards/card-12-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-12-mobile.webp 1x, img/cards/card-12-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-12-desktop.png 1x, img/cards/card-12-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-12-tablet.png 1x, img/cards/card-12-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-12-mobile.png" srcset="img/cards/card-12-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-12-desktop.webp 1x, img/cards/card-12-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-12-tablet.webp 1x, img/cards/card-12-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-12-mobile.webp 1x, img/cards/card-12-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-12-desktop.png 1x, img/cards/card-12-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-12-tablet.png 1x, img/cards/card-12-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-12-mobile.png" srcset="img/cards/card-12-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-12-desktop.webp 1x, img/cards/card-12-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-12-tablet.webp 1x, img/cards/card-12-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-12-mobile.webp 1x, img/cards/card-12-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-12-desktop.png 1x, img/cards/card-12-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-12-tablet.png 1x, img/cards/card-12-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-12-mobile.png" srcset="img/cards/card-12-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                    <li class="card__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/cards/card-12-desktop.webp 1x, img/cards/card-12-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/card-12-tablet.webp 1x, img/cards/card-12-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/cards/card-12-mobile.webp 1x, img/cards/card-12-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/cards/card-12-desktop.png 1x, img/cards/card-12-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cards/card-12-tablet.png 1x, img/cards/card-12-tablet@2x.png 2x">
+                        <img class="card__img" src="img/cards/card-12-mobile.png" srcset="img/cards/card-12-mobile@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </li>
+                  </ul>
+
+                  <div class="card__slider-pagination card-pagination"></div>
+                </div>
+
+                <div class="card__description">
+                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
+                  <p class="card__price">6 000 ₽</p>
+                </div>
+
+                <div class="card__btn-container">
+                  <a class="card__btn-buy app-btn app-btn--card app-btn--light" href="">
+                    <span class="app-btn__decor app-btn__decor--left"></span>
+                    <span class="card__btn-buy-text">Добавить</span> в корзину
+                    <span class="app-btn__decor app-btn__decor--right"></span>
+                  </a>
+                </div>
+
+                <span class="card__mark card-mark card-mark--new">Новинка</span>
+
+                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
@@ -1035,20 +1279,7 @@
             </article>
           </div>
 
-          <div class="promo__pagination pagination">
-            <button class="pagination__btn pagination__btn--current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-            <button class="pagination__btn" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-            <button class="pagination__btn" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-            <button class="pagination__btn" type="button">
-              <span class="visually-hidden">4 фото</span>
-            </button>
-          </div>
+          <div class="promo__pagination pagination"></div>
 
           <a class="promo__btn app-btn app-btn--light" href="">
             <span class="app-btn__decor app-btn__decor--left"></span>
@@ -1352,6 +1583,42 @@
                 <div class="brands__link-container">
                   <a class="brands__link" href="#">
                     <picture>
+                      <source type="image/webp" srcset="img/brands/brand-05.webp 1x, img/brands/brand-05@2x.webp 2x">
+                      <img class="brands__img" src="img/brands/brand-05.png" srcset="img/brands/brand-05@2x.png 2x" alt="Изображение товара.">
+                    </picture>
+                  </a>
+                </div>
+                <div class="brands__link-container">
+                  <a class="brands__link" href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/brands/brand-06.webp 1x, img/brands/brand-06@2x.webp 2x">
+                      <img class="brands__img" src="img/brands/brand-06.png" srcset="img/brands/brand-06@2x.png 2x" alt="Изображение товара.">
+                    </picture>
+                  </a>
+                </div>
+              </li>
+              <li class="brands__item swiper-slide">
+                <div class="brands__link-container">
+                  <a class="brands__link" href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/brands/brand-07.webp 1x, img/brands/brand-07@2x.webp 2x">
+                      <img class="brands__img" src="img/brands/brand-07.png" srcset="img/brands/brand-07@2x.png 2x" alt="Изображение товара.">
+                    </picture>
+                  </a>
+                </div>
+                <div class="brands__link-container">
+                  <a class="brands__link" href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/brands/brand-08.webp 1x, img/brands/brand-08@2x.webp 2x">
+                      <img class="brands__img" src="img/brands/brand-08.png" srcset="img/brands/brand-08@2x.png 2x" alt="Изображение товара.">
+                    </picture>
+                  </a>
+                </div>
+              </li>
+              <li class="brands__item swiper-slide">
+                <div class="brands__link-container">
+                  <a class="brands__link" href="#">
+                    <picture>
                       <source type="image/webp" srcset="img/brands/brand-09.webp 1x, img/brands/brand-09@2x.webp 2x">
                       <img class="brands__img" src="img/brands/brand-09.png" srcset="img/brands/brand-09@2x.png 2x" alt="Изображение товара.">
                     </picture>
@@ -1429,19 +1696,18 @@
                   <div class="reviews__item-content">
                     <div class="reviews__img-container">
                       <picture>
-                        <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
-                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" srcset="img/userfoto/userfoto-2.webp 1x, img/userfoto/userfoto-2@2x.webp 2x">
+                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </div>
                     <p class="reviews__text">
-                      Заказал первый раз, заказ пришёл во время, упаковано
-                      все отлично, все заказанное соответствует описанию, но есть
-                      один маленький ньюанс, коробки все мятые, толи при упаковке
-                      так случилось толи на складе так отномятся с товаром, в целом
-                      всем доволен, буду заказывать ещё, сайт-магазин рекомендую
-                      к покупкам, в целом всем доволен, буду заказывать ещё
+                      Положили всё необходимое + наклейку, скидочную карту
+                      и леденцы, неожиданным было то, что держатель и клип-корд
+                      в наборе пришёл не того цвета, меня даже порадовало,
+                      вот только разочаровала одна упакованная игла, которую
+                      не получилось адекватно достать
                     </p>
-                    <a class="reviews__link">@Velli7350</a>
+                    <a class="reviews__link">@mark_love</a>
                   </div>
                 </div>
               </li>
@@ -1471,19 +1737,18 @@
                   <div class="reviews__item-content">
                     <div class="reviews__img-container">
                       <picture>
-                        <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
-                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
+                        <source type="image/webp" srcset="img/userfoto/userfoto-2.webp 1x, img/userfoto/userfoto-2@2x.webp 2x">
+                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Изображение товара.">
                       </picture>
                     </div>
                     <p class="reviews__text">
-                      Заказал первый раз, заказ пришёл во время, упаковано
-                      все отлично, все заказанное соответствует описанию, но есть
-                      один маленький ньюанс, коробки все мятые, толи при упаковке
-                      так случилось толи на складе так отномятся с товаром, в целом
-                      всем доволен, буду заказывать ещё, сайт-магазин рекомендую
-                      к покупкам, в целом всем доволен, буду заказывать ещё
+                      Положили всё необходимое + наклейку, скидочную карту
+                      и леденцы, неожиданным было то, что держатель и клип-корд
+                      в наборе пришёл не того цвета, меня даже порадовало,
+                      вот только разочаровала одна упакованная игла, которую
+                      не получилось адекватно достать
                     </p>
-                    <a class="reviews__link">@Velli7350</a>
+                    <a class="reviews__link">@mark_love</a>
                   </div>
                 </div>
               </li>
@@ -1505,6 +1770,26 @@
                       к покупкам, в целом всем доволен, буду заказывать ещё
                     </p>
                     <a class="reviews__link">@Velli7350</a>
+                  </div>
+                </div>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__item-wrapper">
+                  <div class="reviews__item-content">
+                    <div class="reviews__img-container">
+                      <picture>
+                        <source type="image/webp" srcset="img/userfoto/userfoto-2.webp 1x, img/userfoto/userfoto-2@2x.webp 2x">
+                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Изображение товара.">
+                      </picture>
+                    </div>
+                    <p class="reviews__text">
+                      Положили всё необходимое + наклейку, скидочную карту
+                      и леденцы, неожиданным было то, что держатель и клип-корд
+                      в наборе пришёл не того цвета, меня даже порадовало,
+                      вот только разочаровала одна упакованная игла, которую
+                      не получилось адекватно достать
+                    </p>
+                    <a class="reviews__link">@mark_love</a>
                   </div>
                 </div>
               </li>
@@ -1531,23 +1816,7 @@
               </li>
             </ul>
 
-            <div class="reviews__pagination pagination">
-              <button class="pagination__btn pagination__btn--current" type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
-              <button class="pagination__btn" type="button">
-                <span class="visually-hidden">2 фото</span>
-              </button>
-              <button class="pagination__btn" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-              <button class="pagination__btn" type="button">
-                <span class="visually-hidden">4 фото</span>
-              </button>
-              <button class="pagination__btn" type="button">
-                <span class="visually-hidden">5 фото</span>
-              </button>
-            </div>
+            <div class="reviews__pagination pagination"></div>
           </div>
 
           <div class="reviews__slider-controls">

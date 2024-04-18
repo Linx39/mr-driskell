@@ -1,9 +1,25 @@
 .catalog-toggle {
+  position: relative;
+
+  width: fit-content;
+  padding-right: 65px;
+
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
 
   .interactive-styles();
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 0;
+
+    .decor-triangle(6px, 6px, @color-orange);
+    transform: rotate(90deg);
+  }
+
 
   @media (min-width: @desktop-width) {
     padding-right: 37px;
@@ -11,12 +27,11 @@
     font-size: 25px;
     line-height: 35px;
 
-    &--closed {
-      .burger-icon(@color-orange);
+    &::before {
+      border: none;
+      transform: none;
     }
 
-    &--opened {
-      .cross-icon(@color-orange);
-    }
+    .burger-icon(@color-orange);
   }
 }

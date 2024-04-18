@@ -230,3 +230,22 @@
     transform: rotate(-90deg);
   }
 }
+
+.border-decor-triangle--left(@width, @height, @border-width, @color) {
+  .border-decor-triangle(@width, @height, @color);
+  border-left: @border-width solid @color;
+
+  &::before {
+    top: 0;
+    left: calc((-@height - @border-width) / 2 );
+
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    bottom: 0;
+    left: calc((-@height - @border-width) / 2 );
+
+    transform: rotate(-90deg);
+  }
+}

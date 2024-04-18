@@ -1,0 +1,17 @@
+.catalog-list {
+  display: grid;
+  row-gap: 13px;
+
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+  }
+}
+
+.catalog-list__link {
+  .interactive-styles();
+}

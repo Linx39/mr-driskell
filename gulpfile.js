@@ -1,62 +1,122 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
+import sourcemap from 'gulp-sourcemaps';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import csso from 'postcss-csso';
 import rename from 'gulp-rename';
+import htmlmin from 'gulp-htmlmin';
+import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
 import svgstore from 'gulp-svgstore';
+import fonterFix from 'gulp-fonter';
+import {deleteAsync} from 'del';
 import browser from 'browser-sync';
 
-// Styles
-export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
+const SOURCE_FOLDER = 'source';
+const PUBLIC_FOLDER = 'docs';
 
 // HTML
 export const html = () => {
-  return gulp.src('source/*.html');
+  return gulp.src(`${SOURCE_FOLDER}/*.html`)
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest(PUBLIC_FOLDER))
+  .pipe(browser.stream());
+}
+
+// Styles
+export const styles = () => {
+  return gulp.src(`${SOURCE_FOLDER}/less/style.less`, { sourcemaps: true })
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename('style.min.css'))
+    .pipe(sourcemap.write('.'))
+    .pipe(gulp.dest(`${PUBLIC_FOLDER}/css`, { sourcemaps: '.' }))
+    .pipe(browser.stream());
 }
 
 // Scripts
 export const scripts = () => {
-  return gulp.src('source/js/*.js')
-    // .pipe(gulp.dest('docs/js'))
+  return gulp.src(`${SOURCE_FOLDER}/js/*.js`)
+    .pipe(gulp.dest(`${PUBLIC_FOLDER}/js`))
     .pipe(browser.stream());
 }
 
-// WebP
-export const createWebp = () => {
+// Images
+export const optimizeImages = () => {
   return gulp.src([
-    'source/img/**/*.{jpg,png}',
-    '!source/img/favicons/*'
+    `${SOURCE_FOLDER}/img/**/*.{png,jpg,svg}`,
+    `!${SOURCE_FOLDER}/img/sprite/*`
   ])
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest('source/img'))
+    .pipe(imagemin())
+    .pipe(gulp.dest(`${PUBLIC_FOLDER}/img`));
 }
 
-// Sprite
+export const copyImages = () => {
+  return gulp.src([
+    `${SOURCE_FOLDER}/img/**/*.{png,jpg,svg}`,
+    `!${SOURCE_FOLDER}/img/sprite/*`
+  ])
+    .pipe(gulp.dest(`${PUBLIC_FOLDER}/img`));
+}
+
+export const createWebp = () => {
+  return gulp.src([
+    `${SOURCE_FOLDER}/img/**/*.{jpg,png}`,
+    `!${SOURCE_FOLDER}/img/favicons/*`
+  ])
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest(`${PUBLIC_FOLDER}/img`))
+}
+
 export const createSprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
+  return gulp.src(`${SOURCE_FOLDER}/img/sprite/*.svg`)
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('source/img'));
+    .pipe(gulp.dest(`${PUBLIC_FOLDER}/img`));
 }
+
+// export const createFonts = () => {
+//   return gulp.src(`${SOURCE_FOLDER}/fonts/*.ttf`)
+//   .pipe(fonterFix({
+//     formats: ['woff']
+//   }))
+//   .pipe(gulp.dest(`${PUBLIC_FOLDER}/fonts`))
+//   // .pipe(gulp.src(`${SOURCE_FOLDER}/fonts/*.*`))
+//   // .pipe(ttf2woff2())
+//   // .pipe(gulp.dest(`${PUBLIC_FOLDER}/fonts`));
+// }
+
+// Copy
+export const copy = (done) => {
+  gulp.src([
+    `${SOURCE_FOLDER}/fonts/*.ttf`,
+    `${SOURCE_FOLDER}/swiper/*.*`
+  ], {
+    base: `${SOURCE_FOLDER}`
+  })
+    .pipe(gulp.dest(PUBLIC_FOLDER))
+  done();
+}
+
+// Clean
+export const clean = () => {
+  return deleteAsync(PUBLIC_FOLDER);
+};
 
 // Server
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: PUBLIC_FOLDER
     },
     cors: true,
     notify: false,
@@ -65,27 +125,48 @@ const server = (done) => {
   done();
 }
 
-// Reload
-const reload = (done) => {
-  browser.reload();
-  done();
-}
+// // Reload
+// const reload = (done) => {
+//   browser.reload();
+//   done();
+// }
 
 // Watcher
 const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/js/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch(`${SOURCE_FOLDER}/less/**/*.less`, gulp.series(styles));
+  gulp.watch(`${SOURCE_FOLDER}/js/*.js`, gulp.series(scripts));
+  gulp.watch(`${SOURCE_FOLDER}/*.html`, gulp.series(html));
 }
 
+// Build
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
 
-export default gulp.series(
   gulp.parallel(
     styles,
     html,
     scripts,
+    createSprite,
+    createWebp,
+  ),
+);
+
+export default gulp.series(
+  clean,
+  copy,
+  copyImages,
+
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    createSprite,
+    createWebp,
   ),
   gulp.series(
     server,
     watcher
-  ));
+  )
+);
