@@ -30,14 +30,11 @@ const initSwiper = () => {
     slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 20,
-    dynamicBullets: true,
-    dynamicMainBullets: 4,
 
     breakpoints: {
       [Width.MOBILE]: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-
       },
 
       [Width.TABLET]: {

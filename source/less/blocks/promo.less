@@ -25,6 +25,8 @@
   .wrapper();
   padding-bottom: 8px;
 
+  overflow: hidden;
+
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
   }
@@ -59,14 +61,6 @@
 }
 
 /* NO-JS */
-.promo--no-js .promo__pagination {
-  display: none;
-}
-
-.promo--no-js .promo__btn {
-  display: none;
-}
-
 .promo--no-js .promo__filter-list{
   display: flex;
   gap: 18px;
@@ -78,3 +72,18 @@
     justify-content: center;
   }
 }
+
+.promo--no-js .promo__cards {
+  gap: 20px;
+
+  overflow: auto;
+}
+
+.promo--no-js .promo__pagination {
+  display: none;
+}
+
+.promo--no-js .promo__btn {
+  display: none;
+}
+

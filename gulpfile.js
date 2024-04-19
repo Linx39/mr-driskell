@@ -10,9 +10,9 @@ import htmlmin from 'gulp-htmlmin';
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
 import svgstore from 'gulp-svgstore';
-import fonterFix from 'gulp-fonter';
 import {deleteAsync} from 'del';
 import browser from 'browser-sync';
+import webpack from 'webpack-stream'
 
 const SOURCE_FOLDER = 'source';
 const PUBLIC_FOLDER = 'docs';
@@ -37,13 +37,20 @@ export const styles = () => {
     ]))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))
-    .pipe(gulp.dest(`${PUBLIC_FOLDER}/css`, { sourcemaps: '.' }))
+    .pipe(gulp.dest(`${PUBLIC_FOLDER}/css`))
     .pipe(browser.stream());
 }
 
 // Scripts
 export const scripts = () => {
   return gulp.src(`${SOURCE_FOLDER}/js/*.js`)
+    .pipe(webpack({
+      mode: 'development',
+      devtool: 'source-map',
+      output: {
+          filename: 'app.min.js',
+      }
+    }))
     .pipe(gulp.dest(`${PUBLIC_FOLDER}/js`))
     .pipe(browser.stream());
 }
@@ -84,22 +91,11 @@ export const createSprite = () => {
     .pipe(gulp.dest(`${PUBLIC_FOLDER}/img`));
 }
 
-// export const createFonts = () => {
-//   return gulp.src(`${SOURCE_FOLDER}/fonts/*.ttf`)
-//   .pipe(fonterFix({
-//     formats: ['woff']
-//   }))
-//   .pipe(gulp.dest(`${PUBLIC_FOLDER}/fonts`))
-//   // .pipe(gulp.src(`${SOURCE_FOLDER}/fonts/*.*`))
-//   // .pipe(ttf2woff2())
-//   // .pipe(gulp.dest(`${PUBLIC_FOLDER}/fonts`));
-// }
-
 // Copy
 export const copy = (done) => {
   gulp.src([
     `${SOURCE_FOLDER}/fonts/*.ttf`,
-    `${SOURCE_FOLDER}/swiper/*.*`
+    `${SOURCE_FOLDER}/swiper/*.min.*`
   ], {
     base: `${SOURCE_FOLDER}`
   })
@@ -113,7 +109,7 @@ export const clean = () => {
 };
 
 // Server
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: PUBLIC_FOLDER
@@ -151,6 +147,11 @@ export const build = gulp.series(
     createSprite,
     createWebp,
   ),
+
+  gulp.series(
+    server,
+    watcher
+  ),
 );
 
 export default gulp.series(
@@ -165,8 +166,9 @@ export default gulp.series(
     createSprite,
     createWebp,
   ),
+
   gulp.series(
     server,
     watcher
-  )
+  ),
 );

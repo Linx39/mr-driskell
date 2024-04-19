@@ -9,7 +9,6 @@
     "browser-sync-client": "2.27.7",
     "del": "^7.1.0",
     "gulp": "4.0.2",
-    "gulp-fonter": "^0.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^9.0.0",
     "gulp-less": "5.0.0",
@@ -21,7 +20,9 @@
     "gulp-webp": "4.0.1",
     "postcss-csso": "^6.0.1",
     "stylelint": "^16.2.1",
-    "stylelint-config-standard-less": "^3.0.1"
+    "stylelint-config-standard-less": "^3.0.1",
+    "webpack": "^5.91.0",
+    "webpack-stream": "^7.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
