@@ -7,24 +7,8 @@ const promoElement = document.querySelector(`.${PROMO_CLASS}`);
 
 promoElement.classList.remove(PROMO_NO_JS_CLASS);
 
-const promoFilterSlider = new Swiper('.promo__filter-slider', {
-  direction: 'horizontal',
-  loop: false,
-  slidesPerView: 'auto',
-  spaceBetween: 18,
-  initialSlide: 2,
-  slidesOffsetAfter: 20,
-
-  breakpoints: {
-    [Width.DESKTOP]: {
-      spaceBetween: 46,
-      slidesOffsetAfter: 0,
-    },
-  }
-});
-
 const initSwiper = () => {
-  const promoSlider = new Swiper('.promo__slider', {
+  const promoSlider = new Swiper('.promo__products-slider', {
     direction: 'horizontal',
     loop: false,
     slidesPerView: 1,
