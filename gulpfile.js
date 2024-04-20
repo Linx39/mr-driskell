@@ -148,10 +148,10 @@ export const build = gulp.series(
     createWebp,
   ),
 
-  gulp.series(
-    server,
-    watcher
-  ),
+  // gulp.series(
+  //   server,
+  //   watcher
+  // ),
 );
 
 export default gulp.series(
@@ -167,8 +167,8 @@ export default gulp.series(
     createWebp,
   ),
 
-  gulp.series(
-    server,
-    watcher
-  ),
+  // gulp.series(
+  //   server,
+  //   watcher
+  // ),
 );
