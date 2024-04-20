@@ -17,3 +17,5 @@ export const deactivateBlur = () => {
     blur.classList.remove(BLUR_ACTIVE_CLASS)
   }
 }
+
+export const isOnBlurClick = (evt) => evt.target === blur;

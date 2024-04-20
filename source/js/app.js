@@ -1,4 +1,3 @@
-import './main-nav.js';
 import './site-toogle.js';
 import './catalog-toogle.js';
 

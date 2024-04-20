@@ -7,8 +7,10 @@
   font-weight: 400;
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, min-content);
+    grid-auto-flow: column;
     column-gap: 40px;
+    min-height: 221px;
   }
 }
 

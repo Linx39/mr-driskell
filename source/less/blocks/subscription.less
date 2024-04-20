@@ -103,15 +103,12 @@
   background-color: @color-back-light-02;
   border: none;
 
-  &:hover {
-    outline: 1px solid @color-dark-orange;
-  }
-
-  &:focus-visible {
-    outline: 1px solid @color-dark-orange;
-  }
-
   &:active {
+    outline: 1px solid @color-dark-orange;
+  }
+
+  &:hover,
+  &:focus-visible {
     outline: 1px solid @color-dark-orange;
   }
 
@@ -152,12 +149,9 @@
   line-height: 16px;
 }
 
-.subscription__control:hover {
-  color: @color-orange;
-}
-
-.subscription__control:focus-visible {
-  color: @color-orange;
+.subscription__control:hover,
+.subscription__control:focus-within {
+  color: @color-dark-orange;
   outline: none;
 }
 
@@ -171,7 +165,9 @@
   border: 2px solid @color-orange;
 }
 
-.subscription__control-mark:focus-visible {
+.subscription__control:hover .subscription__control-mark,
+.subscription__control:focus-within .subscription__control-mark {
+  border-color: @color-dark-orange;
   outline: none;
 }
 
@@ -181,10 +177,6 @@
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 17px 14px;
-}
-
-.subscription__control-mark:focus-visible + .subscription__control-title {
-  color: @color-orange;
 }
 
 .subscription__btn {

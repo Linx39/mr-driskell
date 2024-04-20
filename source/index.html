@@ -64,7 +64,7 @@
               <input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск" required>
             </label>
 
-            <button class="visually-hidden" type="submit">Найти</button>
+            <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
           </form>
 
           <ul class="main-nav__top-user-list user-list user-list--only-icon">
@@ -108,53 +108,51 @@
             <button class="main-nav__catalog-toggle catalog-toggle catalog-toggle--closed" type="button">Каталог</button>
 
             <div class="main-nav__catalog">
-              <div class="">
-                <ul class="main-nav__catalog-filter-list filter__list filter__list--small">
-                  <li class="filter__item">
-                    <a class="filter__link filter__link--current" href="#">По категории</a>
-                  </li>
-                  <li class="filter__item">
-                    <a class="filter__link" href="#">По брендам</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="main-nav__catalog-filter-list filter__list filter__list--small">
+                <li class="filter__item">
+                  <a class="filter__link filter__link--current" href="#">По категории</a>
+                </li>
+                <li class="filter__item">
+                  <a class="filter__link" href="#">По брендам</a>
+                </li>
+              </ul>
 
               <ul class="main-nav__catalog-list catalog-list">
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Новинки</a>
+                  <a class="catalog-list__link" href="#">Новинки</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Наборы для татуировок</a>
+                  <a class="catalog-list__link" href="#">Наборы для татуировок</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Тату машинки</a>
+                  <a class="catalog-list__link" href="#">Тату машинки</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Тату краски</a>
+                  <a class="catalog-list__link" href="#">Тату краски</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Тату иглы</a>
+                  <a class="catalog-list__link" href="#">Тату иглы</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Тату держатели</a>
+                  <a class="catalog-list__link" href="#">Тату держатели</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Тату наконечники</a>
+                  <a class="catalog-list__link" href="#">Тату наконечники</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Блоки питания</a>
+                  <a class="catalog-list__link" href="#">Блоки питания</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Педали и провода</a>
+                  <a class="catalog-list__link" href="#">Педали и провода</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Аксессуары</a>
+                  <a class="catalog-list__link" href="#">Аксессуары</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Принтеры и планшеты</a>
+                  <a class="catalog-list__link" href="#">Принтеры и планшеты</a>
                 </li>
                 <li class="catalog-list__item">
-                  <a class="catalog-list__link">Защита, ёмкости, расходные материалы</a>
+                  <a class="catalog-list__link" href="#">Защита, ёмкости, расходные материалы</a>
                 </li>
               </ul>
             </div>
@@ -164,7 +162,7 @@
                 <input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск" required>
               </label>
 
-              <button class="visually-hidden" type="submit">Найти</button>
+              <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
             </form>
 
             <ul class="main-nav__site-list site-list">
@@ -233,6 +231,11 @@
 
             <ul class="contacts__social-list social-list social-list--block">
               <li class="social-list__item">
+                <a class="social-list__link social-list__link--telegram" href="#">
+                  <span class="social-list__link-text">Telegram</span>
+                </a>
+              </li>
+              <li class="social-list__item">
                 <a class="social-list__link social-list__link--viber" href="#">
                   <span class="social-list__link-text">Viber</span>
                 </a>
@@ -240,11 +243,6 @@
               <li class="social-list__item">
                 <a class="social-list__link social-list__link--whatsapp" href="#">
                   <span class="social-list__link-text">Whats App</span>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link social-list__link--telegram" href="#">
-                  <span class="social-list__link-text">Telegram</span>
                 </a>
               </li>
             </ul>
@@ -276,7 +274,7 @@
                   <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
                 </picture>
               </div>
               <div class="intro__slider-item swiper-slide">
@@ -286,7 +284,7 @@
                   <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
                 </picture>
               </div>
               <div class="intro__slider-item swiper-slide">
@@ -296,7 +294,7 @@
                   <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
                 </picture>
               </div>
               <div class="intro__slider-item swiper-slide">
@@ -306,7 +304,7 @@
                   <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
                 </picture>
               </div>
               <div class="intro__slider-item swiper-slide">
@@ -316,7 +314,7 @@
                   <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Картинка вместо видео занятий.">
+                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
                 </picture>
               </div>
             </div>
@@ -515,8 +513,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h3>
+                  <p class="card__price">8 730 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -527,9 +525,9 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark card-mark--hit">Хит продаж</span>
 
-                <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
+                <a class="card__btn-favorite favorite-btn icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
@@ -589,8 +587,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Foxxx Kitsune Mini Vintage Aging With Gold RCA</h3>
+                  <p class="card__price">65 305 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -601,7 +599,7 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark"></span>
 
                 <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -663,8 +661,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Skinductor Vertigo Long Stroke</h3>
+                  <p class="card__price">65 305 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -675,7 +673,7 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark card-mark--promo">Акция</span>
 
                 <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -737,8 +735,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">CNC X-WE Wireless Tattoo Pen</h3>
+                  <p class="card__price">24 444 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -749,7 +747,7 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark"></span>
 
                 <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -811,8 +809,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">CNC X-WE Wireless Tattoo Pen</h3>
+                  <p class="card__price">19 400 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -823,7 +821,7 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark card-mark--not-available">Нет в наличии</span>
 
                 <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -885,8 +883,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Verge Direct 2.1 Black</h3>
+                  <p class="card__price">11 000 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -959,8 +957,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Verge Direct 2 Black RCA</h3>
+                  <p class="card__price">10 900 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -971,7 +969,7 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark card-mark--discount">Скидка</span>
 
                 <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -1033,8 +1031,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Verge Direct 2.1 Pink gip EGO 4 mm liners</h3>
+                  <p class="card__price">2 037 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -1045,7 +1043,7 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark card-mark--discount">Акция</span>
 
                 <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -1107,8 +1105,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Deuce Machines Direct Drive #7 RCA Samurai</h3>
+                  <p class="card__price">8 000 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -1181,8 +1179,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</h3>
+                  <p class="card__price">11 000 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -1193,7 +1191,7 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark card-mark--hit">Хит продаж</span>
 
                 <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -1255,8 +1253,8 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
-                  <p class="card__price">6 000 ₽</p>
+                  <h3 class="card__title">Verge Direct 2.1 Gunmetal</h3>
+                  <p class="card__price">10 900 ₽</p>
                 </div>
 
                 <div class="card__btn-container">
@@ -1267,7 +1265,7 @@
                   </a>
                 </div>
 
-                <span class="card__mark card-mark card-mark--new">Новинка</span>
+                <span class="card__mark card-mark"></span>
 
                 <a class="card__btn-favorite favorite-btn favorite-btn--active icon-container" href="">
                   <svg width="20" height="18" aria-hidden="true" focusable="false">
@@ -1293,7 +1291,7 @@
         <h2 class="catalog__title">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle catalog__subtitle--small">Тату наборы</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
@@ -1301,12 +1299,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp 1x, img/catalog/catalog-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png 1x, img/catalog/catalog-1-tablet@2x.png 2x">
-                <img class="catalog__img catalog__img--big" src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img catalog__img--big" src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Держатели</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-2-desktop.webp 1x, img/catalog/catalog-2-desktop@2x.webp 2x">
@@ -1314,12 +1312,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-2-mobile.webp 1x, img/catalog/catalog-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-2-desktop.png 1x, img/catalog/catalog-2-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-2-tablet.png 1x, img/catalog/catalog-2-tablet@2x.png 2x">
-                <img class="catalog__img catalog__img--album" src="img/catalog/catalog-2-mobile.png" srcset="img/catalog/catalog-2-mobile@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img catalog__img--album" src="img/catalog/catalog-2-mobile.png" srcset="img/catalog/catalog-2-mobile@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Тату машинки</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-3-desktop.webp 1x, img/catalog/catalog-3-desktop@2x.webp 2x">
@@ -1327,12 +1325,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-3-mobile.webp 1x, img/catalog/catalog-3-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-3-desktop.png 1x, img/catalog/catalog-3-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-3-tablet.png 1x, img/catalog/catalog-3-tablet@2x.png 2x">
-                <img class="catalog__img" src="img/catalog/catalog-3-mobile.png" srcset="img/catalog/catalog-3-mobile@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img" src="img/catalog/catalog-3-mobile.png" srcset="img/catalog/catalog-3-mobile@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle catalog__subtitle--small">Педали и провода</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-4-desktop.webp 1x, img/catalog/catalog-4-desktop@2x.webp 2x">
@@ -1340,12 +1338,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-4-mobile.webp 1x, img/catalog/catalog-4-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-4-desktop.png 1x, img/catalog/catalog-4-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-4-tablet.png 1x, img/catalog/catalog-4-tablet@2x.png 2x">
-                <img class="catalog__img catalog__img--big" src="img/catalog/catalog-4-mobile.png" srcset="img/catalog/catalog-4-mobile@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img catalog__img--big" src="img/catalog/catalog-4-mobile.png" srcset="img/catalog/catalog-4-mobile@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Краски</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-5-desktop.webp 1x, img/catalog/catalog-5-desktop@2x.webp 2x">
@@ -1353,12 +1351,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-5-mobile.webp 1x, img/catalog/catalog-5-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-5-desktop.png 1x, img/catalog/catalog-5-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-5-tablet.png 1x, img/catalog/catalog-5-tablet@2x.png 2x">
-                <img class="catalog__img catalog__img--album" src="img/catalog/catalog-5-mobile.png" srcset="img/catalog/catalog-5-mobile@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img catalog__img--album" src="img/catalog/catalog-5-mobile.png" srcset="img/catalog/catalog-5-mobile@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Блоки питания</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-6-desktop.webp 1x, img/catalog/catalog-6-desktop@2x.webp 2x">
@@ -1366,12 +1364,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-6-desktop.webp 1x, img/catalog/catalog-6-desktop@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-6-desktop.png 1x, img/catalog/catalog-6-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-6-desktop.png 1x, img/catalog/catalog-6-desktop@2x.png 2x">
-                <img class="catalog__img" src="img/catalog/catalog-6-desktop.png" srcset="img/catalog/catalog-6-desktop@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img" src="img/catalog/catalog-6-desktop.png" srcset="img/catalog/catalog-6-desktop@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Наконечники</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-7-desktop.webp 1x, img/catalog/catalog-7-desktop@2x.webp 2x">
@@ -1379,12 +1377,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-7-desktop.webp 1x, img/catalog/catalog-7-desktop@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-7-desktop.png 1x, img/catalog/catalog-7-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-7-desktop.png 1x, img/catalog/catalog-7-desktop@2x.png 2x">
-                <img class="catalog__img" src="img/catalog/catalog-7-desktop.png" srcset="img/catalog/catalog-7-desktop@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img" src="img/catalog/catalog-7-desktop.png" srcset="img/catalog/catalog-7-desktop@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Тату иглы</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-8-desktop.webp 1x, img/catalog/catalog-8-desktop@2x.webp 2x">
@@ -1392,12 +1390,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-8-desktop.webp 1x, img/catalog/catalog-8-desktop@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-8-desktop.png 1x, img/catalog/catalog-8-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-8-desktop.png 1x, img/catalog/catalog-8-desktop@2x.png 2x">
-                <img class="catalog__img" src="img/catalog/catalog-8-desktop.png" srcset="img/catalog/catalog-8-desktop@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img" src="img/catalog/catalog-8-desktop.png" srcset="img/catalog/catalog-8-desktop@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Защита, ёмкости, расходники</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-9-desktop.webp 1x, img/catalog/catalog-9-desktop@2x.webp 2x">
@@ -1405,12 +1403,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-9-desktop.webp 1x, img/catalog/catalog-9-desktop@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-9-desktop.png 1x, img/catalog/catalog-9-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-9-desktop.png 1x, img/catalog/catalog-9-desktop@2x.png 2x">
-                <img class="catalog__img" src="img/catalog/catalog-9-desktop.png" srcset="img/catalog/catalog-9-desktop@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img" src="img/catalog/catalog-9-desktop.png" srcset="img/catalog/catalog-9-desktop@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Аксессуары</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-10-desktop.webp 1x, img/catalog/catalog-10-desktop@2x.webp 2x">
@@ -1418,12 +1416,12 @@
                 <source type="image/webp" srcset="img/catalog/catalog-10-desktop.webp 1x, img/catalog/catalog-10-desktop@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-10-desktop.png 1x, img/catalog/catalog-10-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-10-desktop.png 1x, img/catalog/catalog-10-desktop@2x.png 2x">
-                <img class="catalog__img" src="img/catalog/catalog-10-desktop.png" srcset="img/catalog/catalog-10-desktop@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img" src="img/catalog/catalog-10-desktop.png" srcset="img/catalog/catalog-10-desktop@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link">
+            <a class="catalog__link" href="#">
               <h3 class="catalog__subtitle">Принтеры и планшеты</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/catalog/catalog-11-desktop.webp 1x, img/catalog/catalog-11-desktop@2x.webp 2x">
@@ -1431,7 +1429,7 @@
                 <source type="image/webp" srcset="img/catalog/catalog-11-desktop.webp 1x, img/catalog/catalog-11-desktop@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/catalog/catalog-11-desktop.png 1x, img/catalog/catalog-11-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-11-desktop.png 1x, img/catalog/catalog-11-desktop@2x.png 2x">
-                <img class="catalog__img" src="img/catalog/catalog-11-desktop.png" srcset="img/catalog/catalog-11-desktop@2x.png 2x" alt="Изображение товара.">
+                <img class="catalog__img" src="img/catalog/catalog-11-desktop.png" srcset="img/catalog/catalog-11-desktop@2x.png 2x" alt="Изображение группы товаров из каталога.">
               </picture>
             </a>
           </li>
@@ -1449,7 +1447,7 @@
         <div class="offers__block">
           <div class="offers__block-content">
             <h3 class="offers__subtitle">Краски Lip Nitn</h3>
-            <a class="offers__btn" href="">Смотреть в каталоге</a>
+            <a class="offers__btn" href="#">Смотреть в каталоге</a>
           </div>
           <div class="offers__img-container">
             <picture>
@@ -1458,14 +1456,14 @@
               <source type="image/webp" srcset="img/offer/offer-1-mobile.webp 1x, img/offer/offer-1-mobile@2x.webp 2x">
               <source media="(min-width: 1280px)" srcset="img/offer/offer-1-desktop.png 1x, img/offer/offer-1-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/offer/offer-1-tablet.png 1x, img/offer/offer-1-tablet@2x.png 2x">
-              <img class="offers__img" src="img/offer/offer-1-mobile.png" srcset="img/offer/offer-1-mobile@2x.png 2x" alt="Изображение товара.">
+              <img class="offers__img" src="img/offer/offer-1-mobile.png" srcset="img/offer/offer-1-mobile@2x.png 2x" alt="Изображение группы товаров для привлечения внимания.">
             </picture>
           </div>
         </div>
         <div class="offers__block">
           <div class="offers__block-content">
             <h3 class="offers__subtitle">Foxx viper — хит 2021 года</h3>
-            <a class="offers__btn" href="">Смотреть в каталоге</a>
+            <a class="offers__btn" href="#">Смотреть в каталоге</a>
           </div>
           <div class="offers__img-container">
             <picture>
@@ -1474,7 +1472,7 @@
               <source type="image/webp" srcset="img/offer/offer-2-mobile.webp 1x, img/offer/offer-2-mobile@2x.webp 2x">
               <source media="(min-width: 1280px)" srcset="img/offer/offer-2-desktop.png 1x, img/offer/offer-2-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/offer/offer-2-tablet.png 1x, img/offer/offer-2-tablet@2x.png 2x">
-              <img class="offers__img" src="img/offer/offer-2-mobile.png" srcset="img/offer/offer-2-mobile@2x.png 2x" alt="Изображение товара.">
+              <img class="offers__img" src="img/offer/offer-2-mobile.png" srcset="img/offer/offer-2-mobile@2x.png 2x" alt="Изображение группы товаров для привлечения внимания.">
             </picture>
           </div>
         </div>
@@ -1494,7 +1492,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-01.webp 1x, img/brands/brand-01@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-01.png" srcset="img/brands/brand-01@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-01.png" srcset="img/brands/brand-01@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1502,7 +1500,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-02.webp 1x, img/brands/brand-02@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-02.png" srcset="img/brands/brand-02@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-02.png" srcset="img/brands/brand-02@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1512,7 +1510,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-03.webp 1x, img/brands/brand-03@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-03.png" srcset="img/brands/brand-03@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-03.png" srcset="img/brands/brand-03@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1520,7 +1518,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-04.webp 1x, img/brands/brand-04@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-04.png" srcset="img/brands/brand-04@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-04.png" srcset="img/brands/brand-04@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1530,7 +1528,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-05.webp 1x, img/brands/brand-05@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-05.png" srcset="img/brands/brand-05@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-05.png" srcset="img/brands/brand-05@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1538,7 +1536,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-06.webp 1x, img/brands/brand-06@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-06.png" srcset="img/brands/brand-06@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-06.png" srcset="img/brands/brand-06@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1548,7 +1546,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-07.webp 1x, img/brands/brand-07@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-07.png" srcset="img/brands/brand-07@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-07.png" srcset="img/brands/brand-07@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1556,7 +1554,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-08.webp 1x, img/brands/brand-08@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-08.png" srcset="img/brands/brand-08@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-08.png" srcset="img/brands/brand-08@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1566,7 +1564,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-09.webp 1x, img/brands/brand-09@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-09.png" srcset="img/brands/brand-09@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-09.png" srcset="img/brands/brand-09@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1574,7 +1572,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-10.webp 1x, img/brands/brand-10@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-10.png" srcset="img/brands/brand-10@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-10.png" srcset="img/brands/brand-10@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1584,7 +1582,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-05.webp 1x, img/brands/brand-05@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-05.png" srcset="img/brands/brand-05@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-05.png" srcset="img/brands/brand-05@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1592,7 +1590,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-06.webp 1x, img/brands/brand-06@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-06.png" srcset="img/brands/brand-06@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-06.png" srcset="img/brands/brand-06@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1602,7 +1600,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-07.webp 1x, img/brands/brand-07@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-07.png" srcset="img/brands/brand-07@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-07.png" srcset="img/brands/brand-07@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1610,7 +1608,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-08.webp 1x, img/brands/brand-08@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-08.png" srcset="img/brands/brand-08@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-08.png" srcset="img/brands/brand-08@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1620,7 +1618,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-09.webp 1x, img/brands/brand-09@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-09.png" srcset="img/brands/brand-09@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-09.png" srcset="img/brands/brand-09@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1628,7 +1626,7 @@
                   <a class="brands__link" href="#">
                     <picture>
                       <source type="image/webp" srcset="img/brands/brand-10.webp 1x, img/brands/brand-10@2x.webp 2x">
-                      <img class="brands__img" src="img/brands/brand-10.png" srcset="img/brands/brand-10@2x.png 2x" alt="Изображение товара.">
+                      <img class="brands__img" src="img/brands/brand-10.png" srcset="img/brands/brand-10@2x.png 2x" alt="Логотип бренда.">
                     </picture>
                   </a>
                 </div>
@@ -1656,7 +1654,7 @@
             <source type="image/webp" srcset="img/about/about-mobile.webp 1x, img/about/about-mobile@2x.webp 2x">
             <source media="(min-width: 1280px)" srcset="img/about/about-desktop.png 1x, img/about/about-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/about/about-tablet.png 1x, img/about/about-tablet@2x.png 2x">
-            <img class="about__img" src="img/about/about-mobile.png" srcset="img/about/about-mobile@2x.png 2x" alt="Изображение товара.">
+            <img class="about__img" src="img/about/about-mobile.png" srcset="img/about/about-mobile@2x.png 2x" alt="Красивая картинка татуировок.">
           </picture>
         </div>
         <div class="about__content">
@@ -1697,7 +1695,7 @@
                     <div class="reviews__img-container">
                       <picture>
                         <source type="image/webp" srcset="img/userfoto/userfoto-2.webp 1x, img/userfoto/userfoto-2@2x.webp 2x">
-                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Изображение товара.">
+                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Фото пользователя.">
                       </picture>
                     </div>
                     <p class="reviews__text">
@@ -1717,7 +1715,7 @@
                     <div class="reviews__img-container">
                       <picture>
                         <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
-                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
+                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Фото пользователя.">
                       </picture>
                     </div>
                     <p class="reviews__text">
@@ -1738,7 +1736,7 @@
                     <div class="reviews__img-container">
                       <picture>
                         <source type="image/webp" srcset="img/userfoto/userfoto-2.webp 1x, img/userfoto/userfoto-2@2x.webp 2x">
-                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Изображение товара.">
+                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Фото пользователя.">
                       </picture>
                     </div>
                     <p class="reviews__text">
@@ -1758,7 +1756,7 @@
                     <div class="reviews__img-container">
                       <picture>
                         <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
-                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
+                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Фото пользователя.">
                       </picture>
                     </div>
                     <p class="reviews__text">
@@ -1779,7 +1777,7 @@
                     <div class="reviews__img-container">
                       <picture>
                         <source type="image/webp" srcset="img/userfoto/userfoto-2.webp 1x, img/userfoto/userfoto-2@2x.webp 2x">
-                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Изображение товара.">
+                        <img class="reviews__img" src="img/userfoto/userfoto-2.png" srcset="img/userfoto/userfoto-2@2x.png 2x" alt="Фото пользователя.">
                       </picture>
                     </div>
                     <p class="reviews__text">
@@ -1799,7 +1797,7 @@
                     <div class="reviews__img-container">
                       <picture>
                         <source type="image/webp" srcset="img/userfoto/userfoto-1.webp 1x, img/userfoto/userfoto-1@2x.webp 2x">
-                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Изображение товара.">
+                        <img class="reviews__img" src="img/userfoto/userfoto-1.png" srcset="img/userfoto/userfoto-1@2x.png 2x" alt="Фото пользователя.">
                       </picture>
                     </div>
                     <p class="reviews__text">
@@ -1857,7 +1855,7 @@
               <label class="subscription__control" for="personal-data">
                 <input class="subscription__control-field visually-hidden" type="checkbox" name="personal-data" id="personal-data" tabindex="-1">
                 <span class="subscription__control-mark" tabindex="0"></span>
-                <span class="subscription__control-title">Вы соглашаетесь на обработку ваших персональных данных</span>
+                <span>Вы соглашаетесь на обработку ваших персональных данных</span>
               </label>
 
               <button class="subscription__btn app-btn app-btn--dark" type="submit">
@@ -1872,7 +1870,7 @@
         <div class="subscription__img-container">
           <picture>
             <source type="image/webp" srcset="img/subscription/subscription.webp 1x, img/subscription/subscription@2x.webp 2x">
-            <img class="subscription__img" src="img/subscription/subscription.png" srcset="img/subscription/subscription@2x.png 2x" alt="Изображение товара.">
+            <img class="subscription__img" src="img/subscription/subscription.png" srcset="img/subscription/subscription@2x.png 2x" alt="Красивая картинка татуировок.">
           </picture>
         </div>
       </section>
@@ -1885,7 +1883,7 @@
             <img src="img/logo.svg" width="192" height="63" alt="Логотип компании.">
           </a>
 
-          <a class="page-footer__policy">Политика конфиденциальности</a>
+          <a class="page-footer__policy" href="#">Политика конфиденциальности</a>
 
           <ul class="page-footer__site-list site-list site-list--footer">
             <li class="site-list__item">
@@ -1918,6 +1916,11 @@
 
           <ul class="contacts__social-list social-list social-list--block">
             <li class="social-list__item">
+              <a class="social-list__link social-list__link--telegram" href="#">
+                <span class="social-list__link-text">Telegram</span>
+              </a>
+            </li>
+            <li class="social-list__item">
               <a class="social-list__link social-list__link--viber" href="#">
                 <span class="social-list__link-text">Viber</span>
               </a>
@@ -1925,11 +1928,6 @@
             <li class="social-list__item">
               <a class="social-list__link social-list__link--whatsapp" href="#">
                 <span class="social-list__link-text">Whats App</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--telegram" href="#">
-                <span class="social-list__link-text">Telegram</span>
               </a>
             </li>
           </ul>

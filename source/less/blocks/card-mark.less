@@ -24,8 +24,6 @@
 
   &::after {
     right: -1px;
-
-    .decor-triangle(11px, 29px, @color-back-light-02);
     transform: translateY(-50%) rotate(180deg);
   }
 
@@ -36,13 +34,31 @@
   &--hit {
     .set-color(@color-violet);
   }
+
+  &--promo {
+    .set-color(@color-gren);
+  }
+
+  &--not-available {
+    .set-color(@color-font-grey-2);
+  }
+
+  &--discount {
+    .set-color(@color-red);
+  }
 }
 
 .set-color(@color) {
   color: @color;
   border: 1px solid @color;
 
+  background-color: @color-back-light-02;
+
   &::before {
     .decor-triangle(11px, 29px, @color);
+  }
+
+  &::after {
+    .decor-triangle(11px, 29px, @color-back-light-02);
   }
 }
