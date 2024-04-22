@@ -1,8 +1,7 @@
 .catalog-toggle {
-  position: relative;
-
-  width: fit-content;
-  padding-right: 65px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
 
   font-size: 20px;
   line-height: 30px;
@@ -10,11 +9,20 @@
 
   .interactive-styles();
 
+  @media (min-width: @desktop-width) {
+    gap: 9px;
+
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.catalog__icon {
+  position: relative;
+
   &::before {
     position: absolute;
     content: "";
-    top: 12px;
-    right: 0;
 
     .decor-triangle(6px, 6px, @color-orange);
     transform: rotate(90deg);
@@ -22,11 +30,6 @@
 
 
   @media (min-width: @desktop-width) {
-    padding-right: 37px;
-
-    font-size: 25px;
-    line-height: 35px;
-
     &::before {
       border: none;
       transform: none;

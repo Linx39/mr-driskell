@@ -3,12 +3,9 @@
   background-color: @color-back-black-02;
 }
 
-.intro__wrapper {
-  .wrapper-width();
-}
-
 .intro__slider {
   position: relative;
+  .wrapper-width();
 
   overflow: hidden;
 }
@@ -19,6 +16,7 @@
 
 .intro__slider-item {
   flex-shrink: 0;
+  position: relative;
 
   width: 100%;
 }
@@ -38,11 +36,18 @@
   }
 }
 
+.intro__slider-note {
+  position: absolute;
+
+  bottom: 15px;
+  right: 15px;
+}
+
 .intro__content-container {
   display: grid;
   justify-content: center;
 
-  .wrapper();
+  .wrapper-padding();
 
   padding-top: 10px;
   padding-bottom: 20px;

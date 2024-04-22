@@ -1,0 +1,30 @@
+.products-slider {
+  overflow: hidden;
+}
+
+.products-slider__wrapper {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    display: flex;
+    gap: 0;
+    justify-content: unset;
+  }
+}
+
+.products-slider__pagination {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+/* NO-JS */
+.products-slider--no-js .products-slider__wrapper {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    gap: 20px;
+
+    overflow: auto;
+  }
+}
+
+.products-slider--no-js .products-slider__pagination {
+  display: none;
+}

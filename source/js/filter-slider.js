@@ -1,27 +1,21 @@
 import { Width } from "./const.js";
 
-const PROMO_CLASS = 'promo';
-const PROMO_NO_JS_CLASS = 'promo--no-js';
+const FILTER_SLIDER_CLASS = 'filter-slider';
+const FILTER_SLIDER_NO_JS_CLASS = 'filter-slider--no-js';
 
-const promoElement = document.querySelector(`.${PROMO_CLASS}`);
+const filterSliderElement = document.querySelector(`.${FILTER_SLIDER_CLASS}`);
 
-promoElement.classList.remove(PROMO_NO_JS_CLASS);
+filterSliderElement.classList.remove(FILTER_SLIDER_NO_JS_CLASS);
 
 const initSwiper = () => {
-  const filterSlider = new Swiper('.promo__filter-slider', {
+  const filterSlider = new Swiper('.filter-slider', {
     direction: 'horizontal',
     loop: false,
     slidesPerView: 'auto',
-    spaceBetween: 17.5,
+    spaceBetween: 18,
     initialSlide: 2,
-    slidesOffsetBefore: 20,
-    slidesOffsetAfter: 20,
 
     breakpoints: {
-      [Width.TABLET]: {
-        slidesOffsetBefore: 0,
-        slidesOffsetAfter: 0,
-      },
       [Width.DESKTOP]: {
         maxBackfaceHiddenSlides: 0,
       },
@@ -55,6 +49,3 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
   setSliderMode();
 });
-
-
-

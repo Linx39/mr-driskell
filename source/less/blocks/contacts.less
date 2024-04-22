@@ -10,7 +10,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: min-content auto;
-    gap: 12px 25px;
+    gap: 12px 20px;
   }
 }
 
@@ -18,8 +18,6 @@
   display: flex;
   gap: 10px;
   align-items: center;
-
-  white-space: nowrap;
 
   .interactive-styles();
 }
@@ -41,6 +39,10 @@
   }
 }
 
+.contacts__address--phone {
+  min-width: 186px;
+}
+
 .contacts__address--mail {
   @media (min-width: @tablet-width) {
     grid-column: span 2;
@@ -51,7 +53,7 @@
   display: grid;
   grid-template-columns: min-content min-content;
 
-  gap: 0 58px;
+  gap: 0 50px;
 
   font-size: 15px;
   font-weight: 400;
@@ -61,6 +63,8 @@
 .contacts--desktop .contacts__address--phone {
   grid-row: 1 / 1;
   grid-column: 1 / 2;
+
+  min-width: 164px;
 }
 
 .contacts--desktop .contacts__social-list {

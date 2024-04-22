@@ -1,0 +1,26 @@
+.filter-slider {
+  overflow: hidden;
+}
+
+.filter-slider__wrapper {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    display: flex;
+    gap: 0;
+    justify-content: unset;
+  }
+}
+
+/* NO-JS */
+.filter-slider--no-js {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    padding: 0 @mobile-padding;
+  }
+}
+
+.filter-slider--no-js .filter-slider__wrapper {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    gap: 18px;
+
+    overflow: auto;
+  }
+}

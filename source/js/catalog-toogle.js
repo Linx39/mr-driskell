@@ -1,5 +1,6 @@
-import { isEscEvent } from "./utils.js";const CATALOG_TOGGLE_CLASS = 'main-nav__catalog-toggle';
+import { isEscEvent } from "./utils.js";
 
+const CATALOG_TOGGLE_CLASS = 'main-nav__catalog-toggle';
 const CATALOG_TOGGLE_CLOSED_CLASS = 'catalog-toggle--closed';
 const CATALOG_TOGGLE_OPENED_CLASS = 'catalog-toggle--opened';
 

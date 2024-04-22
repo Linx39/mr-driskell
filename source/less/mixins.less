@@ -29,10 +29,6 @@
 .wrapper {
   .wrapper-width();
   .wrapper-padding();
-
-  // @media (min-width: @desktop-width) {
-  //   max-width: @desktop-width;
-  // }
 }
 
 .wrapper-max {
@@ -77,8 +73,6 @@
 }
 
 .burger-icon(@color) {
-  position: relative;
-
   &::before{
     position: absolute;
     top: 6px;
@@ -97,13 +91,9 @@
 }
 
 .cross-icon(@color) {
-  position: relative;
-
   &::before,
   &::after {
     position: absolute;
-    top: 6px;
-    right: 12px;
 
     width: 2px;
     height: 24px;

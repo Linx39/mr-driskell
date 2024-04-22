@@ -13,7 +13,10 @@
       <h1 class="visually-hidden">Магазин товаров для татуажа Mr.Driskell</h1>
       <nav class="main-nav">
         <div class="main-nav__top">
-          <button class="main-nav__site-toggle site-toggle site-toggle--closed" type="button">Меню</button>
+          <button class="main-nav__site-toggle site-toggle site-toggle--closed" type="button">
+            Меню
+            <div class="site-toggle__icon icon-container"></div>
+          </button>
 
           <div class="main-nav__top-contacts contacts contacts--desktop">
             <a class="contacts__address contacts__address--phone" href="tel:+79525525252">
@@ -60,8 +63,8 @@
           </a>
 
           <form class="main-nav__top-search-form search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label for="search">
-              <input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск" required>
+            <label for="top-search">
+              <input class="search-form__input" type="text" name="search" id="top-search" placeholder="Поиск" required>
             </label>
 
             <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
@@ -105,15 +108,18 @@
 
         <div class="main-nav__bottom">
           <div class="main-nav__bottom-menu">
-            <button class="main-nav__catalog-toggle catalog-toggle catalog-toggle--closed" type="button">Каталог</button>
+            <button class="main-nav__catalog-toggle catalog-toggle catalog-toggle--closed" type="button">
+              Каталог
+              <div class="catalog__icon icon-container"></div>
+            </button>
 
             <div class="main-nav__catalog">
-              <ul class="main-nav__catalog-filter-list filter__list filter__list--small">
-                <li class="filter__item">
-                  <a class="filter__link filter__link--current" href="#">По категории</a>
+              <ul class="main-nav__catalog-filter-list filter-list filter-list--small">
+                <li class="filter-list__item">
+                  <a class="filter-list__link filter-list__link--current" href="#">По категории</a>
                 </li>
-                <li class="filter__item">
-                  <a class="filter__link" href="#">По брендам</a>
+                <li class="filter-list__item">
+                  <a class="filter-list__link" href="#">По брендам</a>
                 </li>
               </ul>
 
@@ -158,14 +164,14 @@
             </div>
 
             <form class="main-nav__bottom-search-form search-form" action="https://echo.htmlacademy.ru/" method="get">
-              <label for="search">
-                <input class="search-form__input" type="text" name="search" id="search" placeholder="Поиск" required>
+              <label for="bottom-search">
+                <input class="search-form__input" type="text" name="search" id="bottom-search" placeholder="Поиск" required>
               </label>
 
               <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
             </form>
 
-            <ul class="main-nav__site-list site-list">
+            <ul class="main-nav__site-list site-list site-list--header">
               <li class="site-list__item">
                 <a class="site-list__link" href="#">Промокоды</a>
               </li>
@@ -220,13 +226,13 @@
           </div>
 
           <div class="main-nav__bottom-contacts contacts">
-            <a class="contacts__address contacts__address--phone" href="tel:+79525525252">
+            <a class="contacts__address contacts__address--phone" href="tel:88006006191">
               <div class="icon-container">
                 <svg width="21" height="21" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
               </div>
-              +7 952 552-52-52
+              8 800 600-61-91
             </a>
 
             <ul class="contacts__social-list social-list social-list--block">
@@ -264,129 +270,130 @@
 
     <main class="page__main">
       <section class="intro intro--no-js">
-        <div class="intro__wrapper">
-          <div class="intro__slider swiper">
-            <div class="intro__slider-list swiper-wrapper">
-              <div class="intro__slider-item swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
-                  <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
-                </picture>
-              </div>
-              <div class="intro__slider-item swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
-                  <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
-                </picture>
-              </div>
-              <div class="intro__slider-item swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
-                  <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
-                </picture>
-              </div>
-              <div class="intro__slider-item swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
-                  <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
-                </picture>
-              </div>
-              <div class="intro__slider-item swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
-                  <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-                  <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
-                </picture>
-              </div>
+        <div class="intro__slider swiper">
+          <div class="intro__slider-list swiper-wrapper">
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
+              </picture>
+            </div>
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
+              </picture>
+            </div>
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
+              </picture>
+              <p class="intro__slider-note">*проект находится в стадии разработки</p>
+            </div>
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
+              </picture>
+            </div>
+            <div class="intro__slider-item swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+                <img class="intro__slider-img" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Татуировачная машинка.">
+              </picture>
+              <p class="intro__slider-note">*проект находится в стадии разработки</p>
+            </div>
+          </div>
+
+          <div class="intro__content-container">
+            <div class="intro__content">
+              <h2 class="intro__title">Лучшие товары в мире татуировок</h2>
+              <p class="intro__description">Оборудование и расходники <br>для самых ярких и качественных работ</p>
+
+              <a class="intro__btn app-btn app-btn--dark" href="">
+                <span class="app-btn__decor app-btn__decor--left"></span>
+                Смотреть каталог
+                <span class="app-btn__decor app-btn__decor--right"></span>
+              </a>
             </div>
 
-            <div class="intro__content-container">
-              <div class="intro__content">
-                <h2 class="intro__title">Лучшие товары в мире татуировок</h2>
-                <p class="intro__description">Оборудование и расходники <br>для самых ярких и качественных работ</p>
+            <div class="intro__slider-controls">
+              <button class="intro__arrow-btn intro__arrow-btn--prev needle-btn needle-btn--prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
 
-                <a class="intro__btn app-btn app-btn--dark" href="">
-                  <span class="app-btn__decor app-btn__decor--left"></span>
-                  Смотреть каталог
-                  <span class="app-btn__decor app-btn__decor--right"></span>
-                </a>
-              </div>
-
-              <div class="intro__slider-controls">
-                <button class="intro__arrow-btn intro__arrow-btn--prev needle-btn needle-btn--prev" type="button">
-                  <span class="visually-hidden">Предыдущее фото</span>
+              <div class="intro__pagination pagination pagination--vertical">
+                <button class="pagination__btn pagination__btn--current" type="button">
+                  <span class="visually-hidden">1 фото</span>
                 </button>
-
-                <div class="intro__pagination pagination pagination--vertical">
-                  <button class="pagination__btn pagination__btn--current" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                  <button class="pagination__btn" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                  <button class="pagination__btn" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                  <button class="pagination__btn" type="button">
-                    <span class="visually-hidden">4 фото</span>
-                  </button>
-                  <button class="pagination__btn" type="button">
-                    <span class="visually-hidden">5 фото</span>
-                  </button>
-                </div>
-
-                <button class="intro__arrow-btn intro__arrow-btn--next needle-btn needle-btn--next" type="button">
-                  <span class="visually-hidden">Следующее фото</span>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">4 фото</span>
+                </button>
+                <button class="pagination__btn" type="button">
+                  <span class="visually-hidden">5 фото</span>
                 </button>
               </div>
+
+              <button class="intro__arrow-btn intro__arrow-btn--next needle-btn needle-btn--next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       <section class="promo promo--no-js">
-        <h2 class="visually-hidden">Промо товары</h2>
-        <div class="promo__filter filter filter--no-js">
+        <h2 class="visually-hidden">Наши продукты</h2>
+
+        <div class="promo__filter filter-slider filter-slider--no-js swiper">
           <h3 class="visually-hidden">Фильтры</h3>
-          <div class="promo__filter-slider swiper">
-            <ul class="promo__filter-list filter__list swiper-wrapper">
-              <li class="filter__item swiper-slide">
-                <a class="filter__link" href="#">Хиты продаж</a>
-              </li>
-              <li class="filter__item swiper-slide">
-                <a class="filter__link" href="#">Самые популярные</a>
-              </li>
-              <li class="filter__item swiper-slide">
-                <a class="filter__link filter__link--current" href="#">Новые поступления</a>
-              </li>
-              <li class="filter__item swiper-slide">
-                <a class="filter__link" href="#">Акционные товары</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="promo__filter-list filter-slider__wrapper filter-list swiper-wrapper">
+            <li class="filter-list__item swiper-slide">
+              <a class="filter-list__link" href="#">Хиты продаж</a>
+            </li>
+            <li class="filter-list__item swiper-slide">
+              <a class="filter-list__link" href="#">Самые популярные</a>
+            </li>
+            <li class="filter-list__item swiper-slide">
+              <a class="filter-list__link filter-list__link--current" href="#">Новые поступления</a>
+            </li>
+            <li class="filter-list__item swiper-slide">
+              <a class="filter-list__link" href="#">Акционные товары</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="promo__products-slider swiper">
-          <div class="promo__products products products--no-js swiper-wrapper">
+        <div class="promo__products products-slider products-slider--no-js swiper">
+          <h3 class="visually-hidden">Продукты</h3>
+
+          <div class="promo__products-list products-list products-slider__wrapper swiper-wrapper">
             <article class="card card--no-js swiper-slide" tabindex="0">
               <div class="card__wrapper">
                 <a class="card__link" href="" tabindex="-1"><span class="visually-hidden">Перейти к товару</span></a>
@@ -439,7 +446,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h3>
+                  <h4 class="card__title">Foxxx Kitsune Mini Black Vintage RCA</h4>
                   <p class="card__price">6 000 ₽</p>
                 </div>
 
@@ -513,7 +520,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h3>
+                  <h4 class="card__title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h4>
                   <p class="card__price">8 730 ₽</p>
                 </div>
 
@@ -587,7 +594,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Foxxx Kitsune Mini Vintage Aging With Gold RCA</h3>
+                  <h4 class="card__title">Foxxx Kitsune Mini Vintage Aging With Gold RCA</h4>
                   <p class="card__price">65 305 ₽</p>
                 </div>
 
@@ -661,7 +668,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Skinductor Vertigo Long Stroke</h3>
+                  <h4 class="card__title">Skinductor Vertigo Long Stroke</h4>
                   <p class="card__price">65 305 ₽</p>
                 </div>
 
@@ -735,7 +742,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">CNC X-WE Wireless Tattoo Pen</h3>
+                  <h4 class="card__title">CNC X-WE Wireless Tattoo Pen</h4>
                   <p class="card__price">24 444 ₽</p>
                 </div>
 
@@ -809,7 +816,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">CNC X-WE Wireless Tattoo Pen</h3>
+                  <h4 class="card__title">CNC X-WE Wireless Tattoo Pen</h4>
                   <p class="card__price">19 400 ₽</p>
                 </div>
 
@@ -883,7 +890,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Verge Direct 2.1 Black</h3>
+                  <h4 class="card__title">Verge Direct 2.1 Black</h4>
                   <p class="card__price">11 000 ₽</p>
                 </div>
 
@@ -957,7 +964,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Verge Direct 2 Black RCA</h3>
+                  <h4 class="card__title">Verge Direct 2 Black RCA</h4>
                   <p class="card__price">10 900 ₽</p>
                 </div>
 
@@ -1031,7 +1038,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Verge Direct 2.1 Pink gip EGO 4 mm liners</h3>
+                  <h4 class="card__title">Verge Direct 2.1 Pink gip EGO 4 mm liners</h4>
                   <p class="card__price">2 037 ₽</p>
                 </div>
 
@@ -1105,7 +1112,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Deuce Machines Direct Drive #7 RCA Samurai</h3>
+                  <h4 class="card__title">Deuce Machines Direct Drive #7 RCA Samurai</h4>
                   <p class="card__price">8 000 ₽</p>
                 </div>
 
@@ -1179,7 +1186,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</h3>
+                  <h4 class="card__title">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</h4>
                   <p class="card__price">11 000 ₽</p>
                 </div>
 
@@ -1253,7 +1260,7 @@
                 </div>
 
                 <div class="card__description">
-                  <h3 class="card__title">Verge Direct 2.1 Gunmetal</h3>
+                  <h4 class="card__title">Verge Direct 2.1 Gunmetal</h4>
                   <p class="card__price">10 900 ₽</p>
                 </div>
 
@@ -1277,7 +1284,7 @@
             </article>
           </div>
 
-          <div class="promo__pagination pagination"></div>
+          <div class="promo__pagination products-slider__pagination pagination"></div>
 
           <a class="promo__btn app-btn app-btn--light" href="">
             <span class="app-btn__decor app-btn__decor--left"></span>
@@ -1285,6 +1292,7 @@
             <span class="app-btn__decor app-btn__decor--right"></span>
           </a>
         </div>
+
       </section>
 
       <section class="catalog">
@@ -1833,7 +1841,7 @@
         <h2 class="visually-hidden">Подписка на рассылку</h2>
 
         <div class="subscription__content">
-          <h3 class="subscription__title">Узнавайте первыми</h3>
+          <p class="subscription__slogan">Узнавайте первыми</p>
           <p class="subscription__description">
             Подпишитесь на новостную рассылку
             с самыми&nbsp;интересными новостями и акциями
