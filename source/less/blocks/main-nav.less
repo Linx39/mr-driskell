@@ -136,14 +136,16 @@
 .main-nav__bottom-menu  {
   position: relative;
 
-  display: grid;
-  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 
   padding: 25px @mobile-padding 40px;
 
   .border-decor-triangle--top(6px, 6px, 1px, @color-dark-orange);
 
   @media (min-width: @desktop-width) {
+    display: grid;
     grid-template-columns: min-content 1fr auto;
     gap: 60px;
     align-items: center;
@@ -197,7 +199,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     gap: 21px;
-
+    justify-content: start;
+    
     padding: 30px 47px 29px;
   }
 }
@@ -218,6 +221,7 @@
 
 .main-nav__bottom-search-form {
  order: 1;
+ align-self: stretch;
 
   @media (min-width: @tablet-width) {
     display: none

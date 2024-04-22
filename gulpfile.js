@@ -128,7 +128,7 @@ export const server = (done) => {
 // }
 
 // Watcher
-const watcher = () => {
+export const watcher = () => {
   gulp.watch(`${SOURCE_FOLDER}/less/**/*.less`, gulp.series(styles));
   gulp.watch(`${SOURCE_FOLDER}/js/*.js`, gulp.series(scripts));
   gulp.watch(`${SOURCE_FOLDER}/*.html`, gulp.series(html));
