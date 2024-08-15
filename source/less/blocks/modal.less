@@ -1,0 +1,46 @@
+.modal {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    position: fixed;
+    top: 80px;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+
+    // overflow-y: scroll;
+
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+
+.modal--opened {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    pointer-events: auto;
+    visibility: visible;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.modal__wrapper {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    height: 100%;
+    overflow-y: auto;
+
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform .5s, opacity .5s;
+  }
+}
+
+.modal--opened .modal__wrapper {
+  @media (max-width: (@desktop-width - 0.2px)) {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform .5s, opacity .5s;
+  }
+}

@@ -5,13 +5,20 @@
     top: 0;
     left: 0;
 
-    display: none;
     width: 100%;
     height: 100%;
 
+    overflow-y: scroll;
+
+    // backdrop-filter: blur(3px);
+    background-color: @color-back-black-02;
+
+    opacity: 0;
+    pointer-events: none;
+
     &--active {
-      display: block;
-      backdrop-filter: blur(5px);
+      opacity: .6;
+      pointer-events: auto;
     }
   }
 }

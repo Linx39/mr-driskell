@@ -2,28 +2,44 @@ import { resetCatalogList } from "./catalog-toogle.js";
 import { activateBlur, deactivateBlur } from "./blur.js";
 import { isEscEvent } from "./utils.js";
 
-const MAIN_NAV_BOTTOM_CLASS = 'main-nav__bottom';
-const MAIN_NAV_BOTTOM_OPENED_CLASS = 'main-nav__bottom--opened';
+const MODAL_CLASS = 'modal';
+const MODAL_WRAPPER_CLASS ='modal__wrapper';
+const MODAL_OPENED_CLASS = 'modal--opened';
 
-const SITE_TOGGLE_CLASS = 'main-nav__site-toggle';
+const SITE_TOGGLE_CLASS = 'site-toggle';
 const SITE_TOGGLE_CLOSED_CLASS = 'site-toggle--closed';
 const SITE_TOGGLE_OPENED_CLASS = 'site-toggle--opened';
 
-const mainNavBottom = document.querySelector(`.${MAIN_NAV_BOTTOM_CLASS}`);
+const body = document.querySelector('.page__body');
+const modal = document.querySelector(`.${MODAL_CLASS}`);
+const modalWrapper = modal.querySelector(`.${MODAL_WRAPPER_CLASS}`);
 const siteToogle = document.querySelector(`.${SITE_TOGGLE_CLASS}`);
 
-const openMainNavBottom = () => {
+const openModal = () => {
+  const documentWidth = document.documentElement.clientWidth;
+  const scrollYWidth = window.innerWidth - documentWidth;
+
+  body.style.overflowY = 'hidden';
+  body.style.marginRight = `${scrollYWidth}px`;
+
   siteToogle.classList.remove(SITE_TOGGLE_CLOSED_CLASS);
   siteToogle.classList.add(SITE_TOGGLE_OPENED_CLASS);
-  mainNavBottom.classList.add(MAIN_NAV_BOTTOM_OPENED_CLASS);
+
+  modal.classList.add(MODAL_OPENED_CLASS);
+  modal.style.marginRight = `${scrollYWidth}px`;
+
   document.addEventListener(`keydown`, onEscKeydown)
   document.addEventListener('click', onDocumentClick)
 }
 
-const closeMainNavBottom = () => {
+const closeModal = () => {
+  body.removeAttribute('style');
+
   siteToogle.classList.remove(SITE_TOGGLE_OPENED_CLASS);
   siteToogle.classList.add(SITE_TOGGLE_CLOSED_CLASS);
-  mainNavBottom.classList.remove(MAIN_NAV_BOTTOM_OPENED_CLASS);
+
+  modal.classList.remove(MODAL_OPENED_CLASS);
+
   document.removeEventListener('keydown', onEscKeydown);
   document.removeEventListener('click', onDocumentClick);
 }
@@ -32,7 +48,7 @@ const resetMainNav = () => {
   resetCatalogList();
 
   if (siteToogle.classList.contains(SITE_TOGGLE_OPENED_CLASS)) {
-    closeMainNavBottom();
+    closeModal();
   }
 
   deactivateBlur();
@@ -45,17 +61,15 @@ const onEscKeydown = (evt) => {
   }
 }
 
-const isOutElementClick = (evt) => !mainNavBottom.contains(evt.target) && !siteToogle.contains(evt.target);
-
 const onDocumentClick = (evt) => {
-  if (isOutElementClick(evt)) {
+  if (modal.contains(evt.target) && !modalWrapper.contains(evt.target)) {
     resetMainNav();
   }
 }
 
 siteToogle.addEventListener('click', () => {
   if (siteToogle.classList.contains(SITE_TOGGLE_CLOSED_CLASS)) {
-    openMainNavBottom();
+    openModal();
     activateBlur();
     return;
   }
@@ -63,6 +77,6 @@ siteToogle.addEventListener('click', () => {
   resetMainNav();
 })
 
-window.addEventListener('resize', () => {
-  resetMainNav();
-})
+// window.addEventListener('resize', () => {
+//   resetMainNav();
+// })
