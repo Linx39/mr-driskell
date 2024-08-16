@@ -76,7 +76,3 @@ siteToogle.addEventListener('click', () => {
 
   resetMainNav();
 })
-
-// window.addEventListener('resize', () => {
-//   resetMainNav();
-// })

@@ -18,6 +18,7 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   slideFullyVisibleClass: 'reviews__item--visible',
   initialSlide: 1,
   centeredSlides: true,
+  grabCursor: true,
   autoplay: {
     delay: 3000,
     pauseOnMouseEnter: true,
