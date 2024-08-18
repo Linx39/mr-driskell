@@ -4,11 +4,11 @@
 
   .wrapper-width();
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     gap: 40px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .about__img-container {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     padding-right: 30px;
   }
 }
@@ -27,11 +27,11 @@
   object-fit: cover;
   object-position: top;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     height: 400px;;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     height: 635px;
     object-position: top right;
   }
@@ -40,8 +40,8 @@
 .about__content {
   .wrapper-padding();
 
-  @media (min-width: @desktop-width) {
-    width: calc(@desktop-width / 2);
+  @media (min-width: @xxl-width) {
+    width: calc(@xxl-width / 2);
     padding-left: 25px;
   }
 }
@@ -56,12 +56,12 @@
 
   color: @color-orange;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     font-size: 40px;
     line-height: 52px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     font-size: 50px;
     line-height: 65px;
   }
@@ -78,7 +78,7 @@
     margin-bottom: 20px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     margin-bottom: 40px;
 
     font-size: 17px;
@@ -89,7 +89,7 @@
 .about__btn {
   margin: 0 auto;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     margin: 0;
   }
 }

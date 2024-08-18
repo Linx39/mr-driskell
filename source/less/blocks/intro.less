@@ -27,11 +27,11 @@
   object-fit: cover;
   object-position: center;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     height: 536px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     height: 700px;
   }
 }
@@ -54,7 +54,7 @@
 
   pointer-events: none;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     position: absolute;
     inset: 0;
     z-index: 10;
@@ -70,7 +70,7 @@
     padding-bottom: 72px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     grid-template-columns: 1fr min-content;
     align-items: center;
 
@@ -82,14 +82,14 @@
 .intro__content {
   max-width: 280px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
 
     max-width: 480px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     max-width: 600px;
   }
 }
@@ -103,14 +103,14 @@
   line-height: 35px;
   color: @color-orange;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     margin-bottom: 30px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     font-size: 75px;
     line-height: 75px;
   }
@@ -123,14 +123,14 @@
   font-weight: 400;
   line-height: 28px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     margin-bottom: 40px;
 
     font-size: 25px;
     line-height: 35px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     margin-bottom: 60px;
   }
 }
@@ -138,7 +138,7 @@
 .intro__btn {
   pointer-events: all;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     margin-left: 15px;
   }
 }
@@ -146,12 +146,12 @@
 .intro__slider-controls {
   pointer-events: all;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
 
@@ -167,7 +167,7 @@
 .intro__arrow-btn {
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     display: block;
   }
 }
@@ -175,7 +175,7 @@
 .intro__pagination {
   position: static;
 
-  @media (max-width: (@tablet-width - 0.2px)) {
+  @media (max-width: (@md-width - 0.2px)) {
     display: none;
   }
 }

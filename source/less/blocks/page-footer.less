@@ -6,12 +6,12 @@
 .page-footer__wrapper {
   .wrapper();
 
-  @media (max-width: (@desktop-width - 0.2px)) {
+  @media (max-width: (@xxl-width - 0.2px)) {
     padding-left: 0;
     padding-right: 0;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     display: grid;
     grid-template-columns: 722px 1fr;
   }
@@ -23,21 +23,21 @@
   display: grid;
   gap: 40px;
 
-  padding: 56px @mobile-padding 55px;
+  padding: 56px @sm-padding 55px;
 
   .border-decor-triangle--bottom(6px, 6px, 1px, @color-dark-orange);
 
   font-family: @font-footer;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     grid-template-columns: min-content 1fr;
     grid-template-rows: min-content min-content;
     gap: 24px 110px;
 
-    padding: 70px @tablet-padding;
+    padding: 70px @sm-padding;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     grid-template-columns: max-content 1fr;
     gap: 52px 71px;
     padding: 139px 80px 120px 0;
@@ -52,12 +52,12 @@
 
   .interactive-styles-custom();
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     width: 194px;
     height: 67px;
   }
@@ -78,7 +78,7 @@
 
   .interactive-styles();
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     grid-row: 2 / 3;
     align-self: end;
 
@@ -96,7 +96,7 @@
   font-weight: 500;
   line-height: 23px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @md-width) {
     grid-row: 1 / 3;
     grid-column: 2 / 3;
 
@@ -106,7 +106,7 @@
     line-height: 26px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     column-gap: 80px;
   }
 }
@@ -116,13 +116,13 @@
 }
 
 .page-footer__contacts {
-  padding: 65px @mobile-padding 60px;
+  padding: 65px @sm-padding 60px;
 
-  @media (min-width: @tablet-width) {
-    padding: 70px @tablet-padding;
+  @media (min-width: @md-width) {
+    padding: 70px @sm-padding;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     padding: 129px 0 131px 102px ;
   }
 }

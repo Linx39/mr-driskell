@@ -4,5 +4,5 @@ export const Width = {
 
   MOBILE: 576,
   TABLET: 768,
-  DESKTOP: 1280,
+  DESKTOP: 1400,
 }

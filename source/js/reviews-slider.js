@@ -13,7 +13,7 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 'auto',
-  spaceBetween: 10,
+  spaceBetween: 0,
   watchSlidesProgress: true,
   slideFullyVisibleClass: 'reviews__item--visible',
   initialSlide: 1,
@@ -27,14 +27,14 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   breakpoints: {
     [Width.TABLET]: {
       slidesPerView: 'auto',
-      spaceBetween: -60,
       centeredSlides: true,
+      spaceBetween: 0,
     },
 
     [Width.DESKTOP]: {
       slidesPerView: 2,
-      spaceBetween: 20,
       centeredSlides: false,
+      spaceBetween: 20,
     },
   },
 

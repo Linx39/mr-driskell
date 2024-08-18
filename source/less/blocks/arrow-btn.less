@@ -19,40 +19,27 @@
   }
 
   &--prev::before {
-    transform: rotate(180deg) translateX(50%) translateY(50%);
+    transform: rotate(180deg) translateX(60%) translateY(50%);
   }
 
   &--next::before {
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-30%) translateY(-50%);
   }
 
-  &:hover,
-  &:focus-visible {
+  &--disabled {
+    opacity: 0.3;
+
+    cursor: initial;
+  }
+
+  &:not(&--disabled):hover,
+  &:not(&--disabled):focus-visible {
     border-color: @color-dark-orange;
 
     outline: none;
 
     &::before {
       .decor-triangle(10px, 12px, @color-dark-orange);
-    }
-  }
-
-  &--disabled {
-    opacity: 0.3;
-
-    &::before {
-      .decor-triangle(10px, 12px, @color-orange);
-    }
-
-    &:hover,
-    &:focus-visible {
-      border-color: @color-orange;
-
-      outline: none;
-
-      &::before {
-        .decor-triangle(10px, 12px, @color-orange);
-      }
     }
   }
 }

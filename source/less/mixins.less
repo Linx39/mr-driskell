@@ -1,45 +1,34 @@
 .wrapper-width {
   box-sizing: border-box;
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @xxl-width) {
     max-width: @max-width;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 .wrapper-padding {
   box-sizing: border-box;
-  padding-right: @mobile-padding;
-  padding-left: @mobile-padding;
+  padding-right: @sm-padding;
+  padding-left: @sm-padding;
 
-  @media (min-width: @tablet-width) {
-    padding-right: @tablet-padding;
-    padding-left: @tablet-padding;
+  @media (min-width: @xl-width) {
+    padding-right: @xl-padding;
+    padding-left: @xl-padding;
   }
 
-  @media (min-width: @desktop-width) {
-    max-width: @desktop-width;
-    padding-right: @desktop-padding;
-    padding-left: @desktop-padding;
+  @media (min-width: @xxl-width) {
+    max-width: @xxl-width;
+    padding-right: @xxl-padding;
+    padding-left: @xxl-padding;
   }
 }
 
 .wrapper {
   .wrapper-width();
   .wrapper-padding();
-}
-
-.wrapper-max {
-  .wrapper-width();
-  .wrapper-padding();
-
-  @media (min-width: @desktop-width) {
-    max-width: @desktop-width-max;
-    padding-left: @desktop-padding-max;
-    padding-right: @desktop-padding-max;
-  }
 }
 
 .interactive-styles {

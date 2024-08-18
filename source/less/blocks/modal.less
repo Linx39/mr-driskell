@@ -1,5 +1,5 @@
 .modal {
-  @media (max-width: (@desktop-width - 0.2px)) {
+  @media (max-width: (@xxl-width - 0.2px)) {
     position: fixed;
     top: 80px;
     left:0;
@@ -19,7 +19,7 @@
 }
 
 .modal--opened {
-  @media (max-width: (@desktop-width - 0.2px)) {
+  @media (max-width: (@xxl-width - 0.2px)) {
     pointer-events: auto;
     visibility: visible;
     -webkit-overflow-scrolling: touch;
@@ -27,7 +27,7 @@
 }
 
 .modal__wrapper {
-  @media (max-width: (@desktop-width - 0.2px)) {
+  @media (max-width: (@xxl-width - 0.2px)) {
     height: 100%;
     overflow-y: auto;
 
@@ -38,7 +38,7 @@
 }
 
 .modal--opened .modal__wrapper {
-  @media (max-width: (@desktop-width - 0.2px)) {
+  @media (max-width: (@xxl-width - 0.2px)) {
     transform: translateX(0);
     opacity: 1;
     transition: transform .5s, opacity .5s;
