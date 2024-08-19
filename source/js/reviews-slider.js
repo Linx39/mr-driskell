@@ -19,19 +19,19 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   initialSlide: 1,
   centeredSlides: true,
   grabCursor: true,
-  autoplay: {
-    delay: 3000,
-    pauseOnMouseEnter: true,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   pauseOnMouseEnter: true,
+  // },
 
   breakpoints: {
-    [Width.TABLET]: {
+    [Width.MD]: {
       slidesPerView: 'auto',
       centeredSlides: true,
       spaceBetween: 0,
     },
 
-    [Width.DESKTOP]: {
+    [Width.XXL]: {
       slidesPerView: 2,
       centeredSlides: false,
       spaceBetween: 20,

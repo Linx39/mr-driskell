@@ -2,8 +2,7 @@
   width: 280px;
   height: auto;
 
-  @media (min-width: @xxl-width) {
-    min-width: 280px;
+  @media (min-width: @xl-width) {
     width: auto;
   }
 
@@ -26,7 +25,7 @@
 
   background-color: @color-back-light-02;
 
-  @media (min-width: @xxl-width) {
+  @media (min-width: @xl-width) {
     padding-top: 15px;
     padding-bottom: 30px;
   }
@@ -40,7 +39,7 @@
 
   cursor: pointer;
 
-  @media (min-width: @xxl-width) {
+  @media (min-width: @xl-width) {
     height: calc(100% + 70px);
     transition: transform 0.3s;
     transform: translateY(-25px);
@@ -66,7 +65,7 @@
 
   overflow: hidden;
 
-  @media (min-width: @xxl-width) {
+  @media (min-width: @xl-width) {
     margin-bottom: 6px;
   }
 }
@@ -81,13 +80,14 @@
 
 .card__img {
   width: 100%;
-  height: auto;
+  height: 228px;
+  object-fit: contain;
 }
 
 .card__slider-pagination {
   display: none;
 
-  @media (min-width: @xxl-width) {
+  @media (min-width: @xl-width) {
     position: static;
     z-index: 10;
 
@@ -102,27 +102,23 @@
 }
 
 .card__description {
-  flex-grow: 1;
-
   position: relative;
 
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .card__title {
   flex-grow: 1;
 
-  min-height: 42px;
   margin-bottom: 7px;
 
   font-size: 15px;
   font-weight: 400;
   line-height: 21px;
 
-  @media (min-width: @xxl-width) {
-    min-height: 48px;
+  @media (min-width: @xl-width) {
     margin-bottom: 10px;
 
     font-size: 17px;
@@ -144,7 +140,7 @@
 
   background-color: @color-back-light-02;
 
-  @media (min-width: @xxl-width) {
+  @media (min-width: @xl-width) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -160,7 +156,7 @@
 
 .card:hover .card__btn-container,
 .card:focus-within .card__btn-container {
-  @media (min-width: @xxl-width) {
+  @media (min-width: @xl-width) {
     transition: transform 0.3s;
     transform: translateY(0);
     bottom: 30px;
@@ -176,7 +172,7 @@
 
 .card:hover .card__btn-buy,
 .card:focus-visible .card__btn-buy {
-  @media (min-width: @xxl-width) {
+  @media (min-width: @xl-width) {
     pointer-events: all;
   }
 }
@@ -187,7 +183,7 @@
   top: 30px;
   left: 30px;
 
-  max-width: 45%;
+  max-width: 50%;
 }
 
 .card__btn-favorite {
@@ -200,7 +196,7 @@
 .card__btn-buy-text {
   display: none;
 
-  @media (min-width: @xxl-width) {
+  @media (min-width: @xl-width) {
     display: inline;
   }
 }

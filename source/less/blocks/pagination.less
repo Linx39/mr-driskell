@@ -1,8 +1,9 @@
 .pagination {
   display: flex;
-  gap: 15px;
+  gap: 6px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   &--vertical {
     @media (min-width: @xxl-width) {
@@ -20,38 +21,45 @@
 }
 
 .pagination__btn {
+  flex-shrink: 0;
+
   position: relative;
 
-  width: 16px;
-  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  border: 1px solid @color-dark-orange;
+  width: 24px;
+  height: 24px;
 
   &:focus-visible {
     outline: none;
   }
-
+  
   &::before {
     position: absolute;
     content: "";
-    inset: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid @color-dark-orange;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
 
     width: 10px;
     height: 10px;
-    margin: auto;
   }
 
-  &--current::before {
+  &--current::after {
     background-color: @color-orange;
   }
 
-  &:not(&--current):hover::before,
-  &:not(&--current):focus-visible::before {
+  &:not(&--current):hover::after,
+  &:not(&--current):focus-visible::after {
     background-color: @color-dark-orange;
-  }
-
-  &--current:hover,
-  &--current:focus-visible {
-    border-color: @color-orange;
   }
 }

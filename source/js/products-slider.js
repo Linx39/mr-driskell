@@ -11,22 +11,12 @@ const initSwiper = () => {
   const productsSlider = new Swiper('.products-slider', {
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
+    slidesPerView: 'auto',
+    // slidesPerGroup: 1,
     spaceBetween: 20,
 
     breakpoints: {
-      [Width.MOBILE]: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-      },
-
-      [Width.TABLET]: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-      },
-
-      [Width.DESKTOP]: {
+      [Width.XL]: {
         maxBackfaceHiddenSlides: 0,
       },
     },
@@ -48,7 +38,7 @@ let isSliderInit = false;
 let productsSlider = Swiper;
 
 const setSliderMode = () => {
-  const isDesktopWidth = window.matchMedia(`(min-width: ${Width.DESKTOP}px)`).matches;
+  const isDesktopWidth = window.matchMedia(`(min-width: ${Width.XL}px)`).matches;
 
   if (!isDesktopWidth && !isSliderInit){
     productsSlider = initSwiper();
@@ -61,10 +51,10 @@ const setSliderMode = () => {
   }
 };
 
-window.addEventListener('load', () => {
+window.addEventListener("DOMContentLoaded", () => {
   setSliderMode();
 });
 
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
   setSliderMode();
 });

@@ -2,7 +2,8 @@ export const Width = {
   MIN: 320,
   MAX: 1920,
 
-  MOBILE: 576,
-  TABLET: 768,
-  DESKTOP: 1400,
+  SM: 576,
+  MD: 768,
+  XL: 1200,
+  XXL: 1400,
 }
