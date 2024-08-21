@@ -35,21 +35,21 @@
 
 .reviews__slider {
   position: relative;
+  margin-bottom: 36px;
 
   overflow: visible;
+
+  @media (min-width: @md-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @xl-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .reviews__list {
   display: flex;
-  margin-bottom: 47px;
-
-  @media (min-width: @md-width) {
-    margin-bottom: 41px;
-  }
-
-  @media (min-width: @xl-width) {
-    margin-bottom: 49px;
-  }
 }
 
 .reviews__item {
@@ -57,7 +57,7 @@
 
   width: 280px;
   padding-top: 30px;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 
   @media (min-width: @md-width) {
     width: 598px;
@@ -177,7 +177,7 @@
   @media (min-width: @xl-width) {
     position: absolute;
     content: "";
-    top: 50%;
+    top: calc((100% - 50px - 10px - 38px - 24px) / 2 + 50px);
     z-index: 1;
 
     display: block;

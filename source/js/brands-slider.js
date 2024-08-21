@@ -23,7 +23,7 @@ const brandsSlider = new Swiper('.brands__slider', {
     [Width.MD]: {
       slidesOffsetBefore: -19.5,
     },
-    [Width.DESKTOP]: {
+    [Width.XL]: {
       slidesOffsetBefore: -19.5,
     }
   },
