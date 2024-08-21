@@ -1,14 +1,9 @@
 const CARD_CLASS = 'card';
-const CARD_NO_JS_CLASS = 'card--no-js';
-
-const cardElements = document.querySelectorAll(`.${CARD_CLASS}`);
-
-cardElements.forEach(card => card.classList.remove(CARD_NO_JS_CLASS));
 
 const cardSlider = new Swiper('.card__slider', {
-  direction: 'horizontal',
-  loop: false,
-
+  slidesPerView: 1,
+  nested: true,
+  
   pagination: {
     el: '.card__slider-pagination',
     bulletElement: 'button',

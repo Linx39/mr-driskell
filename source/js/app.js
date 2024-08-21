@@ -4,6 +4,5 @@ import './intro.js';
 import './filter-slider.js';
 import './card-slider.js';
 import './products-slider.js';
-import './promo.js';
 import './brands-slider.js';
 import './reviews-slider.js';

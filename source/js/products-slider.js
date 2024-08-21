@@ -1,28 +1,28 @@
 import { Width } from "./const.js";
 
-const PRODUCTS_SLIDER_CLASS = 'products-slider';
-const PRODUCTS_SLIDER_NO_JS_CLASS = 'products-slider--no-js';
-
-const productsSliderElement = document.querySelector(`.${PRODUCTS_SLIDER_CLASS}`);
-
-productsSliderElement.classList.remove(PRODUCTS_SLIDER_NO_JS_CLASS);
-
 const initSwiper = () => {
-  const productsSlider = new Swiper('.products-slider', {
-    direction: 'horizontal',
-    loop: false,
+  const productsSlider = new Swiper('.promo__products-slider', {
     slidesPerView: 'auto',
-    // slidesPerGroup: 1,
     spaceBetween: 20,
+    slidesOffsetBefore: 20,
+    slidesOffsetAfter: 20,
 
     breakpoints: {
+      [Width.XS]: {
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
+      },
+      [Width.MD]: {
+        slidesOffsetBefore: 30,
+        slidesOffsetAfter: 30,
+      },
       [Width.XL]: {
         maxBackfaceHiddenSlides: 0,
       },
     },
 
     pagination: {
-      el: '.products-slider__pagination',
+      el: '.promo__products-pagination',
       bulletElement: 'button',
       clickable: true,
       bulletClass: 'pagination__btn',
