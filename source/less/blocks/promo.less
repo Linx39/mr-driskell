@@ -8,11 +8,16 @@
 }
 
 .promo__products {
+  .wrapper();
   padding-bottom: 8px;
 
-  @media (min-width: @md-width) {
-    padding-bottom: 0;
+  @media (min-width: @xs-width) {
+    padding: 0;
   }
+
+  // @media (min-width: @md-width) {
+  //   padding-bottom: 0;
+  // }
 
   @media (min-width: @xl-width) {
     .wrapper();

@@ -2,17 +2,19 @@ import { Width } from "./const.js";
 
 const initSwiper = () => {
   const productsSlider = new Swiper('.promo__products-slider', {
-    slidesPerView: 'auto',
+    slidesPerView: 1,
     spaceBetween: 20,
-    slidesOffsetBefore: 20,
-    slidesOffsetAfter: 20,
+    slidesOffsetBefore: 0,
+    slidesOffsetAfter: 0,
 
     breakpoints: {
       [Width.XS]: {
+        slidesPerView: 'auto',
         slidesOffsetBefore: 20,
         slidesOffsetAfter: 20,
       },
       [Width.MD]: {
+        slidesPerView: 'auto',
         slidesOffsetBefore: 30,
         slidesOffsetAfter: 30,
       },
