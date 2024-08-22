@@ -1,12 +1,16 @@
 .pagination {
   display: flex;
-  gap: 6px;
+  gap: 4px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
+  @media (min-width: @xxl-width) {
+    gap: 6px;
+  }
+
   &--vertical {
-    @media (min-width: @xxl-width) {
+    @media (min-width: @xl-width) {
       flex-direction: column;
     }
   }
@@ -35,7 +39,7 @@
   &:focus-visible {
     outline: none;
   }
-  
+
   &::before {
     position: absolute;
     content: "";

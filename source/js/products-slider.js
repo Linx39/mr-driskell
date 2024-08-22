@@ -1,6 +1,6 @@
 import { Width } from "./const.js";
 
-const initSwiper = () => {
+const initProductsSwiper = () => {
   const productsSlider = new Swiper('.promo__products-slider', {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -36,27 +36,27 @@ const initSwiper = () => {
   return productsSlider;
 };
 
-let isSliderInit = false;
+let isProductsSliderInit = false;
 let productsSlider = Swiper;
 
-const setSliderMode = () => {
+const setProductsSliderMode = () => {
   const isDesktopWidth = window.matchMedia(`(min-width: ${Width.XL}px)`).matches;
 
-  if (!isDesktopWidth && !isSliderInit){
-    productsSlider = initSwiper();
-    isSliderInit = true;
+  if (!isDesktopWidth && !isProductsSliderInit){
+    productsSlider = initProductsSwiper();
+    isProductsSliderInit = true;
   }
 
-  if (isDesktopWidth && isSliderInit) {
+  if (isDesktopWidth && isProductsSliderInit) {
     productsSlider.destroy();
-    isSliderInit = false;
+    isProductsSliderInit = false;
   }
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  setSliderMode();
+  setProductsSliderMode();
 });
 
 window.addEventListener("resize", () => {
-  setSliderMode();
+  setProductsSliderMode();
 });

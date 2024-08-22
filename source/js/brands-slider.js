@@ -14,10 +14,10 @@ const brandsSlider = new Swiper('.brands__slider', {
   centerInsufficientSlides: true,
   slidesOffsetBefore: -7,
   grabCursor: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 3000,
+    pauseOnMouseEnter: true,
+  },
 
   breakpoints: {
     [Width.MD]: {
