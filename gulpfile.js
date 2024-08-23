@@ -121,12 +121,6 @@ export const server = (done) => {
   done();
 }
 
-// // Reload
-// const reload = (done) => {
-//   browser.reload();
-//   done();
-// }
-
 // Watcher
 export const watcher = () => {
   gulp.watch(`${SOURCE_FOLDER}/less/**/*.less`, gulp.series(styles));
