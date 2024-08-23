@@ -35,8 +35,6 @@
 .filter-list__link {
   padding-bottom: 6px;
 
-  .interactive-styles();
-
   @media (min-width: @xl-width) {
     padding-bottom: 7px;
   }
@@ -46,11 +44,13 @@
 
     .border-decor-rhombus--bottom(4.2px, 1px, @color-orange);
 
-    .interactive-styles-custom();
-
     @media (min-width: @xl-width) {
       .border-decor-rhombus--bottom(8.3px, 2px, @color-orange);
     }
+  }
+
+  &:not(&--current) {
+    .interactive-styles();
   }
 }
 

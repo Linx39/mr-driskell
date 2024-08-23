@@ -1,12 +1,5 @@
 import { Width } from "./const.js";
 
-const BRANDS_CLASS = 'brands';
-const BRANDS_NO_JS_CLASS = 'brands--no-js';
-
-const brandsElement = document.querySelector(`.${BRANDS_CLASS}`);
-
-brandsElement.classList.remove(BRANDS_NO_JS_CLASS);
-
 const brandsSlider = new Swiper('.brands__slider', {
   direction: 'horizontal',
   loop: true,

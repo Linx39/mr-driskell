@@ -1,14 +1,5 @@
 import { Width } from "./const.js";
 
-const REVIEWS_CLASS = 'reviews';
-const REVIEWS_NO_JS_CLASS = 'reviews--no-js';
-
-const reviewsElement = document.querySelector(`.${REVIEWS_CLASS}`);
-
-if (reviewsElement) {
-  reviewsElement.classList.remove(REVIEWS_NO_JS_CLASS);
-}
-
 const reviewsSlider = new Swiper('.reviews__slider', {
   direction: 'horizontal',
   loop: true,

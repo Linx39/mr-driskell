@@ -2,10 +2,10 @@ import { Width } from "./const.js";
 
 const initProductsSwiper = () => {
   const productsSwiper = new Swiper('.promo__products-slider', {
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 20,
-    slidesOffsetBefore: 0,
-    slidesOffsetAfter: 0,
+    slidesOffsetBefore: 20,
+    slidesOffsetAfter: 20,
 
     breakpoints: {
       [Width.XS]: {
@@ -18,18 +18,16 @@ const initProductsSwiper = () => {
         slidesOffsetBefore: 30,
         slidesOffsetAfter: 30,
       },
-      // [Width.XL]: {
-      //   maxBackfaceHiddenSlides: 0,
-      // },
     },
 
     pagination: {
       el: '.promo__products-pagination',
-      bulletElement: 'button',
       clickable: true,
       bulletClass: 'pagination__btn',
       bulletActiveClass: 'pagination__btn--current',
       lockClass: 'pagination--disabled',
+      dynamicBullets: true,
+      dynamicMainBullets: 3,
     },
   });
 
