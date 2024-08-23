@@ -1,7 +1,7 @@
 import { Width } from "./const.js";
 
 const initProductsSwiper = () => {
-  const productsSlider = new Swiper('.promo__products-slider', {
+  const productsSwiper = new Swiper('.promo__products-slider', {
     slidesPerView: 1,
     spaceBetween: 20,
     slidesOffsetBefore: 0,
@@ -18,9 +18,9 @@ const initProductsSwiper = () => {
         slidesOffsetBefore: 30,
         slidesOffsetAfter: 30,
       },
-      [Width.XL]: {
-        maxBackfaceHiddenSlides: 0,
-      },
+      // [Width.XL]: {
+      //   maxBackfaceHiddenSlides: 0,
+      // },
     },
 
     pagination: {
@@ -33,30 +33,30 @@ const initProductsSwiper = () => {
     },
   });
 
-  return productsSlider;
+  return productsSwiper;
 };
 
-let isProductsSliderInit = false;
-let productsSlider = Swiper;
+let isProductsSwiperInit = false;
+let productsSwiper = Swiper;
 
-const setProductsSliderMode = () => {
+const setProductsSwiperMode = () => {
   const isDesktopWidth = window.matchMedia(`(min-width: ${Width.XL}px)`).matches;
 
-  if (!isDesktopWidth && !isProductsSliderInit){
-    productsSlider = initProductsSwiper();
-    isProductsSliderInit = true;
+  if (!isDesktopWidth && !isProductsSwiperInit){
+    productsSwiper = initProductsSwiper();
+    isProductsSwiperInit = true;
   }
 
-  if (isDesktopWidth && isProductsSliderInit) {
-    productsSlider.destroy();
-    isProductsSliderInit = false;
+  if (isDesktopWidth && isProductsSwiperInit) {
+    productsSwiper.destroy();
+    isProductsSwiperInit = false;
   }
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  setProductsSliderMode();
+  setProductsSwiperMode();
 });
 
 window.addEventListener("resize", () => {
-  setProductsSliderMode();
+  setProductsSwiperMode();
 });

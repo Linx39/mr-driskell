@@ -1,7 +1,7 @@
 import { Width } from "./const.js";
 
 const initCardSwiper = () => {
-  const cardSlider = new Swiper('.card__slider', {
+  const cardSwiper = new Swiper('.card__slider', {
     slidesPerView: 1,
 
     pagination: {
@@ -13,42 +13,33 @@ const initCardSwiper = () => {
     },
   });
 
-  return cardSlider;
+  return cardSwiper;
 }
 
-initCardSwiper();
+let isCardSwiperInit = false;
+let cardSwiper = Swiper;
 
-// const cardSlidersElement = document.querySelectorAll('.card__slider');
+const setCardSwiperMode = () => {
+  const isDesktopWidth = window.matchMedia(`(min-width: ${Width.XL}px)`).matches;
 
-// let cardSliders = [...cardSlidersElement].map(() => Swiper);
-// console.log(cardSliders);
+  if (isDesktopWidth && !isCardSwiperInit) {
+    cardSwiper = initCardSwiper();
+    isCardSwiperInit = true;
+  }
 
-// let isCardSliderInit = false;
+  if (!isDesktopWidth && isCardSwiperInit){
+    cardSwiper.forEach(swiper => {
+      swiper.destroy();
+    });
+    isCardSwiperInit = false;
+  }
+};
 
-// const setCardSliderMode = () => {
-//   const isDesktopWidth = window.matchMedia(`(min-width: ${Width.XL}px)`).matches;
+window.addEventListener("DOMContentLoaded", () => {
+  setCardSwiperMode();
+});
 
-//   if (isDesktopWidth && !isCardSliderInit) {
-//     cardSliders.forEach((card) => {
-//       card = initCardSwiper();
-//     }
-//   );
-//     isCardSliderInit = true;
-//   }
-
-//   if (!isDesktopWidth && isCardSliderInit){
-//     cardSliders.forEach(card => {
-//       card.destroy()
-//     });
-//     isCardSliderInit = false;
-//   }
-// };
-
-// window.addEventListener("DOMContentLoaded", () => {
-//   setCardSliderMode();
-// });
-
-// window.addEventListener("resize", () => {
-//   setCardSliderMode();
-// });
+window.addEventListener("resize", () => {
+  setCardSwiperMode();
+});
 
