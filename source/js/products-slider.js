@@ -7,6 +7,16 @@ const initProductsSwiper = () => {
     slidesOffsetBefore: 20,
     slidesOffsetAfter: 20,
 
+    pagination: {
+      el: '.promo__products-pagination',
+      clickable: true,
+      bulletClass: 'pagination__btn',
+      bulletActiveClass: 'pagination__btn--current',
+      lockClass: 'pagination--disabled',
+      dynamicBullets: true,
+      dynamicMainBullets: 3,
+    },
+
     breakpoints: {
       [Width.XS]: {
         slidesPerView: 'auto',
@@ -18,16 +28,6 @@ const initProductsSwiper = () => {
         slidesOffsetBefore: 30,
         slidesOffsetAfter: 30,
       },
-    },
-
-    pagination: {
-      el: '.promo__products-pagination',
-      clickable: true,
-      bulletClass: 'pagination__btn',
-      bulletActiveClass: 'pagination__btn--current',
-      lockClass: 'pagination--disabled',
-      dynamicBullets: true,
-      dynamicMainBullets: 3,
     },
   });
 
